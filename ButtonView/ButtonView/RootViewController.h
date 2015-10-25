@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RootViewController.h
 //  ButtonView
 //
 //  Created by 邵瑞 on 15/10/24.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface RootViewController : UIViewController
 
 @end
-

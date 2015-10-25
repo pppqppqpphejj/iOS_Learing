@@ -7,31 +7,97 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CEF9E01C1BDCBFE800505477 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF9E01B1BDCBFE800505477 /* main.m */; };
-		CEF9E01F1BDCBFE800505477 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF9E01E1BDCBFE800505477 /* AppDelegate.m */; };
-		CEF9E0221BDCBFE800505477 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF9E0211BDCBFE800505477 /* ViewController.m */; };
-		CEF9E0251BDCBFE800505477 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF9E0231BDCBFE800505477 /* Main.storyboard */; };
-		CEF9E0281BDCBFE800505477 /* ButtonView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEF9E0261BDCBFE800505477 /* ButtonView.xcdatamodeld */; };
-		CEF9E02A1BDCBFE800505477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF9E0291BDCBFE800505477 /* Assets.xcassets */; };
-		CEF9E02D1BDCBFE800505477 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF9E02B1BDCBFE800505477 /* LaunchScreen.storyboard */; };
+		CEA0EA211BDBBB0800C24D28 /* RootView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA0EA201BDBBB0800C24D28 /* RootView.m */; };
+		CEA0EA241BDBBB4100C24D28 /* ColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA0EA231BDBBB4100C24D28 /* ColorView.m */; };
+		CEA0EA271BDBBB5900C24D28 /* ButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA0EA261BDBBB5900C24D28 /* ButtonView.m */; };
+		CEA0EA2B1BDBBB6D00C24D28 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA0EA291BDBBB6D00C24D28 /* RootViewController.m */; };
+		CEA0EA2C1BDBBB6D00C24D28 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA0EA2A1BDBBB6D00C24D28 /* RootViewController.xib */; };
+		CEA0EA2E1BDBD42600C24D28 /* 描述文件.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEA0EA2D1BDBD42600C24D28 /* 描述文件.strings */; };
+		CEA0EA371BDBD58F00C24D28 /* TouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA0EA361BDBD58F00C24D28 /* TouchView.m */; };
+		CEA0EA3C1BDBE67400C24D28 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA0EA381BDBE67400C24D28 /* 1.png */; };
+		CEA0EA3D1BDBE67400C24D28 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA0EA391BDBE67400C24D28 /* 2.png */; };
+		CEA0EA3E1BDBE67400C24D28 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA0EA3A1BDBE67400C24D28 /* 3.png */; };
+		CEA0EA3F1BDBE67400C24D28 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA0EA3B1BDBE67400C24D28 /* 4.png */; };
+		CEFB91291BDB843E00098291 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFB91281BDB843E00098291 /* main.m */; };
+		CEFB912C1BDB843E00098291 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFB912B1BDB843E00098291 /* AppDelegate.m */; };
+		CEFB912F1BDB843E00098291 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFB912E1BDB843E00098291 /* ViewController.m */; };
+		CEFB91321BDB843E00098291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFB91301BDB843E00098291 /* Main.storyboard */; };
+		CEFB91351BDB843E00098291 /* ButtonView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEFB91331BDB843E00098291 /* ButtonView.xcdatamodeld */; };
+		CEFB91371BDB843E00098291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFB91361BDB843E00098291 /* Assets.xcassets */; };
+		CEFB913A1BDB843E00098291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFB91381BDB843E00098291 /* LaunchScreen.storyboard */; };
+		CEFB91451BDB843F00098291 /* ButtonViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFB91441BDB843F00098291 /* ButtonViewTests.m */; };
+		CEFB91501BDB843F00098291 /* ButtonViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFB914F1BDB843F00098291 /* ButtonViewUITests.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CEFB91411BDB843F00098291 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEFB911C1BDB843E00098291 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEFB91231BDB843E00098291;
+			remoteInfo = ButtonView;
+		};
+		CEFB914C1BDB843F00098291 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEFB911C1BDB843E00098291 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEFB91231BDB843E00098291;
+			remoteInfo = ButtonView;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		CEF9E0171BDCBFE800505477 /* ButtonView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEF9E01B1BDCBFE800505477 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CEF9E01D1BDCBFE800505477 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CEF9E01E1BDCBFE800505477 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CEF9E0201BDCBFE800505477 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CEF9E0211BDCBFE800505477 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CEF9E0241BDCBFE800505477 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CEF9E0271BDCBFE800505477 /* ButtonView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ButtonView.xcdatamodel; sourceTree = "<group>"; };
-		CEF9E0291BDCBFE800505477 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CEF9E02C1BDCBFE800505477 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CEF9E02E1BDCBFE800505477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA0EA1F1BDBBB0800C24D28 /* RootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootView.h; sourceTree = "<group>"; };
+		CEA0EA201BDBBB0800C24D28 /* RootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootView.m; sourceTree = "<group>"; };
+		CEA0EA221BDBBB4100C24D28 /* ColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorView.h; sourceTree = "<group>"; };
+		CEA0EA231BDBBB4100C24D28 /* ColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorView.m; sourceTree = "<group>"; };
+		CEA0EA251BDBBB5900C24D28 /* ButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonView.h; sourceTree = "<group>"; };
+		CEA0EA261BDBBB5900C24D28 /* ButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonView.m; sourceTree = "<group>"; };
+		CEA0EA281BDBBB6D00C24D28 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		CEA0EA291BDBBB6D00C24D28 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		CEA0EA2A1BDBBB6D00C24D28 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		CEA0EA2D1BDBD42600C24D28 /* 描述文件.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = "描述文件.strings"; sourceTree = "<group>"; };
+		CEA0EA351BDBD58F00C24D28 /* TouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchView.h; sourceTree = "<group>"; };
+		CEA0EA361BDBD58F00C24D28 /* TouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchView.m; sourceTree = "<group>"; };
+		CEA0EA381BDBE67400C24D28 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		CEA0EA391BDBE67400C24D28 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		CEA0EA3A1BDBE67400C24D28 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		CEA0EA3B1BDBE67400C24D28 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		CEFB91241BDB843E00098291 /* ButtonView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFB91281BDB843E00098291 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEFB912A1BDB843E00098291 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEFB912B1BDB843E00098291 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEFB912D1BDB843E00098291 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CEFB912E1BDB843E00098291 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CEFB91311BDB843E00098291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEFB91341BDB843E00098291 /* ButtonView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ButtonView.xcdatamodel; sourceTree = "<group>"; };
+		CEFB91361BDB843E00098291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEFB91391BDB843E00098291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEFB913B1BDB843E00098291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFB91401BDB843F00098291 /* ButtonViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFB91441BDB843F00098291 /* ButtonViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonViewTests.m; sourceTree = "<group>"; };
+		CEFB91461BDB843F00098291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFB914B1BDB843F00098291 /* ButtonViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFB914F1BDB843F00098291 /* ButtonViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonViewUITests.m; sourceTree = "<group>"; };
+		CEFB91511BDB843F00098291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CEF9E0141BDCBFE800505477 /* Frameworks */ = {
+		CEFB91211BDB843E00098291 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFB913D1BDB843F00098291 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFB91481BDB843F00098291 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,57 +107,103 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CEF9E00E1BDCBFE800505477 = {
+		CEA0EA341BDBD58F00C24D28 /* TouchView代理 */ = {
 			isa = PBXGroup;
 			children = (
-				CEF9E0191BDCBFE800505477 /* ButtonView */,
-				CEF9E0181BDCBFE800505477 /* Products */,
+				CEA0EA381BDBE67400C24D28 /* 1.png */,
+				CEA0EA391BDBE67400C24D28 /* 2.png */,
+				CEA0EA3A1BDBE67400C24D28 /* 3.png */,
+				CEA0EA3B1BDBE67400C24D28 /* 4.png */,
+				CEA0EA351BDBD58F00C24D28 /* TouchView.h */,
+				CEA0EA361BDBD58F00C24D28 /* TouchView.m */,
+			);
+			path = "TouchView代理";
+			sourceTree = "<group>";
+		};
+		CEFB911B1BDB843E00098291 = {
+			isa = PBXGroup;
+			children = (
+				CEFB91261BDB843E00098291 /* ButtonView */,
+				CEFB91431BDB843F00098291 /* ButtonViewTests */,
+				CEFB914E1BDB843F00098291 /* ButtonViewUITests */,
+				CEFB91251BDB843E00098291 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CEF9E0181BDCBFE800505477 /* Products */ = {
+		CEFB91251BDB843E00098291 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEF9E0171BDCBFE800505477 /* ButtonView.app */,
+				CEFB91241BDB843E00098291 /* ButtonView.app */,
+				CEFB91401BDB843F00098291 /* ButtonViewTests.xctest */,
+				CEFB914B1BDB843F00098291 /* ButtonViewUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CEF9E0191BDCBFE800505477 /* ButtonView */ = {
+		CEFB91261BDB843E00098291 /* ButtonView */ = {
 			isa = PBXGroup;
 			children = (
-				CEF9E01D1BDCBFE800505477 /* AppDelegate.h */,
-				CEF9E01E1BDCBFE800505477 /* AppDelegate.m */,
-				CEF9E0201BDCBFE800505477 /* ViewController.h */,
-				CEF9E0211BDCBFE800505477 /* ViewController.m */,
-				CEF9E0231BDCBFE800505477 /* Main.storyboard */,
-				CEF9E0291BDCBFE800505477 /* Assets.xcassets */,
-				CEF9E02B1BDCBFE800505477 /* LaunchScreen.storyboard */,
-				CEF9E02E1BDCBFE800505477 /* Info.plist */,
-				CEF9E0261BDCBFE800505477 /* ButtonView.xcdatamodeld */,
-				CEF9E01A1BDCBFE800505477 /* Supporting Files */,
+				CEA0EA341BDBD58F00C24D28 /* TouchView代理 */,
+				CEA0EA221BDBBB4100C24D28 /* ColorView.h */,
+				CEA0EA231BDBBB4100C24D28 /* ColorView.m */,
+				CEA0EA251BDBBB5900C24D28 /* ButtonView.h */,
+				CEA0EA261BDBBB5900C24D28 /* ButtonView.m */,
+				CEA0EA1F1BDBBB0800C24D28 /* RootView.h */,
+				CEA0EA201BDBBB0800C24D28 /* RootView.m */,
+				CEFB912A1BDB843E00098291 /* AppDelegate.h */,
+				CEFB912B1BDB843E00098291 /* AppDelegate.m */,
+				CEFB912D1BDB843E00098291 /* ViewController.h */,
+				CEFB912E1BDB843E00098291 /* ViewController.m */,
+				CEA0EA281BDBBB6D00C24D28 /* RootViewController.h */,
+				CEA0EA291BDBBB6D00C24D28 /* RootViewController.m */,
+				CEA0EA2A1BDBBB6D00C24D28 /* RootViewController.xib */,
+				CEFB91301BDB843E00098291 /* Main.storyboard */,
+				CEFB91361BDB843E00098291 /* Assets.xcassets */,
+				CEFB91381BDB843E00098291 /* LaunchScreen.storyboard */,
+				CEFB913B1BDB843E00098291 /* Info.plist */,
+				CEFB91331BDB843E00098291 /* ButtonView.xcdatamodeld */,
+				CEFB91271BDB843E00098291 /* Supporting Files */,
+				CEA0EA2D1BDBD42600C24D28 /* 描述文件.strings */,
 			);
 			path = ButtonView;
 			sourceTree = "<group>";
 		};
-		CEF9E01A1BDCBFE800505477 /* Supporting Files */ = {
+		CEFB91271BDB843E00098291 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CEF9E01B1BDCBFE800505477 /* main.m */,
+				CEFB91281BDB843E00098291 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEFB91431BDB843F00098291 /* ButtonViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEFB91441BDB843F00098291 /* ButtonViewTests.m */,
+				CEFB91461BDB843F00098291 /* Info.plist */,
+			);
+			path = ButtonViewTests;
+			sourceTree = "<group>";
+		};
+		CEFB914E1BDB843F00098291 /* ButtonViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEFB914F1BDB843F00098291 /* ButtonViewUITests.m */,
+				CEFB91511BDB843F00098291 /* Info.plist */,
+			);
+			path = ButtonViewUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CEF9E0161BDCBFE800505477 /* ButtonView */ = {
+		CEFB91231BDB843E00098291 /* ButtonView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEF9E0311BDCBFE800505477 /* Build configuration list for PBXNativeTarget "ButtonView" */;
+			buildConfigurationList = CEFB91541BDB843F00098291 /* Build configuration list for PBXNativeTarget "ButtonView" */;
 			buildPhases = (
-				CEF9E0131BDCBFE800505477 /* Sources */,
-				CEF9E0141BDCBFE800505477 /* Frameworks */,
-				CEF9E0151BDCBFE800505477 /* Resources */,
+				CEFB91201BDB843E00098291 /* Sources */,
+				CEFB91211BDB843E00098291 /* Frameworks */,
+				CEFB91221BDB843E00098291 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -99,24 +211,68 @@
 			);
 			name = ButtonView;
 			productName = ButtonView;
-			productReference = CEF9E0171BDCBFE800505477 /* ButtonView.app */;
+			productReference = CEFB91241BDB843E00098291 /* ButtonView.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CEFB913F1BDB843F00098291 /* ButtonViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEFB91571BDB843F00098291 /* Build configuration list for PBXNativeTarget "ButtonViewTests" */;
+			buildPhases = (
+				CEFB913C1BDB843F00098291 /* Sources */,
+				CEFB913D1BDB843F00098291 /* Frameworks */,
+				CEFB913E1BDB843F00098291 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEFB91421BDB843F00098291 /* PBXTargetDependency */,
+			);
+			name = ButtonViewTests;
+			productName = ButtonViewTests;
+			productReference = CEFB91401BDB843F00098291 /* ButtonViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEFB914A1BDB843F00098291 /* ButtonViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEFB915A1BDB843F00098291 /* Build configuration list for PBXNativeTarget "ButtonViewUITests" */;
+			buildPhases = (
+				CEFB91471BDB843F00098291 /* Sources */,
+				CEFB91481BDB843F00098291 /* Frameworks */,
+				CEFB91491BDB843F00098291 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEFB914D1BDB843F00098291 /* PBXTargetDependency */,
+			);
+			name = ButtonViewUITests;
+			productName = ButtonViewUITests;
+			productReference = CEFB914B1BDB843F00098291 /* ButtonViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CEF9E00F1BDCBFE800505477 /* Project object */ = {
+		CEFB911C1BDB843E00098291 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = wonders_ButtonView;
 				TargetAttributes = {
-					CEF9E0161BDCBFE800505477 = {
+					CEFB91231BDB843E00098291 = {
 						CreatedOnToolsVersion = 7.1;
+					};
+					CEFB913F1BDB843F00098291 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = CEFB91231BDB843E00098291;
+					};
+					CEFB914A1BDB843F00098291 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = CEFB91231BDB843E00098291;
 					};
 				};
 			};
-			buildConfigurationList = CEF9E0121BDCBFE800505477 /* Build configuration list for PBXProject "ButtonView" */;
+			buildConfigurationList = CEFB911F1BDB843E00098291 /* Build configuration list for PBXProject "ButtonView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -124,56 +280,112 @@
 				en,
 				Base,
 			);
-			mainGroup = CEF9E00E1BDCBFE800505477;
-			productRefGroup = CEF9E0181BDCBFE800505477 /* Products */;
+			mainGroup = CEFB911B1BDB843E00098291;
+			productRefGroup = CEFB91251BDB843E00098291 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CEF9E0161BDCBFE800505477 /* ButtonView */,
+				CEFB91231BDB843E00098291 /* ButtonView */,
+				CEFB913F1BDB843F00098291 /* ButtonViewTests */,
+				CEFB914A1BDB843F00098291 /* ButtonViewUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CEF9E0151BDCBFE800505477 /* Resources */ = {
+		CEFB91221BDB843E00098291 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEF9E02D1BDCBFE800505477 /* LaunchScreen.storyboard in Resources */,
-				CEF9E02A1BDCBFE800505477 /* Assets.xcassets in Resources */,
-				CEF9E0251BDCBFE800505477 /* Main.storyboard in Resources */,
+				CEA0EA3F1BDBE67400C24D28 /* 4.png in Resources */,
+				CEA0EA2E1BDBD42600C24D28 /* 描述文件.strings in Resources */,
+				CEFB913A1BDB843E00098291 /* LaunchScreen.storyboard in Resources */,
+				CEA0EA3D1BDBE67400C24D28 /* 2.png in Resources */,
+				CEA0EA3E1BDBE67400C24D28 /* 3.png in Resources */,
+				CEFB91371BDB843E00098291 /* Assets.xcassets in Resources */,
+				CEA0EA3C1BDBE67400C24D28 /* 1.png in Resources */,
+				CEA0EA2C1BDBBB6D00C24D28 /* RootViewController.xib in Resources */,
+				CEFB91321BDB843E00098291 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFB913E1BDB843F00098291 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFB91491BDB843F00098291 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CEF9E0131BDCBFE800505477 /* Sources */ = {
+		CEFB91201BDB843E00098291 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEF9E0221BDCBFE800505477 /* ViewController.m in Sources */,
-				CEF9E01F1BDCBFE800505477 /* AppDelegate.m in Sources */,
-				CEF9E0281BDCBFE800505477 /* ButtonView.xcdatamodeld in Sources */,
-				CEF9E01C1BDCBFE800505477 /* main.m in Sources */,
+				CEFB912F1BDB843E00098291 /* ViewController.m in Sources */,
+				CEFB912C1BDB843E00098291 /* AppDelegate.m in Sources */,
+				CEA0EA2B1BDBBB6D00C24D28 /* RootViewController.m in Sources */,
+				CEA0EA371BDBD58F00C24D28 /* TouchView.m in Sources */,
+				CEA0EA241BDBBB4100C24D28 /* ColorView.m in Sources */,
+				CEFB91351BDB843E00098291 /* ButtonView.xcdatamodeld in Sources */,
+				CEA0EA271BDBBB5900C24D28 /* ButtonView.m in Sources */,
+				CEFB91291BDB843E00098291 /* main.m in Sources */,
+				CEA0EA211BDBBB0800C24D28 /* RootView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFB913C1BDB843F00098291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFB91451BDB843F00098291 /* ButtonViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFB91471BDB843F00098291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFB91501BDB843F00098291 /* ButtonViewUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CEFB91421BDB843F00098291 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEFB91231BDB843E00098291 /* ButtonView */;
+			targetProxy = CEFB91411BDB843F00098291 /* PBXContainerItemProxy */;
+		};
+		CEFB914D1BDB843F00098291 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEFB91231BDB843E00098291 /* ButtonView */;
+			targetProxy = CEFB914C1BDB843F00098291 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		CEF9E0231BDCBFE800505477 /* Main.storyboard */ = {
+		CEFB91301BDB843E00098291 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CEF9E0241BDCBFE800505477 /* Base */,
+				CEFB91311BDB843E00098291 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		CEF9E02B1BDCBFE800505477 /* LaunchScreen.storyboard */ = {
+		CEFB91381BDB843E00098291 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CEF9E02C1BDCBFE800505477 /* Base */,
+				CEFB91391BDB843E00098291 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -181,7 +393,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CEF9E02F1BDCBFE800505477 /* Debug */ = {
+		CEFB91521BDB843F00098291 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -224,7 +436,7 @@
 			};
 			name = Debug;
 		};
-		CEF9E0301BDCBFE800505477 /* Release */ = {
+		CEFB91531BDB843F00098291 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -261,62 +473,133 @@
 			};
 			name = Release;
 		};
-		CEF9E0321BDCBFE800505477 /* Debug */ = {
+		CEFB91551BDB843F00098291 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ButtonView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wonders.ButtonView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		CEF9E0331BDCBFE800505477 /* Release */ = {
+		CEFB91561BDB843F00098291 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ButtonView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wonders.ButtonView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CEFB91581BDB843F00098291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ButtonViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonders.ButtonViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButtonView.app/ButtonView";
+			};
+			name = Debug;
+		};
+		CEFB91591BDB843F00098291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ButtonViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonders.ButtonViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButtonView.app/ButtonView";
+			};
+			name = Release;
+		};
+		CEFB915B1BDB843F00098291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ButtonViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonders.ButtonViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ButtonView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CEFB915C1BDB843F00098291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ButtonViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonders.ButtonViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ButtonView;
+				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CEF9E0121BDCBFE800505477 /* Build configuration list for PBXProject "ButtonView" */ = {
+		CEFB911F1BDB843E00098291 /* Build configuration list for PBXProject "ButtonView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CEF9E02F1BDCBFE800505477 /* Debug */,
-				CEF9E0301BDCBFE800505477 /* Release */,
+				CEFB91521BDB843F00098291 /* Debug */,
+				CEFB91531BDB843F00098291 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEF9E0311BDCBFE800505477 /* Build configuration list for PBXNativeTarget "ButtonView" */ = {
+		CEFB91541BDB843F00098291 /* Build configuration list for PBXNativeTarget "ButtonView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CEF9E0321BDCBFE800505477 /* Debug */,
-				CEF9E0331BDCBFE800505477 /* Release */,
+				CEFB91551BDB843F00098291 /* Debug */,
+				CEFB91561BDB843F00098291 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEFB91571BDB843F00098291 /* Build configuration list for PBXNativeTarget "ButtonViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFB91581BDB843F00098291 /* Debug */,
+				CEFB91591BDB843F00098291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEFB915A1BDB843F00098291 /* Build configuration list for PBXNativeTarget "ButtonViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFB915B1BDB843F00098291 /* Debug */,
+				CEFB915C1BDB843F00098291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		CEF9E0261BDCBFE800505477 /* ButtonView.xcdatamodeld */ = {
+		CEFB91331BDB843E00098291 /* ButtonView.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				CEF9E0271BDCBFE800505477 /* ButtonView.xcdatamodel */,
+				CEFB91341BDB843E00098291 /* ButtonView.xcdatamodel */,
 			);
-			currentVersion = CEF9E0271BDCBFE800505477 /* ButtonView.xcdatamodel */;
+			currentVersion = CEFB91341BDB843E00098291 /* ButtonView.xcdatamodel */;
 			path = ButtonView.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = CEF9E00F1BDCBFE800505477 /* Project object */;
+	rootObject = CEFB911C1BDB843E00098291 /* Project object */;
 }

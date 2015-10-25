@@ -1,0 +1,13 @@
+/* 
+  描述文件.strings
+  ButtonView
+
+  Created by 邵瑞 on 15/10/24.
+  Copyright © 2015年 wonders_ButtonView. All rights reserved.
+ ButtonView 一个View用作Buttion用，传递Action事件调用方法
+ 
+ 
+//TouchView
+ 是随机改变颜色或者背景图片的类，自写方法
+ 
+*/

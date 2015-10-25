@@ -2,7 +2,7 @@
 //  ViewController.m
 //  ButtonView
 //
-//  Created by 邵瑞 on 15/10/25.
+//  Created by 邵瑞 on 15/10/24.
 //  Copyright © 2015年 wonders_ButtonView. All rights reserved.
 //
 

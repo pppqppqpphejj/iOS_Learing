@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9059"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController">
+            <connections>
+                <outlet property="bv" destination="Qql-XX-hc1" id="UJF-Ti-Tzm"/>
+                <outlet property="rv" destination="5Vj-KS-moD" id="JeA-XC-wVE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Vj-KS-moD" customClass="RootView">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" red="0.61075599749999998" green="0.55247685349999998" blue="0.29033628099999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="1qN-gc-MS7"/>
+                        <constraint firstAttribute="width" constant="212" id="HCA-90-xCR"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="1qN-gc-MS7"/>
+                            <exclude reference="HCA-90-xCR"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="1qN-gc-MS7"/>
+                            <include reference="HCA-90-xCR"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qql-XX-hc1" customClass="ButtonView">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="212" id="0rV-oy-Aqh"/>
+                        <constraint firstAttribute="height" constant="76" id="kRk-N8-xfQ"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0rV-oy-Aqh"/>
+                            <exclude reference="kRk-N8-xfQ"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="0rV-oy-Aqh"/>
+                            <include reference="kRk-N8-xfQ"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Qql-XX-hc1" firstAttribute="top" secondItem="5Vj-KS-moD" secondAttribute="bottom" constant="26" id="5j7-cx-lsh"/>
+                <constraint firstAttribute="trailing" secondItem="Qql-XX-hc1" secondAttribute="trailing" constant="8" id="G2m-Ms-2yq"/>
+                <constraint firstAttribute="trailing" secondItem="5Vj-KS-moD" secondAttribute="trailing" constant="8" id="MzI-zy-n7f"/>
+                <constraint firstItem="5Vj-KS-moD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="57" id="X2H-wZ-qPP"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="5Vj-KS-moD"/>
+                    <exclude reference="Qql-XX-hc1"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="MzI-zy-n7f"/>
+                    <exclude reference="X2H-wZ-qPP"/>
+                    <exclude reference="5j7-cx-lsh"/>
+                    <exclude reference="G2m-Ms-2yq"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="5Vj-KS-moD"/>
+                    <include reference="Qql-XX-hc1"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="MzI-zy-n7f"/>
+                    <include reference="X2H-wZ-qPP"/>
+                    <include reference="5j7-cx-lsh"/>
+                    <include reference="G2m-Ms-2yq"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
