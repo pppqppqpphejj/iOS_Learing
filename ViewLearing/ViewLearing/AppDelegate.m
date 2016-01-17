@@ -14,9 +14,31 @@
 
 @implementation AppDelegate
 
-
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    
+    
+    if ( viewController ==  self.window.rootViewController) {
+        
+        [navigationController setNavigationBarHidden:YES animated:animated];
+    } else if ( [navigationController isNavigationBarHidden] ) {
+        
+        [navigationController setNavigationBarHidden:YES animated:animated];
+    }
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    
+    UIViewController *ctrl = [storyboard instantiateViewControllerWithIdentifier:@"TEST"];
+    
+    self.viewControllers.viewControllers = @[ctrl];
+
     // Override point for customization after application launch.
+    [self.window makeKeyAndVisible];
+    
+//    UINavigationController  * Nav = self.window.rootViewController;
+//    self.window.rootViewController = Nav;
+//    [self navigationController:Nav willShowViewController:self.window.rootViewController animated:YES];
     return YES;
 }
 

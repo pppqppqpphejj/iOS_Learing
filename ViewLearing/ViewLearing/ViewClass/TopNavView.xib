@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopNavView">
+            <connections>
+                <outlet property="TopNav" destination="am5-Du-SVv" id="X8D-KB-6rc"/>
+                <outlet property="btnTopGoback" destination="qhj-pA-aMG" id="PKc-8p-Up6"/>
+                <outlet property="lalTopTitel" destination="WTv-0q-bKq" id="9cD-Ff-dvy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" userLabel="ffff" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="am5-Du-SVv" userLabel="llll">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTv-0q-bKq">
+                    <rect key="frame" x="0.0" y="21" width="400" height="45"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="5Vs-Gj-uVS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhj-pA-aMG">
+                    <rect key="frame" x="16" y="21" width="45" height="47"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="RfL-gq-gNr"/>
+                        <constraint firstAttribute="height" constant="47" id="coH-o5-07i"/>
+                    </constraints>
+                    <state key="normal" title="返回"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.20000000000000001" green="0.56078431370000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="qhj-pA-aMG" secondAttribute="bottom" constant="12" id="DlA-qa-joQ"/>
+                <constraint firstItem="qhj-pA-aMG" firstAttribute="leading" secondItem="am5-Du-SVv" secondAttribute="leading" constant="16" id="Fme-bu-PNE"/>
+                <constraint firstAttribute="trailing" secondItem="WTv-0q-bKq" secondAttribute="trailing" id="OlD-2o-1fi"/>
+                <constraint firstAttribute="bottom" secondItem="WTv-0q-bKq" secondAttribute="bottom" constant="14" id="lrJ-M1-OKD"/>
+                <constraint firstItem="WTv-0q-bKq" firstAttribute="leading" secondItem="am5-Du-SVv" secondAttribute="leading" id="mJl-KT-heP"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="430" y="81"/>
+        </view>
+    </objects>
+</document>
