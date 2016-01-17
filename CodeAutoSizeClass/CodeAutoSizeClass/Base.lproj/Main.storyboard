@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="360" translatesAutoresizingMaskIntoConstraints="NO" id="CDW-W1-6Cu" userLabel="viewOneLab" colorLabel="IBBuiltInLabel-Yellow">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Uq8-Jx-IMN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Uq8-Jx-IMN"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Uq8-Jx-IMN"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="e6K-yt-PCh">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="138" id="T4h-4n-8tx"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="T4h-4n-8tx"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="T4h-4n-8tx"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUI-uo-I1g">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="80" y="330" width="42" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CDW-W1-6Cu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ILB-OD-wHg"/>
+                            <constraint firstAttribute="trailing" secondItem="CDW-W1-6Cu" secondAttribute="trailing" constant="20" id="P5P-cq-4cH"/>
+                            <constraint firstItem="e6K-yt-PCh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="105" id="Pyc-ut-83b"/>
+                            <constraint firstAttribute="trailing" secondItem="e6K-yt-PCh" secondAttribute="trailing" constant="130" id="Sph-Mi-5zD"/>
+                            <constraint firstItem="e6K-yt-PCh" firstAttribute="top" secondItem="CDW-W1-6Cu" secondAttribute="bottom" constant="114" id="ga4-QB-FcI"/>
+                            <constraint firstItem="CDW-W1-6Cu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="ky1-wY-yck"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="CDW-W1-6Cu"/>
+                                <exclude reference="e6K-yt-PCh"/>
+                                <exclude reference="LUI-uo-I1g"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="ILB-OD-wHg"/>
+                                <exclude reference="P5P-cq-4cH"/>
+                                <exclude reference="ky1-wY-yck"/>
+                                <exclude reference="Pyc-ut-83b"/>
+                                <exclude reference="Sph-Mi-5zD"/>
+                                <exclude reference="ga4-QB-FcI"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="CDW-W1-6Cu"/>
+                                <include reference="e6K-yt-PCh"/>
+                                <include reference="LUI-uo-I1g"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="ILB-OD-wHg"/>
+                                <include reference="P5P-cq-4cH"/>
+                                <include reference="ky1-wY-yck"/>
+                                <include reference="Pyc-ut-83b"/>
+                                <include reference="Sph-Mi-5zD"/>
+                                <include reference="ga4-QB-FcI"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="labOne" destination="CDW-W1-6Cu" id="4dV-53-FDu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9" y="272.25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple" width="80" height="100"/>
+    </resources>
+</document>
