@@ -18,20 +18,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.TopNav.btnTopGoback removeTarget:self action:NULL forControlEvents:UIControlEventTouchUpInside];
-    [self.TopNav.btnTopGoback addTarget:self action:@selector(btnTopGoback:) forControlEvents:UIControlEventTouchUpInside];
+    [self.navigationController setNavigationBarHidden:YES];
+    [self.TopNav.lalTopTitel setText:@"返回111"];
+//    [self.TopNav.btnTopGoback setTitle:@"返回" forState:UIControlStateNormal];
+    [self.TopNav.btnTopGoback setHidden: NO];
+    [self.TopNav setNoPop:NO];
+    [self.TopNav setViewController:self];
+    
+//    [self.TopNav.btnTopGoback removeTarget:self action:NULL forControlEvents:UIControlEventTouchUpInside];
+//    [self.TopNav.btnTopGoback addTarget:self action:@selector(btnTopGoback:) forControlEvents:UIControlEventTouchUpInside];
 
     // Do any additional setup after loading the view.
 }
 
--(void)btnTopGoback:(UIBackButton*)sender
-{
-    [self.TopNav viewPop:self ParentModelOrParentPop:NO Animated:NO];
-    
-//    NSLog(@"self.TopNav.btnTopGoback.frame %@",NSStringFromCGRect(self.TopNav.btnTopGoback.frame));
-//    [self.TopNav.parentController popViewControllerAnimated:YES];
-    
-}
 
 
 - (void)didReceiveMemoryWarning {

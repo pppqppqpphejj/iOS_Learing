@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
@@ -27,14 +26,14 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhj-pA-aMG">
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhj-pA-aMG">
                     <rect key="frame" x="16" y="21" width="45" height="47"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="45" id="RfL-gq-gNr"/>
                         <constraint firstAttribute="height" constant="47" id="coH-o5-07i"/>
                     </constraints>
-                    <state key="normal" title="返回"/>
+                    <state key="normal" image="返回按钮"/>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.20000000000000001" green="0.56078431370000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -52,4 +51,7 @@
             <point key="canvasLocation" x="430" y="81"/>
         </view>
     </objects>
+    <resources>
+        <image name="返回按钮" width="38" height="64"/>
+    </resources>
 </document>

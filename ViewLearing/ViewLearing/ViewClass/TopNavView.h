@@ -9,6 +9,16 @@
 #import <UIKit/UIKit.h>
 
 @interface TopNavView : UIView
+
+/**
+ *传入一个UIViewController 控制器
+ * noPop 根据视图返回model或者pop返回
+ * Animated可以自行code预留
+ **/
+
+@property (strong,nonatomic) UIViewController * ViewController;
+
+@property (nonatomic, getter=isPopView) BOOL noPop; // default is NO
 @property (strong, nonatomic) IBOutlet UIView *TopNav;
 /**
  *返回按钮
@@ -22,12 +32,6 @@
  *返回父视图
  **/
 @property (weak,   nonatomic) UINavigationController *parentController;
-/**
- *传入一个UIViewController 控制器
- * ParentModelOrParentPop 根据视图返回model或者pop返回
- * Animated可以自行code
- **/
--(void)viewPop:(UIViewController *)viewConter  ParentModelOrParentPop:(BOOL)yes Animated:(BOOL)yes;
 
 @end
 /**

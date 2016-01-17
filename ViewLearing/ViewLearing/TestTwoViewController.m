@@ -21,9 +21,13 @@
     [self.TopNav.lalTopTitel setText:@"two111"];
     [self.TopNav.btnTopGoback setTitle:@"twoback" forState:UIControlStateNormal];
     [self.TopNav.btnTopGoback setHidden: NO];
+    
+    [self.TopNav setViewController:self];
+    [self.TopNav setNoPop:YES];
+    
     [self.TopNav.btnTopGoback removeTarget:self action:NULL forControlEvents:UIControlEventTouchUpInside];
     [self.TopNav.btnTopGoback addTarget:self action:@selector(btnTopGoback:) forControlEvents:UIControlEventTouchUpInside];
-    
+//
     //    [self.view addSubview:self.viewCl];
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -31,8 +35,10 @@
 -(void)btnTopGoback:(id)sender
 {
     NSLog(@"self.TopNav.btnTopGoback.frame %@",NSStringFromCGRect(self.TopNav.btnTopGoback.frame));
-    [self.TopNav viewPop:self ParentModelOrParentPop:YES Animated:NO];
+//    [self.TopNav setNoPop:NO];
+    [self.TopNav setViewController:nil];
 
+    
 
     // Do any additional setup after loading the view from its nib.
 }

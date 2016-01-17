@@ -23,9 +23,11 @@
     [self.navigationController setNavigationBarHidden:YES];
     [self.TopNav.lalTopTitel setText:@"返回111"];
     [self.TopNav.btnTopGoback setTitle:@"返回" forState:UIControlStateNormal];
-    [self.TopNav.btnTopGoback setHidden: NO];
+    [self.TopNav.btnTopGoback setHidden: YES];
+    
     [self.TopNav.btnTopGoback removeTarget:self action:NULL forControlEvents:UIControlEventTouchUpInside];
     [self.TopNav.btnTopGoback addTarget:self action:@selector(btnTopGoback:) forControlEvents:UIControlEventTouchUpInside];
+    
 
 //    [self.view addSubview:self.viewCl];
     // Do any additional setup after loading the view, typically from a nib.

@@ -102,7 +102,7 @@ self = [super init];
     [self.btnTopGoback addTarget:self action:@selector(Goback:) forControlEvents:UIControlEventTouchUpInside];
  
 
-    
+
     
 }
 
@@ -111,7 +111,18 @@ self = [super init];
 {
     
     
-    [self.parentController popViewControllerAnimated:YES];
+    if(self.noPop)
+    {
+        [self.ViewController dismissViewControllerAnimated:YES completion:^{
+            
+        }];
+        
+    }
+    else if(!self.noPop)
+    {
+        [self.ViewController.navigationController popViewControllerAnimated:YES];
+        
+    }
 //    [self.parentController dismissViewControllerAnimated:YES completion:NULL];
 //    AppDelegate * win = (AppDelegate *) [[UIApplication sharedApplication] keyWindow];
 //    [win.window.rootViewController dismissViewControllerAnimated:YES completion:^{
@@ -124,25 +135,6 @@ self = [super init];
 //    }
 }
 
--(void)viewPop:(UIViewController *)viewConter  ParentModelOrParentPop:(BOOL)model Animated:(BOOL)yes
-{
-
-    if(model)
-    {
-        [viewConter dismissViewControllerAnimated:YES completion:^{
-            
-        }];
-
-    }
-    else if(!model)
-    {
-        [viewConter.navigationController popViewControllerAnimated:YES];
-
-    }
-    
-    
-    
-}
 
 
 /*
@@ -169,7 +161,7 @@ self = [super init];
 -(void)awakeFromNib
 {
     [self setBackgroundColor:[UIColor clearColor]];
-    [self.imageView setImage:[UIImage imageNamed:@"白色返回箭头"]];
+    [self.imageView setImage:[UIImage imageNamed:@"返回按钮"]];
     [self setShowsTouchWhenHighlighted:YES];
 }
 -(void)viewPop:(UIView *)viewCont Animated:(BOOL)yes
