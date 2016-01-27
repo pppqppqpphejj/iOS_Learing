@@ -44,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE2C732B1C58AAA800F719A9 /* CodeAutoSizeClass.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CodeAutoSizeClass.xcodeproj; path = "/Users/shaorui/邵瑞/学习记录/MyGit/ios/CodeAutoSizeClass/CodeAutoSizeClass.xcodeproj"; sourceTree = "<absolute>"; };
 		CE4AF8F71C4B30200014B39A /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
 		CE4AF8F81C4B30200014B39A /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
 		CE589CB01C490D3100D59F56 /* CodeAutoSizeClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeAutoSizeClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +105,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE2C732C1C58AAA800F719A9 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				CE2C732B1C58AAA800F719A9 /* CodeAutoSizeClass.xcodeproj */,
+			);
+			name = "New Group";
+			path = ../CodeAutoSizeClass.xcodeproj;
+			sourceTree = "<group>";
+		};
 		CE589CA71C490D3100D59F56 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +144,7 @@
 		CE589CB21C490D3100D59F56 /* CodeAutoSizeClass */ = {
 			isa = PBXGroup;
 			children = (
+				CE2C732C1C58AAA800F719A9 /* New Group */,
 				CE4AF8F71C4B30200014B39A /* LoadingView.h */,
 				CE4AF8F81C4B30200014B39A /* LoadingView.m */,
 				CE589CB61C490D3100D59F56 /* AppDelegate.h */,
