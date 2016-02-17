@@ -16,6 +16,18 @@
 		CE75410E1C59AEA600BE3702 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE75410C1C59AEA600BE3702 /* LaunchScreen.storyboard */; };
 		CE7541191C59AEA700BE3702 /* ____DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7541181C59AEA700BE3702 /* ____DemoTests.m */; };
 		CE7541241C59AEA700BE3702 /* ____DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7541231C59AEA700BE3702 /* ____DemoUITests.m */; };
+		CE75413B1C59AEBE00BE3702 /* DFHeadImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7541341C59AEBE00BE3702 /* DFHeadImageView.m */; };
+		CE75413C1C59AEBE00BE3702 /* VPImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7541361C59AEBE00BE3702 /* VPImageCropperViewController.m */; };
+		CE75413D1C59AEBE00BE3702 /* DFHeadImageView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CE7541371C59AEBE00BE3702 /* DFHeadImageView.podspec */; };
+		CE75413E1C59AEBE00BE3702 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CE7541391C59AEBE00BE3702 /* LICENSE */; };
+		CE75413F1C59AEBE00BE3702 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CE75413A1C59AEBE00BE3702 /* README.md */; };
+		CE7541431C59AF5200BE3702 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7541411C59AF5200BE3702 /* RootViewController.m */; };
+		CE7541441C59AF5200BE3702 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7541421C59AF5200BE3702 /* RootViewController.xib */; };
+		CE7541471C59B80200BE3702 /* drawCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7541461C59B80200BE3702 /* drawCircle.m */; };
+		CE7541491C59B81C00BE3702 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7541481C59B81C00BE3702 /* QuartzCore.framework */; };
+		CE75414B1C59B82A00BE3702 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE75414A1C59B82A00BE3702 /* CoreGraphics.framework */; };
+		CE75414F1C59BC0F00BE3702 /* OBShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CE75414E1C59BC0F00BE3702 /* OBShapedButton.m */; };
+		CE7541531C59BC3100BE3702 /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7541521C59BC3100BE3702 /* UIImage+ColorAtPixel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +65,24 @@
 		CE75411F1C59AEA700BE3702 /* 圆形头像DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "圆形头像DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7541231C59AEA700BE3702 /* ____DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____DemoUITests.m"; sourceTree = "<group>"; };
 		CE7541251C59AEA700BE3702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7541331C59AEBE00BE3702 /* DFHeadImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFHeadImageView.h; sourceTree = "<group>"; };
+		CE7541341C59AEBE00BE3702 /* DFHeadImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFHeadImageView.m; sourceTree = "<group>"; };
+		CE7541351C59AEBE00BE3702 /* VPImageCropperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPImageCropperViewController.h; sourceTree = "<group>"; };
+		CE7541361C59AEBE00BE3702 /* VPImageCropperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPImageCropperViewController.m; sourceTree = "<group>"; };
+		CE7541371C59AEBE00BE3702 /* DFHeadImageView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DFHeadImageView.podspec; sourceTree = "<group>"; };
+		CE7541391C59AEBE00BE3702 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CE75413A1C59AEBE00BE3702 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CE7541401C59AF5200BE3702 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = ../RootViewController.h; sourceTree = "<group>"; };
+		CE7541411C59AF5200BE3702 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = ../RootViewController.m; sourceTree = "<group>"; };
+		CE7541421C59AF5200BE3702 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RootViewController.xib; path = ../RootViewController.xib; sourceTree = "<group>"; };
+		CE7541451C59B80200BE3702 /* drawCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawCircle.h; sourceTree = "<group>"; };
+		CE7541461C59B80200BE3702 /* drawCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = drawCircle.m; sourceTree = "<group>"; };
+		CE7541481C59B81C00BE3702 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CE75414A1C59B82A00BE3702 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE75414D1C59BC0F00BE3702 /* OBShapedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBShapedButton.h; sourceTree = "<group>"; };
+		CE75414E1C59BC0F00BE3702 /* OBShapedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBShapedButton.m; sourceTree = "<group>"; };
+		CE7541511C59BC3100BE3702 /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
+		CE7541521C59BC3100BE3702 /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE75414B1C59B82A00BE3702 /* CoreGraphics.framework in Frameworks */,
+				CE7541491C59B81C00BE3702 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +115,8 @@
 		CE7540EF1C59AEA600BE3702 = {
 			isa = PBXGroup;
 			children = (
+				CE75414A1C59B82A00BE3702 /* CoreGraphics.framework */,
+				CE7541481C59B81C00BE3702 /* QuartzCore.framework */,
 				CE7540FA1C59AEA600BE3702 /* 圆形头像Demo */,
 				CE7541171C59AEA700BE3702 /* 圆形头像DemoTests */,
 				CE7541221C59AEA700BE3702 /* 圆形头像DemoUITests */,
@@ -103,8 +137,11 @@
 		CE7540FA1C59AEA600BE3702 /* 圆形头像Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CE7541501C59BC3100BE3702 /* UIImage+ColorAtPixel */,
+				CE75414C1C59BC0F00BE3702 /* OBShapedButton */,
 				CE7540FE1C59AEA600BE3702 /* AppDelegate.h */,
 				CE7540FF1C59AEA600BE3702 /* AppDelegate.m */,
+				CE7541311C59AEBE00BE3702 /* DFHeadImageView-master */,
 				CE7541011C59AEA600BE3702 /* ViewController.h */,
 				CE7541021C59AEA600BE3702 /* ViewController.m */,
 				CE7541041C59AEA600BE3702 /* Main.storyboard */,
@@ -113,6 +150,8 @@
 				CE75410F1C59AEA600BE3702 /* Info.plist */,
 				CE7541071C59AEA600BE3702 /* ____Demo.xcdatamodeld */,
 				CE7540FB1C59AEA600BE3702 /* Supporting Files */,
+				CE7541451C59B80200BE3702 /* drawCircle.h */,
+				CE7541461C59B80200BE3702 /* drawCircle.m */,
 			);
 			path = "圆形头像Demo";
 			sourceTree = "<group>";
@@ -141,6 +180,57 @@
 				CE7541251C59AEA700BE3702 /* Info.plist */,
 			);
 			path = "圆形头像DemoUITests";
+			sourceTree = "<group>";
+		};
+		CE7541311C59AEBE00BE3702 /* DFHeadImageView-master */ = {
+			isa = PBXGroup;
+			children = (
+				CE7541401C59AF5200BE3702 /* RootViewController.h */,
+				CE7541411C59AF5200BE3702 /* RootViewController.m */,
+				CE7541421C59AF5200BE3702 /* RootViewController.xib */,
+				CE7541321C59AEBE00BE3702 /* DFHeadImageView */,
+				CE7541371C59AEBE00BE3702 /* DFHeadImageView.podspec */,
+				CE7541381C59AEBE00BE3702 /* DFHeadImageViewDemo */,
+				CE7541391C59AEBE00BE3702 /* LICENSE */,
+				CE75413A1C59AEBE00BE3702 /* README.md */,
+			);
+			path = "DFHeadImageView-master";
+			sourceTree = "<group>";
+		};
+		CE7541321C59AEBE00BE3702 /* DFHeadImageView */ = {
+			isa = PBXGroup;
+			children = (
+				CE7541331C59AEBE00BE3702 /* DFHeadImageView.h */,
+				CE7541341C59AEBE00BE3702 /* DFHeadImageView.m */,
+				CE7541351C59AEBE00BE3702 /* VPImageCropperViewController.h */,
+				CE7541361C59AEBE00BE3702 /* VPImageCropperViewController.m */,
+			);
+			path = DFHeadImageView;
+			sourceTree = "<group>";
+		};
+		CE7541381C59AEBE00BE3702 /* DFHeadImageViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DFHeadImageViewDemo;
+			sourceTree = "<group>";
+		};
+		CE75414C1C59BC0F00BE3702 /* OBShapedButton */ = {
+			isa = PBXGroup;
+			children = (
+				CE75414D1C59BC0F00BE3702 /* OBShapedButton.h */,
+				CE75414E1C59BC0F00BE3702 /* OBShapedButton.m */,
+			);
+			path = OBShapedButton;
+			sourceTree = "<group>";
+		};
+		CE7541501C59BC3100BE3702 /* UIImage+ColorAtPixel */ = {
+			isa = PBXGroup;
+			children = (
+				CE7541511C59BC3100BE3702 /* UIImage+ColorAtPixel.h */,
+				CE7541521C59BC3100BE3702 /* UIImage+ColorAtPixel.m */,
+			);
+			path = "UIImage+ColorAtPixel";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,8 +337,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE75410E1C59AEA600BE3702 /* LaunchScreen.storyboard in Resources */,
+				CE75413D1C59AEBE00BE3702 /* DFHeadImageView.podspec in Resources */,
+				CE7541441C59AF5200BE3702 /* RootViewController.xib in Resources */,
 				CE75410B1C59AEA600BE3702 /* Assets.xcassets in Resources */,
 				CE7541061C59AEA600BE3702 /* Main.storyboard in Resources */,
+				CE75413E1C59AEBE00BE3702 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +366,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE75413B1C59AEBE00BE3702 /* DFHeadImageView.m in Sources */,
 				CE7541031C59AEA600BE3702 /* ViewController.m in Sources */,
+				CE7541531C59BC3100BE3702 /* UIImage+ColorAtPixel.m in Sources */,
+				CE7541431C59AF5200BE3702 /* RootViewController.m in Sources */,
+				CE75413C1C59AEBE00BE3702 /* VPImageCropperViewController.m in Sources */,
+				CE75413F1C59AEBE00BE3702 /* README.md in Sources */,
+				CE75414F1C59BC0F00BE3702 /* OBShapedButton.m in Sources */,
+				CE7541471C59B80200BE3702 /* drawCircle.m in Sources */,
 				CE7541001C59AEA600BE3702 /* AppDelegate.m in Sources */,
 				CE7541091C59AEA600BE3702 /* ____Demo.xcdatamodeld in Sources */,
 				CE7540FD1C59AEA600BE3702 /* main.m in Sources */,
@@ -500,6 +600,7 @@
 				CE75412A1C59AEA700BE3702 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE75412B1C59AEA700BE3702 /* Build configuration list for PBXNativeTarget "圆形头像DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +609,7 @@
 				CE75412D1C59AEA700BE3702 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE75412E1C59AEA700BE3702 /* Build configuration list for PBXNativeTarget "圆形头像DemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +618,7 @@
 				CE7541301C59AEA700BE3702 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

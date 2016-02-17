@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE7540F71C59AEA600BE3702"
-               BuildableName = "&#x5706;&#x5f62;&#x5934;&#x50cf;Demo.app"
-               BlueprintName = "&#x5706;&#x5f62;&#x5934;&#x50cf;Demo"
-               ReferencedContainer = "container:&#x5706;&#x5f62;&#x5934;&#x50cf;Demo.xcodeproj">
+               BlueprintIdentifier = "CE5A8E4E1C5B0D6300BA8F4A"
+               BuildableName = "genwozou.app"
+               BlueprintName = "genwozou"
+               ReferencedContainer = "container:genwozou.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE7541131C59AEA700BE3702"
-               BuildableName = "&#x5706;&#x5f62;&#x5934;&#x50cf;DemoTests.xctest"
-               BlueprintName = "&#x5706;&#x5f62;&#x5934;&#x50cf;DemoTests"
-               ReferencedContainer = "container:&#x5706;&#x5f62;&#x5934;&#x50cf;Demo.xcodeproj">
+               BlueprintIdentifier = "CE5A8E6A1C5B0D6300BA8F4A"
+               BuildableName = "genwozouTests.xctest"
+               BlueprintName = "genwozouTests"
+               ReferencedContainer = "container:genwozou.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE75411E1C59AEA700BE3702"
-               BuildableName = "&#x5706;&#x5f62;&#x5934;&#x50cf;DemoUITests.xctest"
-               BlueprintName = "&#x5706;&#x5f62;&#x5934;&#x50cf;DemoUITests"
-               ReferencedContainer = "container:&#x5706;&#x5f62;&#x5934;&#x50cf;Demo.xcodeproj">
+               BlueprintIdentifier = "CE5A8E751C5B0D6300BA8F4A"
+               BuildableName = "genwozouUITests.xctest"
+               BlueprintName = "genwozouUITests"
+               ReferencedContainer = "container:genwozou.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE7540F71C59AEA600BE3702"
-            BuildableName = "&#x5706;&#x5f62;&#x5934;&#x50cf;Demo.app"
-            BlueprintName = "&#x5706;&#x5f62;&#x5934;&#x50cf;Demo"
-            ReferencedContainer = "container:&#x5706;&#x5f62;&#x5934;&#x50cf;Demo.xcodeproj">
+            BlueprintIdentifier = "CE5A8E4E1C5B0D6300BA8F4A"
+            BuildableName = "genwozou.app"
+            BlueprintName = "genwozou"
+            ReferencedContainer = "container:genwozou.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE7540F71C59AEA600BE3702"
-            BuildableName = "&#x5706;&#x5f62;&#x5934;&#x50cf;Demo.app"
-            BlueprintName = "&#x5706;&#x5f62;&#x5934;&#x50cf;Demo"
-            ReferencedContainer = "container:&#x5706;&#x5f62;&#x5934;&#x50cf;Demo.xcodeproj">
+            BlueprintIdentifier = "CE5A8E4E1C5B0D6300BA8F4A"
+            BuildableName = "genwozou.app"
+            BlueprintName = "genwozou"
+            ReferencedContainer = "container:genwozou.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE7540F71C59AEA600BE3702"
-            BuildableName = "&#x5706;&#x5f62;&#x5934;&#x50cf;Demo.app"
-            BlueprintName = "&#x5706;&#x5f62;&#x5934;&#x50cf;Demo"
-            ReferencedContainer = "container:&#x5706;&#x5f62;&#x5934;&#x50cf;Demo.xcodeproj">
+            BlueprintIdentifier = "CE5A8E4E1C5B0D6300BA8F4A"
+            BuildableName = "genwozou.app"
+            BlueprintName = "genwozou"
+            ReferencedContainer = "container:genwozou.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface drawCircle : UIView
-
+@property (strong,nonatomic) UIImageView * imageCircle;
+-(void)setImageHttpURl:(NSString *)String isUrlNull:(NSString *)imageStr;
+-(void)addTarget:(NSSet *)actionSet and:(UIControl*)type;
 @end

@@ -187,6 +187,11 @@
 			path = CodeAutoSizeClassUITests;
 			sourceTree = "<group>";
 		};
+		CE6BD5501C5CF8880070443A /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -276,6 +281,12 @@
 			mainGroup = CE589CA71C490D3100D59F56;
 			productRefGroup = CE589CB11C490D3100D59F56 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CE6BD5501C5CF8880070443A /* Products */;
+					ProjectRef = CE2C732B1C58AAA800F719A9 /* CodeAutoSizeClass.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CE589CAF1C490D3100D59F56 /* CodeAutoSizeClass */,

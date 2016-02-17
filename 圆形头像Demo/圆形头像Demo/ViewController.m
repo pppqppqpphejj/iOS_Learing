@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
-
+#import "DFHeadImageView.h"
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet DFHeadImageView *imageView;
+- (IBAction)changeYuan:(id)sender;
 
 @end
 
@@ -16,6 +18,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+
+    [_imageView setImage:[UIImage imageNamed:@"QQ20160128-0"]];
+    [_imageView canReceiveAction:YES];
+    self.imageView.layer.masksToBounds =YES;
+//    [self changeYuan:nil];
+//    [_imageView makeToCircle:!_imageView.makeToCircle];
+
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -24,4 +34,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)changeYuan:(id)sender {
+    
+    [_imageView makeToCircle:!_imageView.makeToCircle];
+}
 @end

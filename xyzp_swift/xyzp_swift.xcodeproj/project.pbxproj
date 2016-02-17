@@ -15,6 +15,7 @@
 		CE2C73471C58B8F600F719A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2C73451C58B8F600F719A9 /* LaunchScreen.storyboard */; };
 		CE2C73521C58B8F600F719A9 /* xyzp_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C73511C58B8F600F719A9 /* xyzp_swiftTests.swift */; };
 		CE2C735D1C58B8F600F719A9 /* xyzp_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C735C1C58B8F600F719A9 /* xyzp_swiftUITests.swift */; };
+		CE2C736B1C58B94F00F719A9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C736A1C58B94F00F719A9 /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CE2C73581C58B8F600F719A9 /* xyzp_swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xyzp_swiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2C735C1C58B8F600F719A9 /* xyzp_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xyzp_swiftUITests.swift; sourceTree = "<group>"; };
 		CE2C735E1C58B8F600F719A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE2C736A1C58B94F00F719A9 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +101,10 @@
 		CE2C73381C58B8F600F719A9 /* xyzp_swift */ = {
 			isa = PBXGroup;
 			children = (
+				CE2C736C1C58B96100F719A9 /* Controller */,
 				CE2C73391C58B8F600F719A9 /* AppDelegate.swift */,
 				CE2C733B1C58B8F600F719A9 /* ViewController.swift */,
+				CE2C736A1C58B94F00F719A9 /* RootViewController.swift */,
 				CE2C733D1C58B8F600F719A9 /* Main.storyboard */,
 				CE2C73431C58B8F600F719A9 /* Assets.xcassets */,
 				CE2C73451C58B8F600F719A9 /* LaunchScreen.storyboard */,
@@ -126,6 +130,13 @@
 				CE2C735E1C58B8F600F719A9 /* Info.plist */,
 			);
 			path = xyzp_swiftUITests;
+			sourceTree = "<group>";
+		};
+		CE2C736C1C58B96100F719A9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 			files = (
 				CE2C733C1C58B8F600F719A9 /* ViewController.swift in Sources */,
 				CE2C73421C58B8F600F719A9 /* xyzp_swift.xcdatamodeld in Sources */,
+				CE2C736B1C58B94F00F719A9 /* RootViewController.swift in Sources */,
 				CE2C733A1C58B8F600F719A9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
