@@ -1,0 +1,79 @@
+//
+//  PrefixHeader.pch
+//  testMapDemoOne
+//
+//  Created by 邵瑞 on 16/3/9.
+//  Copyright © 2016年 wondergroup. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+
+#import "Masonry.h"
+
+//常用宏定义
+
+#define kWeakObject(obj) __weak __typeof(obj) weakObject = obj;
+
+#define kIOSVersion ((float)[[[UIDevice currentDevice] systemVersion] doubleValue])
+    //
+#define IS_RETINA ([[UIScreen mainScreen] scale] >= 2.0)
+    //判断是否为iPhone 4
+#define IS_IPHONE_4_OR_LESS (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0)
+
+    //判断是否为iPhone 6
+
+#define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
+    //判断是否为iPhone 6p
+
+#define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
+
+    //判断是否为iPhone
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+
+    //判断是否为iPad
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
+    //判断是否为ipod
+#define IS_IPOD ([[[UIDevice currentDevice] model] isEqualToString:@"iPod touch"])
+
+    //判断是否为iPhone5
+#define IS_IPHONE_5_SCREEN [[UIScreen mainScreen] bounds].size.height >= 568.0f && [[UIScreen mainScreen] bounds].size.height < 1024.0f
+    //颜色值转换  0b 八进制         0x 十六进制
+#define Color(r,g,b,a) [UIColor colorWithRed:(r/(float)255) green:(g/(float)255) blue:(b/(float)255) alpha:a]
+/*获取设备屏幕大小*/
+#define MAIN_SCREEN_FRAME [[UIScreen mainScreen]  bounds]
+//获取手机屏幕宽度
+#define MAIN_SCREEN_WIDTH [[UIScreen mainScreen]  bounds].size.width
+//获取手机屏幕高度
+#define MAIN_SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+
+#ifdef DEBUG
+#   define DLog(fmt, ...) {NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);}
+#   define ELog(err) {if(err) DLog(@"%@", err)}
+#else
+#   define DLog(...)
+#   define ELog(err)
+#endif
+
+
+    //IOS 字符串为空判断
+#define strIsJudgeEmpty(str) (str == nil ||[str isEqualToString:@"<null>"]||[str isEqualToString:@"(null)"]|| [str isKindOfClass:[NSNull class]]||[str length]<1 ? YES : NO )
+    //A better version of NSLog
+#define NSLog(format, ...) do { \
+fprintf(stderr, "<%s : %d> %s\n", \
+[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], \
+__LINE__, __func__); \
+(NSLog)((format), ##__VA_ARGS__); \
+fprintf(stderr, "-------\n"); \
+} while (0)
+
+#define PI 3.14159265358979323846
+#define ORIGINAL_MAX_WIDTH 640.0f
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

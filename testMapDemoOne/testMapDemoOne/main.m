@@ -1,9 +1,9 @@
 //
 //  main.m
-//  testMapDemoOne
+//  testIndoorLibDemo
 //
-//  Created by 邵瑞 on 16/3/8.
-//  Copyright © 2016年 wondergroup. All rights reserved.
+//  Created by liujun on 15/9/11.
+//  Copyright (c) 2015年 autonavi. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
