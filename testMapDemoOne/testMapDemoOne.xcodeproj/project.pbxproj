@@ -27,6 +27,8 @@
 		CE629F501C8FFDE4003A9721 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE629F421C8FFDE4003A9721 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		CE629F511C8FFDE4003A9721 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE629F441C8FFDE4003A9721 /* View+MASAdditions.m */; };
 		CE629F521C8FFDE4003A9721 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE629F471C8FFDE4003A9721 /* ViewController+MASAdditions.m */; };
+		CE65054B1C91780000B893AE /* SerchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6505491C91780000B893AE /* SerchViewController.m */; };
+		CE65054C1C91780000B893AE /* SerchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE65054A1C91780000B893AE /* SerchViewController.xib */; };
 		CE8B81841C9105890004F678 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8B81831C9105890004F678 /* libstdc++.6.0.9.tbd */; };
 		CE8B81861C9105BA0004F678 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8B81851C9105BA0004F678 /* CoreLocation.framework */; };
 		CE8B818E1C91063D0004F678 /* add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8B81871C91063D0004F678 /* add@2x.png */; };
@@ -69,6 +71,7 @@
 		CE8B81DE1C91064F0004F678 /* popMarkeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8B81BC1C91064F0004F678 /* popMarkeView.m */; };
 		CE8B81DF1C91064F0004F678 /* route.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE8B81BD1C91064F0004F678 /* route.bundle */; };
 		CE8B81E11C91066F0004F678 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8B81E01C91066F0004F678 /* libz.tbd */; };
+		CEE10D901C9151CC00A76F6C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE10D8F1C9151CC00A76F6C /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +136,9 @@
 		CE629F461C8FFDE4003A9721 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		CE629F471C8FFDE4003A9721 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		CE629F531C8FFE8D003A9721 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CE6505481C91780000B893AE /* SerchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SerchViewController.h; sourceTree = "<group>"; };
+		CE6505491C91780000B893AE /* SerchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SerchViewController.m; sourceTree = "<group>"; };
+		CE65054A1C91780000B893AE /* SerchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SerchViewController.xib; sourceTree = "<group>"; };
 		CE8B81831C9105890004F678 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		CE8B81851C9105BA0004F678 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CE8B81871C91063D0004F678 /* add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add@2x.png"; sourceTree = "<group>"; };
@@ -183,6 +189,7 @@
 		CE8B81BC1C91064F0004F678 /* popMarkeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = popMarkeView.m; sourceTree = "<group>"; };
 		CE8B81BD1C91064F0004F678 /* route.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = route.bundle; sourceTree = "<group>"; };
 		CE8B81E01C91066F0004F678 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		CEE10D8F1C9151CC00A76F6C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +197,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE10D901C9151CC00A76F6C /* QuartzCore.framework in Frameworks */,
 				CE8B81E11C91066F0004F678 /* libz.tbd in Frameworks */,
 				CE8B81861C9105BA0004F678 /* CoreLocation.framework in Frameworks */,
 				CE8B81BF1C91064F0004F678 /* libIndoorMapLib.a in Frameworks */,
@@ -217,6 +225,7 @@
 		CE4400661C8E5E5C001232C0 = {
 			isa = PBXGroup;
 			children = (
+				CEE10D8F1C9151CC00A76F6C /* QuartzCore.framework */,
 				CE4400711C8E5E5C001232C0 /* testMapDemoOne */,
 				CE44008E1C8E5E5D001232C0 /* testMapDemoOneTests */,
 				CE4400991C8E5E5D001232C0 /* testMapDemoOneUITests */,
@@ -237,6 +246,7 @@
 		CE4400711C8E5E5C001232C0 /* testMapDemoOne */ = {
 			isa = PBXGroup;
 			children = (
+				CE6505471C9177E700B893AE /* XIBVC */,
 				CE8B81931C91064F0004F678 /* lib */,
 				CE8B81B91C91064F0004F678 /* mapOne.png */,
 				CE8B81BA1C91064F0004F678 /* mapTwo.png */,
@@ -324,6 +334,16 @@
 				CE629F471C8FFDE4003A9721 /* ViewController+MASAdditions.m */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		CE6505471C9177E700B893AE /* XIBVC */ = {
+			isa = PBXGroup;
+			children = (
+				CE6505481C91780000B893AE /* SerchViewController.h */,
+				CE6505491C91780000B893AE /* SerchViewController.m */,
+				CE65054A1C91780000B893AE /* SerchViewController.xib */,
+			);
+			path = XIBVC;
 			sourceTree = "<group>";
 		};
 		CE8B81821C9105730004F678 /* Framework */ = {
@@ -509,6 +529,7 @@
 				CE8B818F1C91063D0004F678 /* add@3x.png in Resources */,
 				CE8B81D81C91064F0004F678 /* indoorMap_colors.json in Resources */,
 				CE8B81D31C91064F0004F678 /* fegl_girltoilets@2x.png in Resources */,
+				CE65054C1C91780000B893AE /* SerchViewController.xib in Resources */,
 				CE8B81D41C91064F0004F678 /* fegl_mteam@2x.png in Resources */,
 				CE8B81CC1C91064F0004F678 /* 990400.png in Resources */,
 				CE8B81CD1C91064F0004F678 /* 990500.png in Resources */,
@@ -572,6 +593,7 @@
 				CE629F4E1C8FFDE4003A9721 /* MASViewConstraint.m in Sources */,
 				CE629F4D1C8FFDE4003A9721 /* MASViewAttribute.m in Sources */,
 				CE629F511C8FFDE4003A9721 /* View+MASAdditions.m in Sources */,
+				CE65054B1C91780000B893AE /* SerchViewController.m in Sources */,
 				CE4400771C8E5E5C001232C0 /* AppDelegate.m in Sources */,
 				CE4400741C8E5E5C001232C0 /* main.m in Sources */,
 				CE629F491C8FFDE4003A9721 /* MASCompositeConstraint.m in Sources */,
@@ -724,7 +746,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/testMapDemoOne/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wondergroup.testMapDemoOne.testMapDemoOne;
+				PRODUCT_BUNDLE_IDENTIFIER = com.genwozou.wonder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -742,7 +764,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/testMapDemoOne/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wondergroup.testMapDemoOne.testMapDemoOne;
+				PRODUCT_BUNDLE_IDENTIFIER = com.genwozou.wonder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

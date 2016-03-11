@@ -12,10 +12,13 @@
 
 
 #import "Masonry.h"
+//清楚背景颜色
+#define  bgClearColor @"self.view.backgroundColor = [UIColor clearColor];"
+
 
 //常用宏定义
 
-#define kWeakObject(obj) __weak __typeof(obj) weakObject = obj;
+#define kWeakObject(obj) __weak typeof(obj) weakSelf = obj;
 
 #define kIOSVersion ((float)[[[UIDevice currentDevice] systemVersion] doubleValue])
     //

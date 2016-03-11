@@ -45,7 +45,7 @@
 - (void)handleSingleTap:(UIGestureRecognizer *)gestureRecognizer {
     
     //do some method.....
-    UIImageView *iv = (UIImageView *) [gestureRecognizer view];
+//    UIImageView *iv = (UIImageView *) [gestureRecognizer view];
     if (self.delegate && ([self.delegate respondsToSelector:@selector(gridClick:colum:type:)])) {
         [self.delegate gridClick:self.row colum:self.colum type:self.type];
     }
