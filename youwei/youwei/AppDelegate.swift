@@ -10,12 +10,26 @@ import UIKit
 import CoreData
 
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+     /**初始化变量RootViewController 对象**/
+    var rootVC: RootViewController?
+    let nibName:NSString = "RootViewController"
+    var nibBundle:NSBundle?
+    
+    
+     //MARK:启动执行
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+
+        self.window  = UIWindow(frame:UIScreen.mainScreen().bounds)
+        self.window?.backgroundColor = UIColor.blueColor()
+        self.window?.makeKeyAndVisible()
+        self.rootVC = RootViewController();
+        self.rootVC =  RootViewController(nibName: nibName as String, bundle: nil)
+        self.rootVC?.view.backgroundColor = UIColor.blueColor()
+        self.window?.rootViewController = rootVC;
         // Override point for customization after application launch.
         return true
     }

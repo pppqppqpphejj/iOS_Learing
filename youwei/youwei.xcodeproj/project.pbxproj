@@ -15,6 +15,10 @@
 		CEA7C8C51C9B8D3000ACC416 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA7C8C31C9B8D3000ACC416 /* LaunchScreen.storyboard */; };
 		CEA7C8D01C9B8D3000ACC416 /* youweiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7C8CF1C9B8D3000ACC416 /* youweiTests.swift */; };
 		CEA7C8DB1C9B8D3000ACC416 /* youweiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7C8DA1C9B8D3000ACC416 /* youweiUITests.swift */; };
+		CEA7C8F21C9BA3E700ACC416 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEA7C8EF1C9BA3E700ACC416 /* Info.plist */; };
+		CEA7C8F31C9BA3E700ACC416 /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7C8F01C9BA3E700ACC416 /* SlideMenuController.swift */; };
+		CED319A41C9BA882001397B6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED319A21C9BA882001397B6 /* RootViewController.swift */; };
+		CED319A51C9BA882001397B6 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED319A31C9BA882001397B6 /* RootViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,11 @@
 		CEA7C8D61C9B8D3000ACC416 /* youweiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = youweiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA7C8DA1C9B8D3000ACC416 /* youweiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = youweiUITests.swift; sourceTree = "<group>"; };
 		CEA7C8DC1C9B8D3000ACC416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA7C8EF1C9BA3E700ACC416 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA7C8F01C9BA3E700ACC416 /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuController.swift; sourceTree = "<group>"; };
+		CEA7C8F11C9BA3E700ACC416 /* SlideMenuControllerSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideMenuControllerSwift.h; sourceTree = "<group>"; };
+		CED319A21C9BA882001397B6 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = rootSwift/RootViewController.swift; sourceTree = "<group>"; };
+		CED319A31C9BA882001397B6 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RootViewController.xib; path = rootSwift/RootViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +108,11 @@
 		CEA7C8B61C9B8D3000ACC416 /* youwei */ = {
 			isa = PBXGroup;
 			children = (
+				CEA7C8EE1C9BA3E700ACC416 /* Source */,
 				CEA7C8B71C9B8D3000ACC416 /* AppDelegate.swift */,
 				CEA7C8B91C9B8D3000ACC416 /* ViewController.swift */,
+				CED319A21C9BA882001397B6 /* RootViewController.swift */,
+				CED319A31C9BA882001397B6 /* RootViewController.xib */,
 				CEA7C8BB1C9B8D3000ACC416 /* Main.storyboard */,
 				CEA7C8C11C9B8D3000ACC416 /* Assets.xcassets */,
 				CEA7C8C31C9B8D3000ACC416 /* LaunchScreen.storyboard */,
@@ -126,6 +138,16 @@
 				CEA7C8DC1C9B8D3000ACC416 /* Info.plist */,
 			);
 			path = youweiUITests;
+			sourceTree = "<group>";
+		};
+		CEA7C8EE1C9BA3E700ACC416 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CEA7C8EF1C9BA3E700ACC416 /* Info.plist */,
+				CEA7C8F01C9BA3E700ACC416 /* SlideMenuController.swift */,
+				CEA7C8F11C9BA3E700ACC416 /* SlideMenuControllerSwift.h */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +254,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA7C8F21C9BA3E700ACC416 /* Info.plist in Resources */,
 				CEA7C8C51C9B8D3000ACC416 /* LaunchScreen.storyboard in Resources */,
+				CED319A51C9BA882001397B6 /* RootViewController.xib in Resources */,
 				CEA7C8C21C9B8D3000ACC416 /* Assets.xcassets in Resources */,
 				CEA7C8BD1C9B8D3000ACC416 /* Main.storyboard in Resources */,
 			);
@@ -259,8 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED319A41C9BA882001397B6 /* RootViewController.swift in Sources */,
 				CEA7C8BA1C9B8D3000ACC416 /* ViewController.swift in Sources */,
 				CEA7C8B81C9B8D3000ACC416 /* AppDelegate.swift in Sources */,
+				CEA7C8F31C9BA3E700ACC416 /* SlideMenuController.swift in Sources */,
 				CEA7C8C01C9B8D3000ACC416 /* youwei.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +512,7 @@
 				CEA7C8E11C9B8D3000ACC416 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEA7C8E21C9B8D3000ACC416 /* Build configuration list for PBXNativeTarget "youweiTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +521,7 @@
 				CEA7C8E41C9B8D3000ACC416 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEA7C8E51C9B8D3000ACC416 /* Build configuration list for PBXNativeTarget "youweiUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +530,7 @@
 				CEA7C8E71C9B8D3000ACC416 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
