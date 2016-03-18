@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEA7C8B81C9B8D3000ACC416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7C8B71C9B8D3000ACC416 /* AppDelegate.swift */; };
+		CEA7C8BA1C9B8D3000ACC416 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7C8B91C9B8D3000ACC416 /* ViewController.swift */; };
+		CEA7C8BD1C9B8D3000ACC416 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA7C8BB1C9B8D3000ACC416 /* Main.storyboard */; };
+		CEA7C8C01C9B8D3000ACC416 /* youwei.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEA7C8BE1C9B8D3000ACC416 /* youwei.xcdatamodeld */; };
+		CEA7C8C21C9B8D3000ACC416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA7C8C11C9B8D3000ACC416 /* Assets.xcassets */; };
+		CEA7C8C51C9B8D3000ACC416 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA7C8C31C9B8D3000ACC416 /* LaunchScreen.storyboard */; };
+		CEA7C8D01C9B8D3000ACC416 /* youweiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7C8CF1C9B8D3000ACC416 /* youweiTests.swift */; };
+		CEA7C8DB1C9B8D3000ACC416 /* youweiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7C8DA1C9B8D3000ACC416 /* youweiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEA7C8CC1C9B8D3000ACC416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEA7C8AC1C9B8D3000ACC416 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEA7C8B31C9B8D3000ACC416;
+			remoteInfo = youwei;
+		};
+		CEA7C8D71C9B8D3000ACC416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEA7C8AC1C9B8D3000ACC416 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEA7C8B31C9B8D3000ACC416;
+			remoteInfo = youwei;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEA7C8B41C9B8D3000ACC416 /* youwei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = youwei.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA7C8B71C9B8D3000ACC416 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEA7C8B91C9B8D3000ACC416 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEA7C8BC1C9B8D3000ACC416 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEA7C8BF1C9B8D3000ACC416 /* youwei.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = youwei.xcdatamodel; sourceTree = "<group>"; };
+		CEA7C8C11C9B8D3000ACC416 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEA7C8C41C9B8D3000ACC416 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEA7C8C61C9B8D3000ACC416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA7C8CB1C9B8D3000ACC416 /* youweiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = youweiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA7C8CF1C9B8D3000ACC416 /* youweiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = youweiTests.swift; sourceTree = "<group>"; };
+		CEA7C8D11C9B8D3000ACC416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA7C8D61C9B8D3000ACC416 /* youweiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = youweiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA7C8DA1C9B8D3000ACC416 /* youweiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = youweiUITests.swift; sourceTree = "<group>"; };
+		CEA7C8DC1C9B8D3000ACC416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEA7C8B11C9B8D3000ACC416 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA7C8C81C9B8D3000ACC416 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA7C8D31C9B8D3000ACC416 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEA7C8AB1C9B8D3000ACC416 = {
+			isa = PBXGroup;
+			children = (
+				CEA7C8B61C9B8D3000ACC416 /* youwei */,
+				CEA7C8CE1C9B8D3000ACC416 /* youweiTests */,
+				CEA7C8D91C9B8D3000ACC416 /* youweiUITests */,
+				CEA7C8B51C9B8D3000ACC416 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEA7C8B51C9B8D3000ACC416 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEA7C8B41C9B8D3000ACC416 /* youwei.app */,
+				CEA7C8CB1C9B8D3000ACC416 /* youweiTests.xctest */,
+				CEA7C8D61C9B8D3000ACC416 /* youweiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEA7C8B61C9B8D3000ACC416 /* youwei */ = {
+			isa = PBXGroup;
+			children = (
+				CEA7C8B71C9B8D3000ACC416 /* AppDelegate.swift */,
+				CEA7C8B91C9B8D3000ACC416 /* ViewController.swift */,
+				CEA7C8BB1C9B8D3000ACC416 /* Main.storyboard */,
+				CEA7C8C11C9B8D3000ACC416 /* Assets.xcassets */,
+				CEA7C8C31C9B8D3000ACC416 /* LaunchScreen.storyboard */,
+				CEA7C8C61C9B8D3000ACC416 /* Info.plist */,
+				CEA7C8BE1C9B8D3000ACC416 /* youwei.xcdatamodeld */,
+			);
+			path = youwei;
+			sourceTree = "<group>";
+		};
+		CEA7C8CE1C9B8D3000ACC416 /* youweiTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEA7C8CF1C9B8D3000ACC416 /* youweiTests.swift */,
+				CEA7C8D11C9B8D3000ACC416 /* Info.plist */,
+			);
+			path = youweiTests;
+			sourceTree = "<group>";
+		};
+		CEA7C8D91C9B8D3000ACC416 /* youweiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEA7C8DA1C9B8D3000ACC416 /* youweiUITests.swift */,
+				CEA7C8DC1C9B8D3000ACC416 /* Info.plist */,
+			);
+			path = youweiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEA7C8B31C9B8D3000ACC416 /* youwei */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA7C8DF1C9B8D3000ACC416 /* Build configuration list for PBXNativeTarget "youwei" */;
+			buildPhases = (
+				CEA7C8B01C9B8D3000ACC416 /* Sources */,
+				CEA7C8B11C9B8D3000ACC416 /* Frameworks */,
+				CEA7C8B21C9B8D3000ACC416 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = youwei;
+			productName = youwei;
+			productReference = CEA7C8B41C9B8D3000ACC416 /* youwei.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEA7C8CA1C9B8D3000ACC416 /* youweiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA7C8E21C9B8D3000ACC416 /* Build configuration list for PBXNativeTarget "youweiTests" */;
+			buildPhases = (
+				CEA7C8C71C9B8D3000ACC416 /* Sources */,
+				CEA7C8C81C9B8D3000ACC416 /* Frameworks */,
+				CEA7C8C91C9B8D3000ACC416 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEA7C8CD1C9B8D3000ACC416 /* PBXTargetDependency */,
+			);
+			name = youweiTests;
+			productName = youweiTests;
+			productReference = CEA7C8CB1C9B8D3000ACC416 /* youweiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEA7C8D51C9B8D3000ACC416 /* youweiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA7C8E51C9B8D3000ACC416 /* Build configuration list for PBXNativeTarget "youweiUITests" */;
+			buildPhases = (
+				CEA7C8D21C9B8D3000ACC416 /* Sources */,
+				CEA7C8D31C9B8D3000ACC416 /* Frameworks */,
+				CEA7C8D41C9B8D3000ACC416 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEA7C8D81C9B8D3000ACC416 /* PBXTargetDependency */,
+			);
+			name = youweiUITests;
+			productName = youweiUITests;
+			productReference = CEA7C8D61C9B8D3000ACC416 /* youweiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEA7C8AC1C9B8D3000ACC416 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = wondergroup;
+				TargetAttributes = {
+					CEA7C8B31C9B8D3000ACC416 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					CEA7C8CA1C9B8D3000ACC416 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CEA7C8B31C9B8D3000ACC416;
+					};
+					CEA7C8D51C9B8D3000ACC416 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CEA7C8B31C9B8D3000ACC416;
+					};
+				};
+			};
+			buildConfigurationList = CEA7C8AF1C9B8D3000ACC416 /* Build configuration list for PBXProject "youwei" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEA7C8AB1C9B8D3000ACC416;
+			productRefGroup = CEA7C8B51C9B8D3000ACC416 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEA7C8B31C9B8D3000ACC416 /* youwei */,
+				CEA7C8CA1C9B8D3000ACC416 /* youweiTests */,
+				CEA7C8D51C9B8D3000ACC416 /* youweiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEA7C8B21C9B8D3000ACC416 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA7C8C51C9B8D3000ACC416 /* LaunchScreen.storyboard in Resources */,
+				CEA7C8C21C9B8D3000ACC416 /* Assets.xcassets in Resources */,
+				CEA7C8BD1C9B8D3000ACC416 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA7C8C91C9B8D3000ACC416 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA7C8D41C9B8D3000ACC416 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEA7C8B01C9B8D3000ACC416 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA7C8BA1C9B8D3000ACC416 /* ViewController.swift in Sources */,
+				CEA7C8B81C9B8D3000ACC416 /* AppDelegate.swift in Sources */,
+				CEA7C8C01C9B8D3000ACC416 /* youwei.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA7C8C71C9B8D3000ACC416 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA7C8D01C9B8D3000ACC416 /* youweiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA7C8D21C9B8D3000ACC416 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA7C8DB1C9B8D3000ACC416 /* youweiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEA7C8CD1C9B8D3000ACC416 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEA7C8B31C9B8D3000ACC416 /* youwei */;
+			targetProxy = CEA7C8CC1C9B8D3000ACC416 /* PBXContainerItemProxy */;
+		};
+		CEA7C8D81C9B8D3000ACC416 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEA7C8B31C9B8D3000ACC416 /* youwei */;
+			targetProxy = CEA7C8D71C9B8D3000ACC416 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEA7C8BB1C9B8D3000ACC416 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEA7C8BC1C9B8D3000ACC416 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEA7C8C31C9B8D3000ACC416 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEA7C8C41C9B8D3000ACC416 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEA7C8DD1C9B8D3000ACC416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEA7C8DE1C9B8D3000ACC416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEA7C8E01C9B8D3000ACC416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = youwei/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondergroup.youwei.youwei;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CEA7C8E11C9B8D3000ACC416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = youwei/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondergroup.youwei.youwei;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CEA7C8E31C9B8D3000ACC416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = youweiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondergroup.youwei.youweiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/youwei.app/youwei";
+			};
+			name = Debug;
+		};
+		CEA7C8E41C9B8D3000ACC416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = youweiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondergroup.youwei.youweiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/youwei.app/youwei";
+			};
+			name = Release;
+		};
+		CEA7C8E61C9B8D3000ACC416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = youweiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondergroup.youwei.youweiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = youwei;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CEA7C8E71C9B8D3000ACC416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = youweiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondergroup.youwei.youweiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = youwei;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEA7C8AF1C9B8D3000ACC416 /* Build configuration list for PBXProject "youwei" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA7C8DD1C9B8D3000ACC416 /* Debug */,
+				CEA7C8DE1C9B8D3000ACC416 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA7C8DF1C9B8D3000ACC416 /* Build configuration list for PBXNativeTarget "youwei" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA7C8E01C9B8D3000ACC416 /* Debug */,
+				CEA7C8E11C9B8D3000ACC416 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEA7C8E21C9B8D3000ACC416 /* Build configuration list for PBXNativeTarget "youweiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA7C8E31C9B8D3000ACC416 /* Debug */,
+				CEA7C8E41C9B8D3000ACC416 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEA7C8E51C9B8D3000ACC416 /* Build configuration list for PBXNativeTarget "youweiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA7C8E61C9B8D3000ACC416 /* Debug */,
+				CEA7C8E71C9B8D3000ACC416 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CEA7C8BE1C9B8D3000ACC416 /* youwei.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CEA7C8BF1C9B8D3000ACC416 /* youwei.xcdatamodel */,
+			);
+			currentVersion = CEA7C8BF1C9B8D3000ACC416 /* youwei.xcdatamodel */;
+			path = youwei.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CEA7C8AC1C9B8D3000ACC416 /* Project object */;
+}

@@ -92,9 +92,12 @@
 @property(nonatomic,strong)  UIButton         *locBtn;
 
 @property(nonatomic,strong)  UIView           *poiView;
+
 @property(nonatomic,strong)  UILabel          *nameLabel;
 @property(nonatomic,strong)  UILabel          *floorLabel;
 @property(nonatomic,strong)  UIButton         *goBtn;
+/***到这儿去***/
+@property(nonatomic,strong)  UIButton         *goHereBtn;
 
 @property(nonatomic,strong)  IndoorBuilding   *indoorBuilding;
 /***楼层地图切换***/
@@ -105,6 +108,7 @@
 @property(nonatomic,strong)  IndoorMarkerView *selMarkView;
 /***向上弹出view 动画***/
 @property(nonatomic,strong)  UIView           *popUpView;
+@property (nonatomic,strong) UIView           *viewZoomOut;
 
 @property(nonatomic,strong)  UIButton         *backBtn;
 
@@ -137,8 +141,12 @@
  * 返回值说明:返回 CGFloat hight 值
  ***/
 - (CGFloat)initContentHightFloat:(CGFloat)fontl andText:(NSString*)text andWidth:(CGFloat)with;
-
-
+/***初始化放大缩小***/
+-(void)initZoomOut;
+/***放大***/
+-(void)zoomAdd;
+/***缩小***/
+-(void)zoomSub;
 
 @end
 
@@ -206,7 +214,7 @@
 
     _toplLable.lineBreakMode = NSLineBreakByWordWrapping;
     [_toplLable sizeToFit];
-    [self.mapView addSubview:self.toplLable];
+//    [self.mapView addSubview:self.toplLable];
     
     /*给 self.mainView 加约束*/
     [self.mapView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -230,16 +238,49 @@
         make.edges.mas_equalTo(self.topSearch).insets(edge);
     }];
     
+    
+    _poiView = [[UIView alloc]initWithFrame:CGRectMake(0,-self.view.frame.size.height, 0, MAIN_SCREEN_WIDTH)];
+    _poiView.backgroundColor = [UIColor whiteColor];
+    _poiView.alpha = 0.50f;
+    [self.mapView addSubview:self.poiView];
+    [self.poiView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.left.mas_equalTo(_mapView.mas_left).mas_equalTo(0);
+        make.right.mas_equalTo(_mapView.mas_right).mas_equalTo(0);
+        make.bottom.mas_equalTo(_mapView.mas_bottom).mas_equalTo(200);
+        make.height.mas_equalTo(200);
+        
+        
+    }];
+    
+    
+    
 
+    self.goHereBtn  = [[UIButton alloc] init];
+    [self.goHereBtn setTitle:@"到这儿去" forState:UIControlStateNormal];
+    [self.goHereBtn setTitleColor:[UIColor whiteColor]  forState:UIControlStateNormal];
+    [self.goHereBtn removeTarget:self action:NULL forControlEvents:UIControlEventTouchUpInside];
+    [self.goHereBtn addTarget:self action:@selector(btngoHereBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [self.goHereBtn setBackgroundColor:[UIColor blueColor]];
+    [self.poiView addSubview:self.goHereBtn];
+    
+    [weakSelf.goHereBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+                    make.left.mas_equalTo(20);
+                    make.right.mas_equalTo(-20);
+                    make.height.mas_equalTo(45);
+                    make.bottom.mas_equalTo(weakSelf.poiView.mas_bottom).equalTo(@-10);
+
+    }];
    
  
     
-    [self.toplLable mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(20);
-        make.right.mas_equalTo(-20);
-        make.height.mas_equalTo(self.textHight);
-        make.top.mas_equalTo(self.topSearch.mas_bottom).equalTo(@40);
-    }];
+//    [self.toplLable mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.mas_equalTo(20);
+//        make.right.mas_equalTo(-20);
+//        make.height.mas_equalTo(self.textHight);
+//        make.top.mas_equalTo(self.topSearch.mas_bottom).equalTo(@40);
+//    }];
 
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -247,7 +288,7 @@
     [button setTitle:@"sss" forState:UIControlStateNormal];
     button.backgroundColor = [UIColor redColor];
     [button addTarget:self action:@selector(aaa:) forControlEvents:UIControlEventTouchUpInside];
-    [self.mapView addSubview:button];
+//    [self.mapView addSubview:button];
     
     self.markView = nil;
     self.markViews = [[NSMutableDictionary alloc]initWithCapacity:0];
@@ -257,11 +298,15 @@
     self.userLocation.lat = @"39.9242401";
 
     [self InitMapData];
+    [self initZoomOut];
     [self.mapView setViewPortToLocationX:self.userLocation.lat.intValue withY:self.userLocation.lon.intValue];
 
 
 }
+-(void)btngoHereBtn:(id)sender
+{
 
+}
 
 -(void)aaa :(UIButton*)button{
 //    [self.topSearch animationDidStart:];
@@ -323,6 +368,82 @@
     
 }
 
+-(void)initZoomOut
+{
+       kWeakObject(self);
+    self.viewZoomOut = [[UIView alloc] initWithFrame:CGRectMake(0,0,50, 80 )];
+    
+    
+    [self.mapView addSubview:self.viewZoomOut];
+    
+    
+    
+    self.addBtn  =[[UIButton alloc] init];
+//    [self.addBtn setBackgroundColor:[UIColor blueColor]];
+    self.addBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.viewZoomOut addSubview:self.addBtn];
+    [self.addBtn setBackgroundImage:[UIImage imageNamed:@"add"] forState:UIControlStateNormal];
+
+    
+    [self.addBtn addTarget:self action:@selector(zoomAdd) forControlEvents:UIControlEventTouchUpInside];
+
+    
+    self.subBtn  =[[UIButton alloc] init];
+//    self.subBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [self.subBtn setBackgroundColor:[UIColor redColor]];
+    [self.subBtn setBackgroundImage:[UIImage imageNamed:@"subtraction"] forState:UIControlStateNormal];
+
+    [self.viewZoomOut addSubview:self.subBtn];
+    [self.subBtn addTarget:self action:@selector(zoomSub) forControlEvents:UIControlEventTouchUpInside];
+    
+    [weakSelf.viewZoomOut mas_updateConstraints:^(MASConstraintMaker *make) {
+        
+            //        make.edges.mas_equalTo(weakSelf.mapView).insets(UIEdgeInsetsMake(300, 40, 40, 40));
+        
+        make.left.mas_equalTo(weakSelf.view.mas_left).equalTo(@10);
+        make.bottom.mas_equalTo(weakSelf.view.mas_bottom).equalTo(@(-100));
+        
+        
+        make.size.mas_equalTo(self.viewZoomOut.frame.size);
+        
+    }];
+    
+    
+    [weakSelf.addBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.edges.mas_equalTo(self.viewZoomOut).insets(UIEdgeInsetsMake(0, 0, self.viewZoomOut.frame.size.height/2, 0));
+        
+        
+    }];
+    
+    
+    [weakSelf.subBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+//        make.left.mas_equalTo(self.viewZoomOut.mas_left).equalTo(@0);
+//        make.right.mas_equalTo(self.viewZoomOut.mas_right).equalTo(@0);
+//        make.top.mas_equalTo(self.addBtn.mas_bottom).equalTo(@0);
+//        make.top.mas_equalTo(self.viewZoomOut.mas_bottom).equalTo(@0);
+        make.edges.mas_equalTo(self.viewZoomOut).insets(UIEdgeInsetsMake(self.viewZoomOut.frame.size.height/2, 0, 0, 0));
+
+
+        
+        
+    }];
+    
+    
+    
+
+    
+}
+-(void)zoomAdd
+{
+
+    [self.mapView zoomIn];
+}
+-(void)zoomSub
+{
+    [self.mapView zoomOut];
+}
 
 -(void)InitMapData
 {
@@ -463,24 +584,12 @@
 
     
     if (!isHidden) {
-        _poiView = [[UIView alloc]initWithFrame:CGRectMake(0,-self.view.frame.size.height, 0, MAIN_SCREEN_WIDTH)];
-        _poiView.backgroundColor = [UIColor blueColor];
-
-        [self.mapView addSubview:self.poiView];
-        [self.poiView mas_makeConstraints:^(MASConstraintMaker *make) {
-            
-            make.left.mas_equalTo(_mapView.mas_left).mas_equalTo(0);
-            make.right.mas_equalTo(_mapView.mas_right).mas_equalTo(0);
-            make.bottom.mas_equalTo(_mapView.mas_bottom).mas_equalTo(200);
-            make.height.mas_equalTo(200);
-            
-            
-        }];
         [self.poiView.superview layoutIfNeeded];
         isHidden = YES;
         self.poiView.hidden =NO;
+        _poiView.alpha = 0.50f;
 
-        [UIView animateWithDuration:2 animations:^{
+        [UIView animateWithDuration:1.5 animations:^{
             
             [self.poiView mas_updateConstraints:^(MASConstraintMaker *make) {
                 
@@ -496,49 +605,37 @@
     }
     else
         {
-        
         isHidden = NO;
+        self.poiView.hidden =YES;
 
-        _poiView = [[UIView alloc]initWithFrame:CGRectMake(0,-self.view.frame.size.height, 0, MAIN_SCREEN_WIDTH)];
-        _poiView.backgroundColor = [UIColor redColor];
-        _poiView.hidden = NO;
-        [self.mapView addSubview:self.poiView];
-        [self.poiView mas_makeConstraints:^(MASConstraintMaker *make) {
-            
-            make.left.mas_equalTo(_mapView.mas_left).mas_equalTo(0);
-            make.right.mas_equalTo(_mapView.mas_right).mas_equalTo(0);
-            make.bottom.mas_equalTo(_mapView.mas_bottom).mas_equalTo(200);
-            make.height.mas_equalTo(200);
-            
-            
-        }];
-        [self.poiView.superview layoutIfNeeded];
         
-        [UIView animateWithDuration:1 animations:^{
-            
-            [self.poiView mas_updateConstraints:^(MASConstraintMaker *make) {
-                
-                make.left.mas_equalTo(_mapView.mas_left).mas_equalTo(0);
-                make.right.mas_equalTo(_mapView.mas_right).mas_equalTo(0);
-                make.bottom.mas_equalTo(_mapView.mas_bottom).mas_equalTo(0);
-                make.height.mas_equalTo(200);
-                
-                
-            }];
-            [self.poiView.superview layoutIfNeeded];
-            
-
-        }];
-
-
+        
+        
+        
+        
+        
         }
-
-
-//    if (!self.isHidden) {
+//    else
+//        {
+//        
+//        isHidden = NO;
 //
-//        self.poiView.hidden = NO;
-//        self.isHidden = YES;
-//        [UIView animateWithDuration:2 animations:^{
+//        _poiView = [[UIView alloc]initWithFrame:CGRectMake(0,-self.view.frame.size.height, 0, MAIN_SCREEN_WIDTH)];
+//        _poiView.backgroundColor = [UIColor redColor];
+//        _poiView.hidden = NO;
+//        [self.mapView addSubview:self.poiView];
+//        [self.poiView mas_makeConstraints:^(MASConstraintMaker *make) {
+//            
+//            make.left.mas_equalTo(_mapView.mas_left).mas_equalTo(0);
+//            make.right.mas_equalTo(_mapView.mas_right).mas_equalTo(0);
+//            make.bottom.mas_equalTo(_mapView.mas_bottom).mas_equalTo(200);
+//            make.height.mas_equalTo(200);
+//            
+//            
+//        }];
+//        [self.poiView.superview layoutIfNeeded];
+//        
+//        [UIView animateWithDuration:0.5 animations:^{
 //            
 //            [self.poiView mas_updateConstraints:^(MASConstraintMaker *make) {
 //                
@@ -546,58 +643,17 @@
 //                make.right.mas_equalTo(_mapView.mas_right).mas_equalTo(0);
 //                make.bottom.mas_equalTo(_mapView.mas_bottom).mas_equalTo(0);
 //                make.height.mas_equalTo(200);
-//
+//                
 //                
 //            }];
 //            [self.poiView.superview layoutIfNeeded];
-//        } ];
-//    }
-//    else
-//        {
-//        self.isHidden = NO;
-//        self.poiView.hidden = YES;
-//        [self.poiView mas_updateConstraints:^(MASConstraintMaker *make) {
 //            
-//            make.left.mas_equalTo(_mapView.mas_left).mas_equalTo(0);
-//            make.right.mas_equalTo(_mapView.mas_right).mas_equalTo(0);
-//            make.bottom.mas_equalTo(_mapView.mas_bottom).mas_equalTo(0);
-//            make.height.mas_equalTo(200);
-//            
-//            
+//
 //        }];
-//        [self.poiView.superview layoutIfNeeded];
-////        [UIView animateWithDuration:2 animations:^{
-////            
-////            [_poiView mas_makeConstraints:^(MASConstraintMaker *make) {
-////                
-////                make.height.mas_equalTo(200);
-////
-////                make.left.mas_equalTo(_mapView.mas_left).mas_equalTo(0);
-////                make.right.mas_equalTo(_mapView.mas_right).mas_equalTo(0);
-////                make.bottom.mas_equalTo(_mapView.mas_bottom).mas_equalTo(0);
-////                
-////                
-////            }];
-////            [self.poiView.superview layoutIfNeeded];
-////        } completion:^(BOOL finished) {
-//        
-////            [UIView animateWithDuration:2 animations:^{
-////                [_poiView mas_makeConstraints:^(MASConstraintMaker *make) {
-////                    make.height.mas_equalTo(200);
-////
-////                    make.top.mas_equalTo(_mapView.mas_top).mas_equalTo(0);
-////                    make.left.mas_equalTo(_mapView.mas_left).mas_equalTo(0);
-////                    make.right.mas_equalTo(_mapView.mas_right).mas_equalTo(0);
-////                }];
-////                [self.poiView.superview layoutIfNeeded];
-////            }];
-//            
-//            
-//            
-////        }];
+//
 //
 //        }
-    
+
    }
 
 - (void)currentViewPortLocationX:(float)x withY:(float)y

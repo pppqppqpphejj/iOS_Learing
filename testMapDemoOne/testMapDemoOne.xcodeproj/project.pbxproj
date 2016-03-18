@@ -71,6 +71,10 @@
 		CE8B81DE1C91064F0004F678 /* popMarkeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8B81BC1C91064F0004F678 /* popMarkeView.m */; };
 		CE8B81DF1C91064F0004F678 /* route.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE8B81BD1C91064F0004F678 /* route.bundle */; };
 		CE8B81E11C91066F0004F678 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8B81E01C91066F0004F678 /* libz.tbd */; };
+		CED1ED781C965430000C88AB /* loc_clicked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED1ED741C965430000C88AB /* loc_clicked@2x.png */; };
+		CED1ED791C965430000C88AB /* loc_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED1ED751C965430000C88AB /* loc_normal@2x.png */; };
+		CED1ED7A1C965430000C88AB /* subtraction@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED1ED761C965430000C88AB /* subtraction@2x.png */; };
+		CED1ED7B1C965430000C88AB /* subtraction@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED1ED771C965430000C88AB /* subtraction@3x.png */; };
 		CEE10D901C9151CC00A76F6C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE10D8F1C9151CC00A76F6C /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -189,6 +193,10 @@
 		CE8B81BC1C91064F0004F678 /* popMarkeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = popMarkeView.m; sourceTree = "<group>"; };
 		CE8B81BD1C91064F0004F678 /* route.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = route.bundle; sourceTree = "<group>"; };
 		CE8B81E01C91066F0004F678 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		CED1ED741C965430000C88AB /* loc_clicked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loc_clicked@2x.png"; sourceTree = "<group>"; };
+		CED1ED751C965430000C88AB /* loc_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loc_normal@2x.png"; sourceTree = "<group>"; };
+		CED1ED761C965430000C88AB /* subtraction@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "subtraction@2x.png"; sourceTree = "<group>"; };
+		CED1ED771C965430000C88AB /* subtraction@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "subtraction@3x.png"; sourceTree = "<group>"; };
 		CEE10D8F1C9151CC00A76F6C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -246,6 +254,10 @@
 		CE4400711C8E5E5C001232C0 /* testMapDemoOne */ = {
 			isa = PBXGroup;
 			children = (
+				CED1ED741C965430000C88AB /* loc_clicked@2x.png */,
+				CED1ED751C965430000C88AB /* loc_normal@2x.png */,
+				CED1ED761C965430000C88AB /* subtraction@2x.png */,
+				CED1ED771C965430000C88AB /* subtraction@3x.png */,
 				CE6505471C9177E700B893AE /* XIBVC */,
 				CE8B81931C91064F0004F678 /* lib */,
 				CE8B81B91C91064F0004F678 /* mapOne.png */,
@@ -519,12 +531,14 @@
 			files = (
 				CE8B81BE1C91064F0004F678 /* indoor.bundle in Resources */,
 				CE8B81CE1C91064F0004F678 /* default_map_select_point_normal@2x.png in Resources */,
+				CED1ED791C965430000C88AB /* loc_normal@2x.png in Resources */,
 				CE629F481C8FFDE4003A9721 /* Info.plist in Resources */,
 				CE8B818E1C91063D0004F678 /* add@2x.png in Resources */,
 				CE8B81D51C91064F0004F678 /* fegl_staircase@2x.png in Resources */,
 				CE8B81DD1C91064F0004F678 /* mapTwo.png in Resources */,
 				CE8B81DA1C91064F0004F678 /* white.png in Resources */,
 				CE8B81D21C91064F0004F678 /* fegl_flag@2x.png in Resources */,
+				CED1ED781C965430000C88AB /* loc_clicked@2x.png in Resources */,
 				CE4400851C8E5E5D001232C0 /* LaunchScreen.storyboard in Resources */,
 				CE8B818F1C91063D0004F678 /* add@3x.png in Resources */,
 				CE8B81D81C91064F0004F678 /* indoorMap_colors.json in Resources */,
@@ -541,6 +555,7 @@
 				CE8B81C11C91064F0004F678 /* 0@2x.png in Resources */,
 				CE8B81C81C91064F0004F678 /* 60000@2x.png in Resources */,
 				CE8B81D01C91064F0004F678 /* fegl_elevator@2x.png in Resources */,
+				CED1ED7B1C965430000C88AB /* subtraction@3x.png in Resources */,
 				CE8B81D11C91064F0004F678 /* fegl_escalator@2x.png in Resources */,
 				CE8B81CF1C91064F0004F678 /* fegl_boytoilets@2x.png in Resources */,
 				CE8B81901C91063D0004F678 /* class.bundle in Resources */,
@@ -553,6 +568,7 @@
 				CE8B81C01C91064F0004F678 /* 0-1@2x.png in Resources */,
 				CE8B81DB1C91064F0004F678 /* route.bundle in Resources */,
 				CE8B81C31C91064F0004F678 /* 200301.png in Resources */,
+				CED1ED7A1C965430000C88AB /* subtraction@2x.png in Resources */,
 				CE8B81CB1C91064F0004F678 /* 990300.png in Resources */,
 				CE8B81DC1C91064F0004F678 /* mapOne.png in Resources */,
 				CE8B81D61C91064F0004F678 /* fegl_toilets@2x.png in Resources */,
