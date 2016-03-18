@@ -14,7 +14,54 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Sp-gc-aKj">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.56078431370000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="HZV-lW-eoD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="HZV-lW-eoD"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="HZV-lW-eoD"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5Sp-gc-aKj" secondAttribute="trailing" constant="148" id="osZ-ue-RT9"/>
+                <constraint firstItem="5Sp-gc-aKj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="163" id="p9R-Gw-n1o"/>
+                <constraint firstItem="5Sp-gc-aKj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="84" id="pWC-og-E6B"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="5Sp-gc-aKj"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="osZ-ue-RT9"/>
+                    <exclude reference="p9R-Gw-n1o"/>
+                    <exclude reference="pWC-og-E6B"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="5Sp-gc-aKj"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="osZ-ue-RT9"/>
+                    <include reference="p9R-Gw-n1o"/>
+                    <include reference="pWC-og-E6B"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>

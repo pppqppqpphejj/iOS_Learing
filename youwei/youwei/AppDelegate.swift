@@ -16,20 +16,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
      /**初始化变量RootViewController 对象**/
     var rootVC: RootViewController?
-    let nibName:NSString = "RootViewController"
-    var nibBundle:NSBundle?
+    /**加载xib文件**/
+
+    let nibName: NSString = "RootViewController"
+    
+     /**初始化左边控制器**/
+    var leftVC: LeftViewController?
+     /**加载xib文件**/
+    var leftNib = "LeftViewController"
+    let leftNibName: String = "LeftViewController"
+    
+     /**初始化右边控制器**/
+    var rightVC: RightViewController?
+    /**加载xib文件**/
+
+    var rightNib = "RightViewController"
+    let rightNibName: NSString = "RightViewController"
+    
     
     
      //MARK:启动执行
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
         self.window  = UIWindow(frame:UIScreen.mainScreen().bounds)
+        
+        
+        
+        self.rootVC =  RootViewController(nibName: nibName as String, bundle: nil)
+        self.rightVC = RightViewController(nibName: rightNib, bundle: nil)
+        self.leftVC = LeftViewController(nibName:leftNib , bundle:nil)
+
+        let slideMenuController = ExSlideMenuController(mainViewController: self.rootVC!, leftMenuViewController: self.leftVC!, rightMenuViewController: self.rightVC!);
+        let nav:UINavigationController = UINavigationController(rootViewController: self.rootVC!)
+            nav.navigationBarHidden =  true
+            slideMenuController.mainViewController = nav;
+
+        self.window?.rootViewController = nav;
         self.window?.backgroundColor = UIColor.blueColor()
         self.window?.makeKeyAndVisible()
-        self.rootVC = RootViewController();
-        self.rootVC =  RootViewController(nibName: nibName as String, bundle: nil)
-        self.rootVC?.view.backgroundColor = UIColor.blueColor()
-        self.window?.rootViewController = rootVC;
+
+
         // Override point for customization after application launch.
         return true
     }

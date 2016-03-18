@@ -1,5 +1,5 @@
 //
-//  RootViewController.swift
+//  ExSlideMenuController.swift
 //  youwei
 //
 //  Created by 邵瑞 on 16/3/18.
@@ -8,23 +8,30 @@
 
 import UIKit
 
-class RootViewController: UIViewController {
+class ExSlideMenuController: SlideMenuController {
 
- 
+    var tagetVC:Bool!
+
+    override func isTagetViewController() -> Bool {
+      if let vc = UIApplication.topViewController(){
+                
+               if vc is RootViewController ||
+                  vc is LeftViewController ||
+                  vc is RightViewController
+                {
+                    tagetVC = true
+                    return tagetVC
+                }
+                else
+                    {
+                        tagetVC = false
+                    }
+        }
+        return tagetVC;
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        var things = "cars"
-        let  clouser =
-        {
-            [things] in
-            
-        print("i love \(things)")
-
-        }
-        things = "ssss"
-        clouser()
-        //        self.view.backgroundColor = UIColor.brownColor()
 
         // Do any additional setup after loading the view.
     }

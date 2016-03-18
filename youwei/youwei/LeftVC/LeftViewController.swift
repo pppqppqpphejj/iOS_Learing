@@ -1,5 +1,5 @@
 //
-//  RootViewController.swift
+//  LeftViewController.swift
 //  youwei
 //
 //  Created by 邵瑞 on 16/3/18.
@@ -8,23 +8,10 @@
 
 import UIKit
 
-class RootViewController: UIViewController {
+class LeftViewController: UIViewController {
 
- 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        var things = "cars"
-        let  clouser =
-        {
-            [things] in
-            
-        print("i love \(things)")
-
-        }
-        things = "ssss"
-        clouser()
-        //        self.view.backgroundColor = UIColor.brownColor()
 
         // Do any additional setup after loading the view.
     }
