@@ -10,9 +10,10 @@ import UIKit
 
 class ExSlideMenuController: SlideMenuController {
 
-    var tagetVC:Bool!
 
     override func isTagetViewController() -> Bool {
+        var tagetVC:Bool!
+
       if let vc = UIApplication.topViewController(){
                 
                if vc is RootViewController ||

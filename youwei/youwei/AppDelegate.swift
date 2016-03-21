@@ -14,6 +14,7 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+     var nav:UINavigationController?
      /**初始化变量RootViewController 对象**/
     var rootVC: RootViewController?
     /**加载xib文件**/
@@ -40,19 +41,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         self.window  = UIWindow(frame:UIScreen.mainScreen().bounds)
         
-        
-        
         self.rootVC =  RootViewController(nibName: nibName as String, bundle: nil)
         self.rightVC = RightViewController(nibName: rightNib, bundle: nil)
         self.leftVC = LeftViewController(nibName:leftNib , bundle:nil)
 
         let slideMenuController = ExSlideMenuController(mainViewController: self.rootVC!, leftMenuViewController: self.leftVC!, rightMenuViewController: self.rightVC!);
-        let nav:UINavigationController = UINavigationController(rootViewController: self.rootVC!)
-            nav.navigationBarHidden =  true
-            slideMenuController.mainViewController = nav;
+        
+      self.nav  = UINavigationController(rootViewController: self.rootVC!)
+        UINavigationBar.appearance().tintColor = UIColor(hex: "689F38")
 
-        self.window?.rootViewController = nav;
-        self.window?.backgroundColor = UIColor.blueColor()
+            self.nav?.navigationBarHidden =  true
+            slideMenuController.mainViewController = self.nav
+
+
+        self.window?.rootViewController = slideMenuController
+        self.window?.backgroundColor = UIColor.whiteColor()
         self.window?.makeKeyAndVisible()
 
 
@@ -112,7 +115,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             dict[NSLocalizedDescriptionKey] = "Failed to initialize the application's saved data"
             dict[NSLocalizedFailureReasonErrorKey] = failureReason
 
-            dict[NSUnderlyingErrorKey] = error as NSError
+            dict[NSUnderlyingErrorKey] = error as! NSError
             let wrappedError = NSError(domain: "YOUR_ERROR_DOMAIN", code: 9999, userInfo: dict)
             // Replace this with code to handle the error appropriately.
             // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.

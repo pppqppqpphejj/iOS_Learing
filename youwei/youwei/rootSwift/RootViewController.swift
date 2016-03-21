@@ -10,9 +10,33 @@ import UIKit
 
 class RootViewController: UIViewController {
 
+    @IBOutlet weak var _VTop: SwiftTopBanner!
  
+    @IBAction func btnToPush(sender: AnyObject) {
+   
+        openLeft()
+
+    }
+    
+    @IBAction func btnRightPushAction(sender: AnyObject) {
+        
+        //        let  right
+        let tow_vc = RightViewController();
+
+        self.navigationController?.pushViewController(tow_vc, animated: true)
+
+        
+//        self.presentViewController(tow_vc, animated: true, completion: nil)
+        
+        
+
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self._VTop.btnGoback.hidden = true
+        self._VTop.lalTitel.text = NSString(string: "自定义") as String
+        
+        
         
         var things = "cars"
         let  clouser =

@@ -17,14 +17,18 @@
             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlh-aJ-hXc">
+                <button opaque="NO" alpha="0.94999999999999996" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlh-aJ-hXc">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="QqY-Oq-ZbM"/>
-                        <constraint firstAttribute="width" constant="40" id="tk2-sH-5Af"/>
+                        <constraint firstAttribute="height" constant="40" id="QqY-Oq-ZbM">
+                            <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="40" id="tk2-sH-5Af">
+                            <variation key="heightClass=regular-widthClass=compact" constant="25"/>
+                        </constraint>
                     </constraints>
-                    <state key="normal" title="Button"/>
+                    <state key="normal" backgroundImage="白色返回箭头"/>
                     <variation key="default">
                         <mask key="constraints">
                             <exclude reference="QqY-Oq-ZbM"/>
@@ -38,9 +42,9 @@
                         </mask>
                     </variation>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fva-dP-uxT">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fva-dP-uxT">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="40" id="dAT-PY-Vwq"/>
                         <constraint firstAttribute="height" constant="40" id="qiD-eg-ObS"/>
@@ -59,8 +63,9 @@
                         </mask>
                     </variation>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="289" translatesAutoresizingMaskIntoConstraints="NO" id="kWr-zD-xSq">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="kWr-zD-xSq">
                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="t3B-yN-0sX"/>
                     </constraints>
@@ -79,14 +84,20 @@
                     </variation>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.20000000000000001" green="0.56078431370000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="kWr-zD-xSq" secondAttribute="bottom" constant="15" id="2LJ-OY-H9Y"/>
                 <constraint firstAttribute="bottom" secondItem="Fva-dP-uxT" secondAttribute="bottom" constant="15" id="Dxy-zq-7FB"/>
                 <constraint firstItem="Fva-dP-uxT" firstAttribute="leading" secondItem="kWr-zD-xSq" secondAttribute="trailing" id="Elm-dh-Vo4"/>
-                <constraint firstAttribute="bottom" secondItem="tlh-aJ-hXc" secondAttribute="bottom" constant="15" id="Gk3-S8-nkw"/>
-                <constraint firstItem="tlh-aJ-hXc" firstAttribute="leading" secondItem="hmK-eA-7SL" secondAttribute="leading" constant="15" id="KSa-Y3-xuz"/>
-                <constraint firstItem="kWr-zD-xSq" firstAttribute="leading" secondItem="tlh-aJ-hXc" secondAttribute="trailing" id="c4J-pP-uSC"/>
+                <constraint firstAttribute="bottom" secondItem="tlh-aJ-hXc" secondAttribute="bottom" constant="15" id="Gk3-S8-nkw">
+                    <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                </constraint>
+                <constraint firstItem="tlh-aJ-hXc" firstAttribute="leading" secondItem="hmK-eA-7SL" secondAttribute="leading" constant="15" id="KSa-Y3-xuz">
+                    <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                </constraint>
+                <constraint firstItem="kWr-zD-xSq" firstAttribute="leading" secondItem="tlh-aJ-hXc" secondAttribute="trailing" id="c4J-pP-uSC">
+                    <variation key="heightClass=regular-widthClass=compact" constant="5"/>
+                </constraint>
                 <constraint firstAttribute="trailing" secondItem="Fva-dP-uxT" secondAttribute="trailing" constant="15" id="ee5-iq-OUZ"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
@@ -98,13 +109,13 @@
                     <exclude reference="kWr-zD-xSq"/>
                 </mask>
                 <mask key="constraints">
+                    <exclude reference="Dxy-zq-7FB"/>
+                    <exclude reference="Elm-dh-Vo4"/>
+                    <exclude reference="ee5-iq-OUZ"/>
                     <exclude reference="Gk3-S8-nkw"/>
                     <exclude reference="KSa-Y3-xuz"/>
                     <exclude reference="2LJ-OY-H9Y"/>
                     <exclude reference="c4J-pP-uSC"/>
-                    <exclude reference="Dxy-zq-7FB"/>
-                    <exclude reference="Elm-dh-Vo4"/>
-                    <exclude reference="ee5-iq-OUZ"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -114,16 +125,19 @@
                     <include reference="kWr-zD-xSq"/>
                 </mask>
                 <mask key="constraints">
+                    <include reference="Dxy-zq-7FB"/>
+                    <include reference="Elm-dh-Vo4"/>
+                    <include reference="ee5-iq-OUZ"/>
                     <include reference="Gk3-S8-nkw"/>
                     <include reference="KSa-Y3-xuz"/>
                     <include reference="2LJ-OY-H9Y"/>
                     <include reference="c4J-pP-uSC"/>
-                    <include reference="Dxy-zq-7FB"/>
-                    <include reference="Elm-dh-Vo4"/>
-                    <include reference="ee5-iq-OUZ"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="487" y="-564"/>
         </view>
     </objects>
+    <resources>
+        <image name="白色返回箭头" width="13" height="26"/>
+    </resources>
 </document>

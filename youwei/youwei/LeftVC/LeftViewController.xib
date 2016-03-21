@@ -2,11 +2,12 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9531"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeftViewController" customModule="youwei" customModuleProvider="target">
             <connections>
+                <outlet property="_VTop" destination="0Ex-6C-Stw" id="tbf-W9-skj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +15,63 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ex-6C-Stw" userLabel="SwiftTopBanner" customClass="SwiftTopBanner" customModule="youwei" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" red="0.69411764710000001" green="0.69411764710000001" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="Iqa-tD-5nl"/>
+                        <constraint firstAttribute="height" constant="80" id="lLf-rQ-FqT"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Iqa-tD-5nl"/>
+                            <exclude reference="lLf-rQ-FqT"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Iqa-tD-5nl"/>
+                            <include reference="lLf-rQ-FqT"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0Ex-6C-Stw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ON1-r2-FmL"/>
+                <constraint firstAttribute="trailing" secondItem="0Ex-6C-Stw" secondAttribute="trailing" id="Vor-sJ-NJd"/>
+                <constraint firstItem="0Ex-6C-Stw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="h3c-H9-D1p"/>
+                <constraint firstItem="0Ex-6C-Stw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="n4s-Qq-SUJ"/>
+                <constraint firstItem="0Ex-6C-Stw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="q3O-OS-aAI"/>
+                <constraint firstAttribute="trailing" secondItem="0Ex-6C-Stw" secondAttribute="trailing" id="yVm-kw-jHR"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="0Ex-6C-Stw"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="ON1-r2-FmL"/>
+                    <exclude reference="Vor-sJ-NJd"/>
+                    <exclude reference="h3c-H9-D1p"/>
+                    <exclude reference="n4s-Qq-SUJ"/>
+                    <exclude reference="q3O-OS-aAI"/>
+                    <exclude reference="yVm-kw-jHR"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="0Ex-6C-Stw"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="ON1-r2-FmL"/>
+                    <include reference="Vor-sJ-NJd"/>
+                    <include reference="h3c-H9-D1p"/>
+                    <include reference="n4s-Qq-SUJ"/>
+                    <include reference="q3O-OS-aAI"/>
+                    <include reference="yVm-kw-jHR"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>

@@ -10,8 +10,12 @@ import UIKit
 
 class RightViewController: UIViewController {
 
+    @IBOutlet weak var _VTop: SwiftTopBanner!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        self._VTop.btnGoback.hidden = false
+        self._VTop.lalTitel.text = "右返回"
 
         // Do any additional setup after loading the view.
     }
