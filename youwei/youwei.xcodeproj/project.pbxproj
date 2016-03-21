@@ -34,9 +34,6 @@
 		CED319BE1C9BE5BC001397B6 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED319B61C9BE5BC001397B6 /* UITableViewExtension.swift */; };
 		CED319BF1C9BE5BC001397B6 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED319B71C9BE5BC001397B6 /* UIView.swift */; };
 		CED319C01C9BE5BC001397B6 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED319B81C9BE5BC001397B6 /* UIViewController.swift */; };
-		CED319C71C9BFEA2001397B6 /* layerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CED319C31C9BFEA2001397B6 /* layerView.m */; };
-		CED319C81C9BFEA2001397B6 /* UITopBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = CED319C51C9BFEA2001397B6 /* UITopBanner.m */; };
-		CED319C91C9BFEA2001397B6 /* UITopBanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED319C61C9BFEA2001397B6 /* UITopBanner.xib */; };
 		CED319CC1C9BFF65001397B6 /* SwiftTopBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED319CB1C9BFF65001397B6 /* SwiftTopBanner.swift */; };
 		CED319D01C9BFFAE001397B6 /* SwiftTopBanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED319CF1C9BFFAE001397B6 /* SwiftTopBanner.xib */; };
 /* End PBXBuildFile section */
@@ -93,11 +90,6 @@
 		CED319B61C9BE5BC001397B6 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		CED319B71C9BE5BC001397B6 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		CED319B81C9BE5BC001397B6 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
-		CED319C21C9BFEA2001397B6 /* layerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = layerView.h; sourceTree = "<group>"; };
-		CED319C31C9BFEA2001397B6 /* layerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = layerView.m; sourceTree = "<group>"; };
-		CED319C41C9BFEA2001397B6 /* UITopBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITopBanner.h; sourceTree = "<group>"; };
-		CED319C51C9BFEA2001397B6 /* UITopBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITopBanner.m; sourceTree = "<group>"; };
-		CED319C61C9BFEA2001397B6 /* UITopBanner.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UITopBanner.xib; sourceTree = "<group>"; };
 		CED319CB1C9BFF65001397B6 /* SwiftTopBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTopBanner.swift; sourceTree = "<group>"; };
 		CED319CF1C9BFFAE001397B6 /* SwiftTopBanner.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwiftTopBanner.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,7 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				CED319CA1C9BFF36001397B6 /* SwiftTopNav */,
-				CED319C11C9BFEA2001397B6 /* NavTopUI */,
 				CED319B01C9BE5AF001397B6 /* Extension */,
 				CEA7C8EE1C9BA3E700ACC416 /* Source */,
 				CEA7C8B71C9B8D3000ACC416 /* AppDelegate.swift */,
@@ -215,18 +206,6 @@
 				CED319B81C9BE5BC001397B6 /* UIViewController.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		CED319C11C9BFEA2001397B6 /* NavTopUI */ = {
-			isa = PBXGroup;
-			children = (
-				CED319C21C9BFEA2001397B6 /* layerView.h */,
-				CED319C31C9BFEA2001397B6 /* layerView.m */,
-				CED319C41C9BFEA2001397B6 /* UITopBanner.h */,
-				CED319C51C9BFEA2001397B6 /* UITopBanner.m */,
-				CED319C61C9BFEA2001397B6 /* UITopBanner.xib */,
-			);
-			path = NavTopUI;
 			sourceTree = "<group>";
 		};
 		CED319CA1C9BFF36001397B6 /* SwiftTopNav */ = {
@@ -350,7 +329,6 @@
 				CED319A51C9BA882001397B6 /* RootViewController.xib in Resources */,
 				CEA7C8C21C9B8D3000ACC416 /* Assets.xcassets in Resources */,
 				CEA7C8BD1C9B8D3000ACC416 /* Main.storyboard in Resources */,
-				CED319C91C9BFEA2001397B6 /* UITopBanner.xib in Resources */,
 				CE88314D1C9FE2BC00F95071 /* NextViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,7 +357,6 @@
 				CED319A41C9BA882001397B6 /* RootViewController.swift in Sources */,
 				CED319AC1C9BE2D6001397B6 /* RightViewController.swift in Sources */,
 				CEA7C8BA1C9B8D3000ACC416 /* ViewController.swift in Sources */,
-				CED319C81C9BFEA2001397B6 /* UITopBanner.m in Sources */,
 				CED319BD1C9BE5BC001397B6 /* UIImageView.swift in Sources */,
 				CE88314C1C9FE2BC00F95071 /* NextViewController.swift in Sources */,
 				CED319B91C9BE5BC001397B6 /* String.swift in Sources */,
@@ -395,7 +372,6 @@
 				CEA7C8C01C9B8D3000ACC416 /* youwei.xcdatamodeld in Sources */,
 				CED319C01C9BE5BC001397B6 /* UIViewController.swift in Sources */,
 				CED319BE1C9BE5BC001397B6 /* UITableViewExtension.swift in Sources */,
-				CED319C71C9BFEA2001397B6 /* layerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
