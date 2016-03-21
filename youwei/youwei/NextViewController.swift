@@ -1,27 +1,20 @@
 //
-//  RightViewController.swift
+//  NextViewController.swift
 //  youwei
 //
-//  Created by 邵瑞 on 16/3/18.
+//  Created by 邵瑞 on 16/3/21.
 //  Copyright © 2016年 wondergroup. All rights reserved.
 //
 
 import UIKit
 
-class RightViewController: UIViewController {
+class NextViewController: UIViewController {
 
     @IBOutlet weak var _VTop: SwiftTopBanner!
-
-    @IBAction func ppp(sender: AnyObject) {
-        
-            self._VTop.btnGobackAction(sender as! UIButton)
-        
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self._VTop.btnGoback.hidden = false
-        self._VTop.lalTitel.text = "右返回"
 
+        self._VTop.lalTitel.text = "寿山石受伤"
         // Do any additional setup after loading the view.
     }
 

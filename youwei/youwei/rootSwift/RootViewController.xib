@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController" customModule="youwei" customModuleProvider="target">
             <connections>
                 <outlet property="_VTop" destination="whe-zV-l2b" id="mpO-qW-LZB"/>
+                <outlet property="modePop" destination="jb2-2u-alI" id="jg0-fk-9vB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -103,6 +104,30 @@
                         </mask>
                     </variation>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jb2-2u-alI">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="69" id="QoH-Os-B6M"/>
+                        <constraint firstAttribute="width" constant="68" id="vM3-6z-NdY"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="QoH-Os-B6M"/>
+                            <exclude reference="vM3-6z-NdY"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="QoH-Os-B6M"/>
+                            <include reference="vM3-6z-NdY"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="modelPop:" destination="-1" eventType="touchUpInside" id="Fxs-Mi-GPH"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
@@ -112,6 +137,8 @@
                 <constraint firstAttribute="trailing" secondItem="whe-zV-l2b" secondAttribute="trailing" id="QVb-C5-igE">
                     <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                 </constraint>
+                <constraint firstItem="jb2-2u-alI" firstAttribute="top" secondItem="whe-zV-l2b" secondAttribute="bottom" constant="48" id="s6C-DC-JsL"/>
+                <constraint firstAttribute="trailing" secondItem="jb2-2u-alI" secondAttribute="trailing" constant="20" id="vZA-mg-D7e"/>
                 <constraint firstItem="whe-zV-l2b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wPW-fF-Ec8">
                     <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                 </constraint>
@@ -119,21 +146,27 @@
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="whe-zV-l2b"/>
+                    <exclude reference="jb2-2u-alI"/>
                 </mask>
                 <mask key="constraints">
                     <exclude reference="Fm5-Xq-iWf"/>
                     <exclude reference="QVb-C5-igE"/>
                     <exclude reference="wPW-fF-Ec8"/>
+                    <exclude reference="s6C-DC-JsL"/>
+                    <exclude reference="vZA-mg-D7e"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="subviews">
                     <include reference="whe-zV-l2b"/>
+                    <include reference="jb2-2u-alI"/>
                 </mask>
                 <mask key="constraints">
                     <include reference="Fm5-Xq-iWf"/>
                     <include reference="QVb-C5-igE"/>
                     <include reference="wPW-fF-Ec8"/>
+                    <include reference="s6C-DC-JsL"/>
+                    <include reference="vZA-mg-D7e"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="-204" y="130"/>

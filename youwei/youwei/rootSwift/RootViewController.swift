@@ -18,15 +18,26 @@ class RootViewController: UIViewController {
 
     }
     
+    @IBOutlet weak var modePop: UIButton!
+    @IBAction func modelPop(sender: AnyObject) {
+        
+        
+        //        let  right
+        let tow_vc = NextViewController();
+        
+        self.navigationController?.pushViewController(tow_vc, animated: true)
+        
+        
+//        self.presentViewController(tow_vc, animated: true, completion: nil)
+        
+
+    }
     @IBAction func btnRightPushAction(sender: AnyObject) {
         
         //        let  right
         let tow_vc = RightViewController();
-
-        self.navigationController?.pushViewController(tow_vc, animated: true)
-
         
-//        self.presentViewController(tow_vc, animated: true, completion: nil)
+        self.presentViewController(tow_vc, animated: true, completion: nil)
         
         
 
@@ -48,7 +59,6 @@ class RootViewController: UIViewController {
         }
         things = "ssss"
         clouser()
-        //        self.view.backgroundColor = UIColor.brownColor()
 
         // Do any additional setup after loading the view.
     }

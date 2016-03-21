@@ -101,10 +101,15 @@ class SwiftTopBanner: UIView{
      func btnGobackAction(btnGobackAction:UIButton)
     {
     
+        /**获得根视图并取得UINavigationController地址**/
 
         appPop = UIApplication.sharedApplication().delegate as! AppDelegate
+        
         self.parentController = appPop.nav
+         /**会自行选择pop 还是 model**/
         parentController.popViewControllerAnimated(true)
+        /**会自行选择pop 还是 model**/
+
         parentController.dismissViewControllerAnimated(true, completion: nil)
         print("self.parentController \(self.parentController)")
 

@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9531"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RightViewController" customModule="youwei" customModuleProvider="target">
@@ -33,31 +33,62 @@
                         </mask>
                     </variation>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBz-DD-OmS">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="oHj-Uf-e1Z"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="oHj-Uf-e1Z"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="oHj-Uf-e1Z"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="ppp:" destination="-1" eventType="touchUpInside" id="GFz-Gh-9Ow"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="HBz-DD-OmS" firstAttribute="top" secondItem="2JD-VE-Xr2" secondAttribute="bottom" constant="78" id="JnW-12-VeL"/>
                 <constraint firstItem="2JD-VE-Xr2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ulg-dm-g3l"/>
                 <constraint firstAttribute="trailing" secondItem="2JD-VE-Xr2" secondAttribute="trailing" id="aXI-vd-3Ww"/>
                 <constraint firstItem="2JD-VE-Xr2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="csI-IV-UMJ"/>
+                <constraint firstItem="HBz-DD-OmS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="44" id="gGF-MS-dwT"/>
+                <constraint firstAttribute="trailing" secondItem="HBz-DD-OmS" secondAttribute="trailing" constant="176" id="oiI-7y-uPk"/>
             </constraints>
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="2JD-VE-Xr2"/>
+                    <exclude reference="HBz-DD-OmS"/>
                 </mask>
                 <mask key="constraints">
                     <exclude reference="Ulg-dm-g3l"/>
                     <exclude reference="aXI-vd-3Ww"/>
                     <exclude reference="csI-IV-UMJ"/>
+                    <exclude reference="JnW-12-VeL"/>
+                    <exclude reference="gGF-MS-dwT"/>
+                    <exclude reference="oiI-7y-uPk"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="subviews">
                     <include reference="2JD-VE-Xr2"/>
+                    <include reference="HBz-DD-OmS"/>
                 </mask>
                 <mask key="constraints">
                     <include reference="Ulg-dm-g3l"/>
                     <include reference="aXI-vd-3Ww"/>
                     <include reference="csI-IV-UMJ"/>
+                    <include reference="JnW-12-VeL"/>
+                    <include reference="gGF-MS-dwT"/>
+                    <include reference="oiI-7y-uPk"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="326" y="175"/>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE88314C1C9FE2BC00F95071 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88314A1C9FE2BC00F95071 /* NextViewController.swift */; };
+		CE88314D1C9FE2BC00F95071 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE88314B1C9FE2BC00F95071 /* NextViewController.xib */; };
 		CEA7C8B81C9B8D3000ACC416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7C8B71C9B8D3000ACC416 /* AppDelegate.swift */; };
 		CEA7C8BA1C9B8D3000ACC416 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7C8B91C9B8D3000ACC416 /* ViewController.swift */; };
 		CEA7C8BD1C9B8D3000ACC416 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA7C8BB1C9B8D3000ACC416 /* Main.storyboard */; };
@@ -57,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE88314A1C9FE2BC00F95071 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		CE88314B1C9FE2BC00F95071 /* NextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
 		CEA7C8B41C9B8D3000ACC416 /* youwei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = youwei.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA7C8B71C9B8D3000ACC416 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEA7C8B91C9B8D3000ACC416 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 				CED319AA1C9BE2D6001397B6 /* RightViewController.swift */,
 				CED319AB1C9BE2D6001397B6 /* RightViewController.xib */,
 				CED319A31C9BA882001397B6 /* RootViewController.xib */,
+				CE88314A1C9FE2BC00F95071 /* NextViewController.swift */,
+				CE88314B1C9FE2BC00F95071 /* NextViewController.xib */,
 				CEA7C8BB1C9B8D3000ACC416 /* Main.storyboard */,
 				CEA7C8C11C9B8D3000ACC416 /* Assets.xcassets */,
 				CEA7C8C31C9B8D3000ACC416 /* LaunchScreen.storyboard */,
@@ -345,6 +351,7 @@
 				CEA7C8C21C9B8D3000ACC416 /* Assets.xcassets in Resources */,
 				CEA7C8BD1C9B8D3000ACC416 /* Main.storyboard in Resources */,
 				CED319C91C9BFEA2001397B6 /* UITopBanner.xib in Resources */,
+				CE88314D1C9FE2BC00F95071 /* NextViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +381,7 @@
 				CEA7C8BA1C9B8D3000ACC416 /* ViewController.swift in Sources */,
 				CED319C81C9BFEA2001397B6 /* UITopBanner.m in Sources */,
 				CED319BD1C9BE5BC001397B6 /* UIImageView.swift in Sources */,
+				CE88314C1C9FE2BC00F95071 /* NextViewController.swift in Sources */,
 				CED319B91C9BE5BC001397B6 /* String.swift in Sources */,
 				CEA7C8B81C9B8D3000ACC416 /* AppDelegate.swift in Sources */,
 				CED319CC1C9BFF65001397B6 /* SwiftTopBanner.swift in Sources */,
