@@ -7,9 +7,12 @@
 //
 
 import UIKit
-
+import JavaScriptCore
 class RootViewController: UIViewController {
 
+    
+    
+    var jsonDic:NSDictionary!
     @IBOutlet weak var _VTop: SwiftTopBanner!
  
     @IBAction func btnToPush(sender: AnyObject) {
@@ -46,7 +49,10 @@ class RootViewController: UIViewController {
         super.viewDidLoad()
         self._VTop.btnGoback.hidden = true
         self._VTop.lalTitel.text = NSString(string: "自定义") as String
-        
+        self.jsonDic = ["key":"sss"]
+        print("is json dic \(self.jsonDic)")
+        print("is json dic  objectForKey \(self.jsonDic.objectForKey("key"))")
+
         
         
         var things = "cars"
@@ -59,8 +65,28 @@ class RootViewController: UIViewController {
         }
         things = "ssss"
         clouser()
+        
+        
+        requestUrl("https://www.baidu.com")
 
         // Do any additional setup after loading the view.
+    }
+    
+//    MARK: swift 网络请求
+     func requestUrl(urlString:String)
+    {
+    
+   var url: NSURL = NSURL(string: urlString)! as NSURL
+        
+        NSLog("打印urlstrinh==%@", "\(url)")
+        
+        let request:NSURLRequest = NSURLRequest(URL: url)
+ 
+        
+        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response, data, error) -> Void in
+            
+                  }
+        
     }
 
     override func didReceiveMemoryWarning() {
