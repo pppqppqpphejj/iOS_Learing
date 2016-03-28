@@ -69,7 +69,7 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="1" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.56078431370000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="8mx-4Y-eZM" secondAttribute="bottom" constant="20" id="2CE-nv-OQF"/>
                         <constraint firstAttribute="bottom" secondItem="n21-fT-XYY" secondAttribute="bottom" constant="20" id="6SQ-Cl-mdZ"/>
@@ -149,11 +149,11 @@
                     <exclude reference="jb2-2u-alI"/>
                 </mask>
                 <mask key="constraints">
+                    <exclude reference="s6C-DC-JsL"/>
+                    <exclude reference="vZA-mg-D7e"/>
                     <exclude reference="Fm5-Xq-iWf"/>
                     <exclude reference="QVb-C5-igE"/>
                     <exclude reference="wPW-fF-Ec8"/>
-                    <exclude reference="s6C-DC-JsL"/>
-                    <exclude reference="vZA-mg-D7e"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -162,11 +162,11 @@
                     <include reference="jb2-2u-alI"/>
                 </mask>
                 <mask key="constraints">
+                    <include reference="s6C-DC-JsL"/>
+                    <include reference="vZA-mg-D7e"/>
                     <include reference="Fm5-Xq-iWf"/>
                     <include reference="QVb-C5-igE"/>
                     <include reference="wPW-fF-Ec8"/>
-                    <include reference="s6C-DC-JsL"/>
-                    <include reference="vZA-mg-D7e"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="-204" y="130"/>

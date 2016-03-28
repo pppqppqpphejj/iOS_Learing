@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var rightNib = "RightViewController"
     let rightNibName: NSString = "RightViewController"
     
-    
+
     
      //MARK:启动执行
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -50,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       self.nav  = UINavigationController(rootViewController: self.rootVC!)
         UINavigationBar.appearance().tintColor = UIColor(hex: "689F38")
 
-            self.nav?.navigationBarHidden =  true
+            self.nav?.navigationBarHidden =  false
             slideMenuController.mainViewController = self.nav
 
 

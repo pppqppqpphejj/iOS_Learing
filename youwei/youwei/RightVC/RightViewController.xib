@@ -69,12 +69,12 @@
                     <exclude reference="HBz-DD-OmS"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="Ulg-dm-g3l"/>
-                    <exclude reference="aXI-vd-3Ww"/>
-                    <exclude reference="csI-IV-UMJ"/>
                     <exclude reference="JnW-12-VeL"/>
                     <exclude reference="gGF-MS-dwT"/>
                     <exclude reference="oiI-7y-uPk"/>
+                    <exclude reference="Ulg-dm-g3l"/>
+                    <exclude reference="aXI-vd-3Ww"/>
+                    <exclude reference="csI-IV-UMJ"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -83,12 +83,12 @@
                     <include reference="HBz-DD-OmS"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="Ulg-dm-g3l"/>
-                    <include reference="aXI-vd-3Ww"/>
-                    <include reference="csI-IV-UMJ"/>
                     <include reference="JnW-12-VeL"/>
                     <include reference="gGF-MS-dwT"/>
                     <include reference="oiI-7y-uPk"/>
+                    <include reference="Ulg-dm-g3l"/>
+                    <include reference="aXI-vd-3Ww"/>
+                    <include reference="csI-IV-UMJ"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="326" y="175"/>

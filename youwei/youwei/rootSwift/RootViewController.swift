@@ -6,9 +6,13 @@
 //  Copyright © 2016年 wondergroup. All rights reserved.
 //
 
+
 import UIKit
 import JavaScriptCore
-class RootViewController: UIViewController {
+
+class RootViewController: UIViewController
+{
+    
 
     
     
@@ -20,19 +24,20 @@ class RootViewController: UIViewController {
         openLeft()
 
     }
+
     
     @IBOutlet weak var modePop: UIButton!
     @IBAction func modelPop(sender: AnyObject) {
         
+        var arr = ["1067349543@qq.com","13983441921@139.com"] as Array
         
-        //        let  right
-        let tow_vc = NextViewController();
+        var isNO:Bool!
+        isNO =  SwiftSingle.sharedInstance.messageSend(arr, messageContent: "nihao 你好！", ViewController: self)
+        print("\(isNO )")
         
-        self.navigationController?.pushViewController(tow_vc, animated: true)
-        
-        
-//        self.presentViewController(tow_vc, animated: true, completion: nil)
-        
+         /**拨打电话**/
+//        SwiftSingle.sharedInstance.messageSend()
+//        SwiftSingle.sharedInstance.callPhoneNumberAction("13983441921")
 
     }
     @IBAction func btnRightPushAction(sender: AnyObject) {
@@ -46,7 +51,12 @@ class RootViewController: UIViewController {
 
     }
     override func viewDidLoad() {
+        
+        
         super.viewDidLoad()
+        
+        
+        
         self._VTop.btnGoback.hidden = true
         self._VTop.lalTitel.text = NSString(string: "自定义") as String
         self.jsonDic = ["key":"sss"]
@@ -76,7 +86,9 @@ class RootViewController: UIViewController {
      func requestUrl(urlString:String)
     {
     
-   var url: NSURL = NSURL(string: urlString)! as NSURL
+        var url:NSURL!
+        
+        url = NSURL(string: urlString)! as NSURL
         
         NSLog("打印urlstrinh==%@", "\(url)")
         
@@ -88,7 +100,9 @@ class RootViewController: UIViewController {
                   }
         
     }
-
+    
+    
+ 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
