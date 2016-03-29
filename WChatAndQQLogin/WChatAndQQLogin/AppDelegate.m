@@ -26,12 +26,12 @@
 
     // openURL
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    return [WXApi handleOpenURL:url delegate:self];
+    return [WXApi handleOpenURL:url delegate:self]||[TencentOAuth HandleOpenURL:url];
 }
 
     // handleURL
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
-    return [WXApi handleOpenURL:url delegate:self];
+    return [WXApi handleOpenURL:url delegate:self]||[TencentOAuth HandleOpenURL:url];
 }
 
 #pragma mark - WXApiDelegate

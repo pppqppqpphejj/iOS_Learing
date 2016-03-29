@@ -11,12 +11,29 @@
 
 #import "AppDelegate.h"
 #import "Masonry.h"
+//集成微信登录所需的条件 头文件 需要引入系统库 libsqlite3 libc++ libsqlite3.0 libz SystemConfiguration CoreTelephony
 #import "WechatAuthSDK.h"
 #import "WXApi.h"
 #import "WXApiObject.h"
+
 #define  kTestWeiXinAppId @"wx4868b35061f87885"//:微信申请下来的AppId
 #define kTestWeiXinSecret @"64020361b8ec4c99936c0e3999a9f249"//:微信申请下来的AppSecret
 #define  kTestSendState @"123"//:与第一步位置二内容相同即可
+//需要配置plist  URL Schemes @"wx4868b35061f87885"
+
+//集成QQ登录 所需的条件 头文件 需要引入系统库 #import <TencentOpenAPI/TencentOAuth.h>／#import <TencentOpenAPI/TencentOAuth.h>
+//libz
+//libc
+//libstdc++
+//libsqlite3.0
+//CoreGraphics
+//SystemConfiguration
+//libiconv
+//Security
+
+#import <TencentOpenAPI/TencentOAuth.h>
+//QQ 开放方平台 应用审核通过之后可用 ，没有通过用测试的
+#define kTestQQLoginAppID @"1104936042"
 
 //防止循环造成循环引用
 #define MyWeakObject(obj) __weak typeof(obj) weakSelf = obj;

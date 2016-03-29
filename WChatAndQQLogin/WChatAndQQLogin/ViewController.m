@@ -8,20 +8,30 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<TencentLoginDelegate>
 @property (strong, nonatomic)   UIButton *btnWX;
 @property (strong, nonatomic)   UIButton *btnQQ;
 @property (strong, nonatomic)   IBOutlet  UIButton *btnWXA;
 @property (strong, nonatomic)  IBOutlet  UIButton *btnQQB;
+
+@property (strong,nonatomic) TencentOAuth *tencentOAuth;
+@property (strong,nonatomic) NSArray *permissions;
+@property(strong,nonatomic) UILabel *resultLable;
+@property(strong,nonatomic) UILabel *tokenLable;
 - (IBAction)btnWXAction:(id)sender;
 
 - (IBAction)btnQQAction:(id)sender;
 @end
 
 @implementation ViewController
+@synthesize tencentOAuth = _tencentOAuth;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+
+    self.resultLable  = [[UILabel alloc] init];
+    self.tokenLable  = [[UILabel alloc] init];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(display) name:@"NotDisPlay" object:nil];
     [self.view setBackgroundColor:[UIColor whiteColor]];
@@ -94,6 +104,9 @@
         
     }];
     
+    
+
+
 
     
     // Do any additional setup after loading the view, typically from a nib.
@@ -130,5 +143,65 @@
 
 
 - (IBAction)btnQQAction:(id)sender {
+    _tencentOAuth  = [[TencentOAuth  alloc] initWithAppId:kTestQQLoginAppID andDelegate:self];
+        //4，设置需要的权限列表，此处尽量使用什么取什么。
+    self.permissions= [NSArray arrayWithObjects:@"get_user_info", @"get_simple_userinfo", @"add_t", nil];
+    
+    NSLog(@"loginAct");
+    [self.tencentOAuth authorize:self.permissions inSafari:NO];
 }
+#pragma mark -- TencentSessionDelegate
+    //登陆完成调用
+- (void)tencentDidLogin
+{
+    self.resultLable.text = @"登录完成";
+    
+    if (self.tencentOAuth.accessToken && 0 != [self.tencentOAuth.accessToken length])
+        {
+            //  记录登录用户的OpenID、Token以及过期时间
+        self.tokenLable.text = self.tencentOAuth.accessToken;
+        [self.btnQQ setTitle:self.tokenLable.text  forState:UIControlStateNormal];
+
+        [self.tencentOAuth getUserInfo];
+        }
+    else
+        {
+        self.tokenLable.text = @"登录不成功 没有获取accesstoken";
+        
+        [self.btnQQ setTitle:self.resultLable.text  forState:UIControlStateNormal];
+        }
+}
+
+    //非网络错误导致登录失败：
+-(void)tencentDidNotLogin:(BOOL)cancelled
+{
+    NSLog(@"tencentDidNotLogin");
+    if (cancelled)
+        {
+       self.resultLable.text = @"用户取消登录";
+        [self.btnQQ setTitle:self.resultLable.text  forState:UIControlStateNormal];
+
+        }else{
+            self.resultLable.text = @"登录失败";
+            [self.btnQQ setTitle:self.resultLable.text  forState:UIControlStateNormal];
+
+        }
+}
+    // 网络错误导致登录失败：
+-(void)tencentDidNotNetWork
+{
+    NSLog(@"tencentDidNotNetWork");
+
+    [self.btnQQ setTitle:@"无网络连接，请设置网络" forState:UIControlStateNormal];
+}
+
+-(void)getUserInfoResponse:(APIResponse *)response
+{
+    NSLog(@"respons:%@",response.jsonResponse);
+    [self.btnQQ setTitle:[response.jsonResponse valueForKey:@"nickname"] forState:UIControlStateNormal];
+
+}
+
+
+
 @end

@@ -19,8 +19,6 @@
 		CE5C3AEE1CAA12BB00316475 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5C3AED1CAA12BB00316475 /* SystemConfiguration.framework */; };
 		CE5C3AF01CAA12C500316475 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5C3AEF1CAA12C500316475 /* libz.tbd */; };
 		CE5C3AF21CAA12CB00316475 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5C3AF11CAA12CB00316475 /* libsqlite3.0.tbd */; };
-		CE5C3AFB1CAA133500316475 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5C3AF61CAA133500316475 /* libWeChatSDK.a */; };
-		CE5C3AFC1CAA133500316475 /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE5C3AF71CAA133500316475 /* read_me.txt */; };
 		CE5C3B181CAA154500316475 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CE5C3AFE1CAA154500316475 /* LICENSE */; };
 		CE5C3B191CAA154500316475 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5C3B011CAA154500316475 /* MASCompositeConstraint.m */; };
 		CE5C3B1A1CAA154500316475 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5C3B041CAA154500316475 /* MASConstraint.m */; };
@@ -36,6 +34,14 @@
 		CE5C3B2A1CAA2BED00316475 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5C3B281CAA2BED00316475 /* Main.storyboard */; };
 		CE5C3B391CAA6A4F00316475 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5C3B381CAA6A4F00316475 /* libc++.tbd */; };
 		CE5C3B3B1CAA6A6300316475 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5C3B3A1CAA6A6300316475 /* libsqlite3.tbd */; };
+		CE5C3B3D1CAA726B00316475 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5C3B3C1CAA726B00316475 /* libstdc++.tbd */; };
+		CE5C3B3F1CAA730700316475 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5C3B3E1CAA730700316475 /* CoreGraphics.framework */; };
+		CE5C3B411CAA735000316475 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5C3B401CAA735000316475 /* Security.framework */; };
+		CE5C3B431CAA735F00316475 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5C3B421CAA735F00316475 /* libiconv.tbd */; };
+		CE5C3B4D1CAA740E00316475 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5C3B451CAA740E00316475 /* TencentOpenAPI.framework */; };
+		CE5C3B4E1CAA740E00316475 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE5C3B461CAA740E00316475 /* TencentOpenApi_IOS_Bundle.bundle */; };
+		CE5C3B4F1CAA740E00316475 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5C3B481CAA740E00316475 /* libWeChatSDK.a */; };
+		CE5C3B501CAA740E00316475 /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE5C3B491CAA740E00316475 /* read_me.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,11 +82,6 @@
 		CE5C3AED1CAA12BB00316475 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CE5C3AEF1CAA12C500316475 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		CE5C3AF11CAA12CB00316475 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
-		CE5C3AF61CAA133500316475 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		CE5C3AF71CAA133500316475 /* read_me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read_me.txt; sourceTree = "<group>"; };
-		CE5C3AF81CAA133500316475 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
-		CE5C3AF91CAA133500316475 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		CE5C3AFA1CAA133500316475 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		CE5C3AFE1CAA154500316475 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		CE5C3B001CAA154500316475 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		CE5C3B011CAA154500316475 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -113,6 +114,17 @@
 		CE5C3B2C1CAA2D2C00316475 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		CE5C3B381CAA6A4F00316475 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		CE5C3B3A1CAA6A6300316475 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		CE5C3B3C1CAA726B00316475 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		CE5C3B3E1CAA730700316475 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE5C3B401CAA735000316475 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CE5C3B421CAA735F00316475 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		CE5C3B451CAA740E00316475 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		CE5C3B461CAA740E00316475 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		CE5C3B481CAA740E00316475 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		CE5C3B491CAA740E00316475 /* read_me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read_me.txt; sourceTree = "<group>"; };
+		CE5C3B4A1CAA740E00316475 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		CE5C3B4B1CAA740E00316475 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		CE5C3B4C1CAA740E00316475 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,13 +132,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5C3B431CAA735F00316475 /* libiconv.tbd in Frameworks */,
+				CE5C3B411CAA735000316475 /* Security.framework in Frameworks */,
+				CE5C3B4F1CAA740E00316475 /* libWeChatSDK.a in Frameworks */,
+				CE5C3B3F1CAA730700316475 /* CoreGraphics.framework in Frameworks */,
+				CE5C3B3D1CAA726B00316475 /* libstdc++.tbd in Frameworks */,
 				CE5C3B3B1CAA6A6300316475 /* libsqlite3.tbd in Frameworks */,
 				CE5C3B391CAA6A4F00316475 /* libc++.tbd in Frameworks */,
 				CE5C3AF21CAA12CB00316475 /* libsqlite3.0.tbd in Frameworks */,
 				CE5C3AF01CAA12C500316475 /* libz.tbd in Frameworks */,
+				CE5C3B4D1CAA740E00316475 /* TencentOpenAPI.framework in Frameworks */,
 				CE5C3AEE1CAA12BB00316475 /* SystemConfiguration.framework in Frameworks */,
 				CE5C3AEC1CAA12AA00316475 /* CoreTelephony.framework in Frameworks */,
-				CE5C3AFB1CAA133500316475 /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,8 +167,6 @@
 		CE5C3A911CAA0F2D00316475 = {
 			isa = PBXGroup;
 			children = (
-				CE5C3B3A1CAA6A6300316475 /* libsqlite3.tbd */,
-				CE5C3B381CAA6A4F00316475 /* libc++.tbd */,
 				CE5C3AF31CAA12E500316475 /* Framework */,
 				CE5C3A9C1CAA0F2D00316475 /* WChatAndQQLogin */,
 				CE5C3AB91CAA0F2D00316475 /* WChatAndQQLoginTests */,
@@ -221,6 +236,12 @@
 		CE5C3AF31CAA12E500316475 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				CE5C3B421CAA735F00316475 /* libiconv.tbd */,
+				CE5C3B401CAA735000316475 /* Security.framework */,
+				CE5C3B3E1CAA730700316475 /* CoreGraphics.framework */,
+				CE5C3B3C1CAA726B00316475 /* libstdc++.tbd */,
+				CE5C3B3A1CAA6A6300316475 /* libsqlite3.tbd */,
+				CE5C3B381CAA6A4F00316475 /* libc++.tbd */,
 				CE5C3AF11CAA12CB00316475 /* libsqlite3.0.tbd */,
 				CE5C3AEF1CAA12C500316475 /* libz.tbd */,
 				CE5C3AED1CAA12BB00316475 /* SystemConfiguration.framework */,
@@ -232,21 +253,10 @@
 		CE5C3AF41CAA132300316475 /* OtherFrame */ = {
 			isa = PBXGroup;
 			children = (
-				CE5C3AF51CAA133500316475 /* SDK1.6.2 */,
+				CE5C3B441CAA740E00316475 /* QQLoginSDK */,
+				CE5C3B471CAA740E00316475 /* WeiChatSDK1.6.2 */,
 			);
 			path = OtherFrame;
-			sourceTree = "<group>";
-		};
-		CE5C3AF51CAA133500316475 /* SDK1.6.2 */ = {
-			isa = PBXGroup;
-			children = (
-				CE5C3AF61CAA133500316475 /* libWeChatSDK.a */,
-				CE5C3AF71CAA133500316475 /* read_me.txt */,
-				CE5C3AF81CAA133500316475 /* WechatAuthSDK.h */,
-				CE5C3AF91CAA133500316475 /* WXApi.h */,
-				CE5C3AFA1CAA133500316475 /* WXApiObject.h */,
-			);
-			path = SDK1.6.2;
 			sourceTree = "<group>";
 		};
 		CE5C3AFD1CAA154500316475 /* Masonry */ = {
@@ -297,6 +307,27 @@
 			);
 			name = PCHHeader;
 			path = OtherFrame/PCHHeader;
+			sourceTree = "<group>";
+		};
+		CE5C3B441CAA740E00316475 /* QQLoginSDK */ = {
+			isa = PBXGroup;
+			children = (
+				CE5C3B451CAA740E00316475 /* TencentOpenAPI.framework */,
+				CE5C3B461CAA740E00316475 /* TencentOpenApi_IOS_Bundle.bundle */,
+			);
+			path = QQLoginSDK;
+			sourceTree = "<group>";
+		};
+		CE5C3B471CAA740E00316475 /* WeiChatSDK1.6.2 */ = {
+			isa = PBXGroup;
+			children = (
+				CE5C3B481CAA740E00316475 /* libWeChatSDK.a */,
+				CE5C3B491CAA740E00316475 /* read_me.txt */,
+				CE5C3B4A1CAA740E00316475 /* WechatAuthSDK.h */,
+				CE5C3B4B1CAA740E00316475 /* WXApi.h */,
+				CE5C3B4C1CAA740E00316475 /* WXApiObject.h */,
+			);
+			path = WeiChatSDK1.6.2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,7 +437,8 @@
 				CE5C3AB01CAA0F2D00316475 /* LaunchScreen.storyboard in Resources */,
 				CE5C3B2A1CAA2BED00316475 /* Main.storyboard in Resources */,
 				CE5C3AAD1CAA0F2D00316475 /* Assets.xcassets in Resources */,
-				CE5C3AFC1CAA133500316475 /* read_me.txt in Resources */,
+				CE5C3B4E1CAA740E00316475 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				CE5C3B501CAA740E00316475 /* read_me.txt in Resources */,
 				CE5C3B181CAA154500316475 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -587,6 +619,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WChatAndQQLogin/OtherFrame/QQLoginSDK",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WChatAndQQLogin/OtherFrame/PCHHeader/PCHHeader.h";
 				INFOPLIST_FILE = WChatAndQQLogin/Info.plist;
@@ -595,6 +632,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WChatAndQQLogin/OtherFrame/SDK1.6.2",
+					"$(PROJECT_DIR)/WChatAndQQLogin/OtherFrame/WeiChatSDK1.6.2",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wondergroup.youwei.WChatAndQQLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -606,6 +644,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WChatAndQQLogin/OtherFrame/QQLoginSDK",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WChatAndQQLogin/OtherFrame/PCHHeader/PCHHeader.h";
 				INFOPLIST_FILE = WChatAndQQLogin/Info.plist;
@@ -614,6 +657,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WChatAndQQLogin/OtherFrame/SDK1.6.2",
+					"$(PROJECT_DIR)/WChatAndQQLogin/OtherFrame/WeiChatSDK1.6.2",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wondergroup.youwei.WChatAndQQLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
