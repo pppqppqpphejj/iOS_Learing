@@ -17,6 +17,8 @@ class RootViewController: UIViewController
     
     
     var jsonDic:NSDictionary!
+     /**单列初始化**/
+
     @IBOutlet weak var _VTop: SwiftTopBanner!
  
     @IBAction func btnToPush(sender: AnyObject) {
@@ -30,7 +32,6 @@ class RootViewController: UIViewController
     @IBAction func modelPop(sender: AnyObject) {
         
         var arr = ["1067349543@qq.com","13983441921@139.com"] as Array
-        
         var isNO:Bool!
         isNO =  SwiftSingle.sharedInstance.messageSend(arr, messageContent: "nihao 你好！", ViewController: self)
         print("\(isNO )")
@@ -50,12 +51,63 @@ class RootViewController: UIViewController
         
 
     }
+    //MARK:viewDidLoad
     override func viewDidLoad() {
         
         
         super.viewDidLoad()
+        var strEmpty:NSString!
+
+        strEmpty = "ee"
+
+        var isNO:Bool!
+        
+//        var text:NSString = NSString(CString:strEmpty .cStringUsingEncoding(NSUTF8StringEncoding),
+//            encoding: NSUTF8StringEncoding)
+        isNO = SwiftStringA.sharedInstance.isEmptyString(strEmpty as String)
         
         
+        
+        print("是否为空\(isNO)")
+        
+        
+        isNO = SwiftStringA.sharedInstance.isStringAEqualStringB(NSString(string: "ABC"), stringB: NSString(string: "ABC"))
+        
+        var strSub:NSString!
+        
+        strSub = SwiftStringA.sharedInstance.subFromToIndex(3, objcString: "ABCDFRRw" )
+
+        print("截取之后的字符串 \(strSub)")
+
+
+        strSub = SwiftStringA.sharedInstance.subStringFromZeroToIndex(5, objcString: "ABCDFRRw" )
+        
+        print("截取之后的字符串 \(strSub)")
+
+        strSub = SwiftStringA.sharedInstance.subsStringFromWithRange(2, indexB: 6, objcString: "ssqwioiow")
+        
+        print("截取之2-6 后的字符串 \(strSub)")
+
+        
+        strSub = SwiftStringA.sharedInstance.swStringByReplacingOccurrencesOfString("?", stringB: "+", objString: "http://www.comcom.com?type=22&userme=ooo")
+        
+        print("替换之 后的字符串 \(strSub)")
+        strSub = SwiftStringA.sharedInstance.swStringFilterReplacingOccurrencesOfString("?", objString: "http://www.comcom.com?type=22&userme=ooo")
+        
+        print("过滤之 后的字符串 \(strSub)")
+
+
+        
+        strSub = SwiftStringA.sharedInstance.swStringFilterWhitespaceCharacterOccurrencesOfString(" http:www.com  ")
+        
+        print("过滤开始 结尾的空白之 后的字符串 \(strSub)")
+
+        print("是否为空\(isNO)")
+
+
+        print("打印常量字符串\n\(SwiftStringA.sharedInstance.constString)")
+        
+        var isBool = SwiftStringA.sharedInstance
         
         self._VTop.btnGoback.hidden = true
         self._VTop.lalTitel.text = NSString(string: "自定义") as String

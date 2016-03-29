@@ -14,10 +14,10 @@
 		CE5C3AEA1CAA114100316475 /* SwiftNSDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C3AE91CAA114100316475 /* SwiftNSDictionary.swift */; };
 		CE5DB75F1CA9302600B12724 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5DB75E1CA9302600B12724 /* Foundation.framework */; };
 		CE5DB76B1CA93BB300B12724 /* SwiftString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB76A1CA93BB300B12724 /* SwiftString.swift */; };
+		CE6A5B4D1CAACB06004D7620 /* SwiftStringA.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A5B4C1CAACB06004D7620 /* SwiftStringA.swift */; };
 		CE88314C1C9FE2BC00F95071 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88314A1C9FE2BC00F95071 /* NextViewController.swift */; };
 		CE88314D1C9FE2BC00F95071 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE88314B1C9FE2BC00F95071 /* NextViewController.xib */; };
 		CE99A4261CA922880070C9FE /* SwiftSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99A4251CA922880070C9FE /* SwiftSingle.swift */; };
-		CE99A4291CA925D60070C9FE /* libAWDProtobufFacetimeiMessage.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE99A4271CA925D60070C9FE /* libAWDProtobufFacetimeiMessage.tbd */; };
 		CE99A42A1CA925D60070C9FE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE99A4281CA925D60070C9FE /* MessageUI.framework */; };
 		CE99A42C1CA925E10070C9FE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE99A42B1CA925E10070C9FE /* MobileCoreServices.framework */; };
 		CEA7C8B81C9B8D3000ACC416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7C8B71C9B8D3000ACC416 /* AppDelegate.swift */; };
@@ -119,15 +119,15 @@
 		CE416B371CA22B16003E1AF8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		CE416B3A1CA22F3E003E1AF8 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../../../../Downloads/Safari浏览器下载/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		CE5C3AE11CAA108200316475 /* SwiftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftView.swift; sourceTree = "<group>"; };
-		CE5C3AE21CAA108200316475 /* SwiftView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwiftView.xib; sourceTree = "<group>"; };
+		CE5C3AE21CAA108200316475 /* SwiftView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SwiftView.xib; path = SwiftView/SwiftView.xib; sourceTree = "<group>"; };
 		CE5C3AE61CAA10BD00316475 /* SwiftNSArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNSArray.swift; sourceTree = "<group>"; };
 		CE5C3AE91CAA114100316475 /* SwiftNSDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNSDictionary.swift; sourceTree = "<group>"; };
 		CE5DB75E1CA9302600B12724 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE5DB76A1CA93BB300B12724 /* SwiftString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftString.swift; sourceTree = "<group>"; };
+		CE6A5B4C1CAACB06004D7620 /* SwiftStringA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftStringA.swift; sourceTree = "<group>"; };
 		CE88314A1C9FE2BC00F95071 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		CE88314B1C9FE2BC00F95071 /* NextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
 		CE99A4251CA922880070C9FE /* SwiftSingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSingle.swift; sourceTree = "<group>"; };
-		CE99A4271CA925D60070C9FE /* libAWDProtobufFacetimeiMessage.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libAWDProtobufFacetimeiMessage.tbd; path = usr/lib/libAWDProtobufFacetimeiMessage.tbd; sourceTree = SDKROOT; };
 		CE99A4281CA925D60070C9FE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		CE99A42B1CA925E10070C9FE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		CEA7C8B41C9B8D3000ACC416 /* youwei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = youwei.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,7 +173,6 @@
 			files = (
 				CE5DB75F1CA9302600B12724 /* Foundation.framework in Frameworks */,
 				CE99A42C1CA925E10070C9FE /* MobileCoreServices.framework in Frameworks */,
-				CE99A4291CA925D60070C9FE /* libAWDProtobufFacetimeiMessage.tbd in Frameworks */,
 				CE99A42A1CA925D60070C9FE /* MessageUI.framework in Frameworks */,
 				CE416B381CA22B16003E1AF8 /* CFNetwork.framework in Frameworks */,
 			);
@@ -222,7 +221,6 @@
 			isa = PBXGroup;
 			children = (
 				CE5C3AE11CAA108200316475 /* SwiftView.swift */,
-				CE5C3AE21CAA108200316475 /* SwiftView.xib */,
 			);
 			path = SwiftView;
 			sourceTree = "<group>";
@@ -247,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				CE5DB76A1CA93BB300B12724 /* SwiftString.swift */,
+				CE6A5B4C1CAACB06004D7620 /* SwiftStringA.swift */,
 			);
 			path = SwiftString;
 			sourceTree = "<group>";
@@ -264,7 +263,6 @@
 			children = (
 				CE5DB75E1CA9302600B12724 /* Foundation.framework */,
 				CE99A42B1CA925E10070C9FE /* MobileCoreServices.framework */,
-				CE99A4271CA925D60070C9FE /* libAWDProtobufFacetimeiMessage.tbd */,
 				CE99A4281CA925D60070C9FE /* MessageUI.framework */,
 				CEA7C8B61C9B8D3000ACC416 /* youwei */,
 				CEA7C8CE1C9B8D3000ACC416 /* youweiTests */,
@@ -292,6 +290,7 @@
 				CE5C3AE01CAA108200316475 /* SwiftView */,
 				CE5DB7691CA93BA000B12724 /* SwiftString */,
 				CE99A41D1CA9223D0070C9FE /* SwiftSingle */,
+				CE5C3AE21CAA108200316475 /* SwiftView.xib */,
 				CE416B3A1CA22F3E003E1AF8 /* Alamofire.xcodeproj */,
 				CED319CA1C9BFF36001397B6 /* SwiftTopNav */,
 				CED319B01C9BE5AF001397B6 /* Extension */,
@@ -583,6 +582,7 @@
 				CE5C3AE71CAA10BD00316475 /* SwiftNSArray.swift in Sources */,
 				CED319BF1C9BE5BC001397B6 /* UIView.swift in Sources */,
 				CED319BC1C9BE5BC001397B6 /* UIImage.swift in Sources */,
+				CE6A5B4D1CAACB06004D7620 /* SwiftStringA.swift in Sources */,
 				CED319BA1C9BE5BC001397B6 /* UIApplication.swift in Sources */,
 				CEA7C8C01C9B8D3000ACC416 /* youwei.xcdatamodeld in Sources */,
 				CE99A4261CA922880070C9FE /* SwiftSingle.swift in Sources */,

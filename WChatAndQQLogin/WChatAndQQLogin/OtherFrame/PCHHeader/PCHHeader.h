@@ -15,7 +15,7 @@
 #import "WechatAuthSDK.h"
 #import "WXApi.h"
 #import "WXApiObject.h"
-
+//使用时替换自己的微信注册信息
 #define  kTestWeiXinAppId @"wx4868b35061f87885"//:微信申请下来的AppId
 #define kTestWeiXinSecret @"64020361b8ec4c99936c0e3999a9f249"//:微信申请下来的AppSecret
 #define  kTestSendState @"123"//:与第一步位置二内容相同即可
@@ -33,7 +33,7 @@
 
 #import <TencentOpenAPI/TencentOAuth.h>
 //QQ 开放方平台 应用审核通过之后可用 ，没有通过用测试的
-#define kTestQQLoginAppID @"1104936042"
+#define kTestQQLoginAppID @"1104617535" //kTestQQLoginAppID 做的时候替换为自己的AppID
 
 //防止循环造成循环引用
 #define MyWeakObject(obj) __weak typeof(obj) weakSelf = obj;
