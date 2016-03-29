@@ -16,23 +16,11 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xM-dz-rBl">
-                                <rect key="frame" x="20" y="475" width="152" height="60"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajF-UC-OlR">
-                                <rect key="frame" x="241" y="496" width="139" height="58"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <navigationItem key="navigationItem" id="SZN-Hl-Ro3"/>
                     <connections>
-                        <outlet property="btnQQB" destination="2xM-dz-rBl" id="GeF-rL-9iq"/>
-                        <outlet property="btnWXA" destination="ajF-UC-OlR" id="jD7-mc-x49"/>
                         <outlet property="view" destination="8bC-Xf-vdC" id="dVy-LU-vN2"/>
                     </connections>
                 </viewController>

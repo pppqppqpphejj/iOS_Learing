@@ -57,7 +57,7 @@
         make.top.mas_equalTo(self.view.mas_top).mas_equalTo(120);
         make.right.mas_equalTo(self.view.mas_right).mas_equalTo(-30);
 
-        make.width.equalTo(@80);
+        make.width.equalTo(@100);
         make.height.equalTo (@45);
     
 
@@ -69,7 +69,7 @@
         make.left.mas_equalTo(self.view.mas_left).mas_equalTo(10);
         make.top.mas_equalTo(self.view.mas_top).mas_equalTo(120);
 
-        make.size.mas_equalTo(CGSizeMake(80,45));
+        make.size.mas_equalTo(CGSizeMake(100,45));
         
     }];
     
@@ -197,6 +197,7 @@
 
 -(void)getUserInfoResponse:(APIResponse *)response
 {
+
     NSLog(@"respons:%@",response.jsonResponse);
     [self.btnQQ setTitle:[response.jsonResponse valueForKey:@"nickname"] forState:UIControlStateNormal];
 
