@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WChatAndQQLogin/ViewController.m"
+            timestampString = "480930497.987201"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "-btnWXAction:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WChatAndQQLogin/AppDelegate.m"
+            timestampString = "480930506.37617"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "-onResp:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[AppDelegate onResp:]"
+                  moduleName = "WChatAndQQLogin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shaorui/%E9%82%B5%E7%91%9E/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/MyGit/ios/WChatAndQQLogin/WChatAndQQLogin/AppDelegate.m"
+                  timestampString = "480930597.607057"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "352">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__22-[AppDelegate onResp:]_block_invoke"
+                  moduleName = "WChatAndQQLogin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shaorui/%E9%82%B5%E7%91%9E/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/MyGit/ios/WChatAndQQLogin/WChatAndQQLogin/AppDelegate.m"
+                  timestampString = "480930597.607349"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

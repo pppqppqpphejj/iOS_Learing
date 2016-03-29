@@ -472,6 +472,7 @@
     
     
     
+    
     _floorBarView = [[IndoorFloorHBar alloc] initWithFrame:CGRectMake(0,0,50, 80 )];
 //    weakSelf.floorBarView = [[IndoorFloorHBar alloc] init];
 

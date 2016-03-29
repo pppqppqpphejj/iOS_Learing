@@ -19,6 +19,7 @@
 //常用宏定义
 
 #define kWeakObject(obj) __weak typeof(obj) weakSelf = obj;
+#define kWeakObjects __weak typeof(obj) weakSelf = obj;
 
 #define kIOSVersion ((float)[[[UIDevice currentDevice] systemVersion] doubleValue])
     //

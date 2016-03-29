@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CE416B381CA22B16003E1AF8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE416B371CA22B16003E1AF8 /* CFNetwork.framework */; };
+		CE5C3AE31CAA108200316475 /* SwiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C3AE11CAA108200316475 /* SwiftView.swift */; };
+		CE5C3AE41CAA108200316475 /* SwiftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5C3AE21CAA108200316475 /* SwiftView.xib */; };
+		CE5C3AE71CAA10BD00316475 /* SwiftNSArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C3AE61CAA10BD00316475 /* SwiftNSArray.swift */; };
+		CE5C3AEA1CAA114100316475 /* SwiftNSDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C3AE91CAA114100316475 /* SwiftNSDictionary.swift */; };
 		CE5DB75F1CA9302600B12724 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5DB75E1CA9302600B12724 /* Foundation.framework */; };
 		CE5DB76B1CA93BB300B12724 /* SwiftString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB76A1CA93BB300B12724 /* SwiftString.swift */; };
 		CE88314C1C9FE2BC00F95071 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88314A1C9FE2BC00F95071 /* NextViewController.swift */; };
@@ -114,6 +118,10 @@
 /* Begin PBXFileReference section */
 		CE416B371CA22B16003E1AF8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		CE416B3A1CA22F3E003E1AF8 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../../../../Downloads/Safari浏览器下载/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		CE5C3AE11CAA108200316475 /* SwiftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftView.swift; sourceTree = "<group>"; };
+		CE5C3AE21CAA108200316475 /* SwiftView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwiftView.xib; sourceTree = "<group>"; };
+		CE5C3AE61CAA10BD00316475 /* SwiftNSArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNSArray.swift; sourceTree = "<group>"; };
+		CE5C3AE91CAA114100316475 /* SwiftNSDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNSDictionary.swift; sourceTree = "<group>"; };
 		CE5DB75E1CA9302600B12724 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE5DB76A1CA93BB300B12724 /* SwiftString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftString.swift; sourceTree = "<group>"; };
 		CE88314A1C9FE2BC00F95071 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
@@ -210,6 +218,31 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		CE5C3AE01CAA108200316475 /* SwiftView */ = {
+			isa = PBXGroup;
+			children = (
+				CE5C3AE11CAA108200316475 /* SwiftView.swift */,
+				CE5C3AE21CAA108200316475 /* SwiftView.xib */,
+			);
+			path = SwiftView;
+			sourceTree = "<group>";
+		};
+		CE5C3AE51CAA10A700316475 /* SwiftNSArray */ = {
+			isa = PBXGroup;
+			children = (
+				CE5C3AE61CAA10BD00316475 /* SwiftNSArray.swift */,
+			);
+			path = SwiftNSArray;
+			sourceTree = "<group>";
+		};
+		CE5C3AE81CAA112E00316475 /* SwiftNSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				CE5C3AE91CAA114100316475 /* SwiftNSDictionary.swift */,
+			);
+			path = SwiftNSDictionary;
+			sourceTree = "<group>";
+		};
 		CE5DB7691CA93BA000B12724 /* SwiftString */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +287,9 @@
 		CEA7C8B61C9B8D3000ACC416 /* youwei */ = {
 			isa = PBXGroup;
 			children = (
+				CE5C3AE81CAA112E00316475 /* SwiftNSDictionary */,
+				CE5C3AE51CAA10A700316475 /* SwiftNSArray */,
+				CE5C3AE01CAA108200316475 /* SwiftView */,
 				CE5DB7691CA93BA000B12724 /* SwiftString */,
 				CE99A41D1CA9223D0070C9FE /* SwiftSingle */,
 				CE416B3A1CA22F3E003E1AF8 /* Alamofire.xcodeproj */,
@@ -499,6 +535,7 @@
 				CED319AD1C9BE2D6001397B6 /* RightViewController.xib in Resources */,
 				CED319A91C9BE2BC001397B6 /* LeftViewController.xib in Resources */,
 				CEA7C8C51C9B8D3000ACC416 /* LaunchScreen.storyboard in Resources */,
+				CE5C3AE41CAA108200316475 /* SwiftView.xib in Resources */,
 				CED319D01C9BFFAE001397B6 /* SwiftTopBanner.xib in Resources */,
 				CED319A51C9BA882001397B6 /* RootViewController.xib in Resources */,
 				CEA7C8C21C9B8D3000ACC416 /* Assets.xcassets in Resources */,
@@ -528,12 +565,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5C3AEA1CAA114100316475 /* SwiftNSDictionary.swift in Sources */,
 				CED319A41C9BA882001397B6 /* RootViewController.swift in Sources */,
 				CED319AC1C9BE2D6001397B6 /* RightViewController.swift in Sources */,
 				CEA7C8BA1C9B8D3000ACC416 /* ViewController.swift in Sources */,
 				CED319BD1C9BE5BC001397B6 /* UIImageView.swift in Sources */,
 				CE88314C1C9FE2BC00F95071 /* NextViewController.swift in Sources */,
 				CED319B91C9BE5BC001397B6 /* String.swift in Sources */,
+				CE5C3AE31CAA108200316475 /* SwiftView.swift in Sources */,
 				CEA7C8B81C9B8D3000ACC416 /* AppDelegate.swift in Sources */,
 				CED319CC1C9BFF65001397B6 /* SwiftTopBanner.swift in Sources */,
 				CED319A81C9BE2BC001397B6 /* LeftViewController.swift in Sources */,
@@ -541,6 +580,7 @@
 				CED319BB1C9BE5BC001397B6 /* UIColor.swift in Sources */,
 				CE5DB76B1CA93BB300B12724 /* SwiftString.swift in Sources */,
 				CEA7C8F31C9BA3E700ACC416 /* SlideMenuController.swift in Sources */,
+				CE5C3AE71CAA10BD00316475 /* SwiftNSArray.swift in Sources */,
 				CED319BF1C9BE5BC001397B6 /* UIView.swift in Sources */,
 				CED319BC1C9BE5BC001397B6 /* UIImage.swift in Sources */,
 				CED319BA1C9BE5BC001397B6 /* UIApplication.swift in Sources */,
