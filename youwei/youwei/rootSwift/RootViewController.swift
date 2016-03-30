@@ -84,15 +84,21 @@ class RootViewController: UIViewController
         
         var isNOSTU:Bool!
         
+//        var sss = SwiftStudent()
+//        var student = SwiftStudent()
+//            student.textName = "sshhdhs"
+//        student.textPhone = "1398383"
+//        student.age = 108
+
         var student = SwiftStudent(name: "邵瑞", phone: "ssss", age: 33)
 
         
-       isNOSTU = SwiftStringA.sharedInstance.saveWithNSKeyedArchiver(student, filePath:"student.plist")
+       isNOSTU = SwiftStringA.sharedInstance.saveWithNSKeyedArchiver(student, filePath:"student.archive")
         print("是否储存成功\(isNOSTU)")
 //        var stuModle:SwiftStudent!
     
       
-        student = SwiftStringA.sharedInstance.readWithNSKeyedUnarchiver("student.plist", documentsPath: SwiftStringA.sharedInstance.swStringDocumentsPath()) as! SwiftStudent
+        student = SwiftStringA.sharedInstance.readWithNSKeyedUnarchiver("student.archive", documentsPath: SwiftStringA.sharedInstance.swStringDocumentsPath()) as! SwiftStudent
         
         
         print("textName \(student.textName)")

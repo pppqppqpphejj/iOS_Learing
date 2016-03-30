@@ -14,14 +14,20 @@ class SwiftStudent: NSObject,NSCoding {
     var textName:NSString!
     var textPhone:NSString!
     var age:Int!
-     init(name:NSString,phone:NSString,age:Int) {
+      init(name:NSString,phone:NSString,age:Int) {
         super.init()
-        
-        self.textName = name
+           self.textName = name
         self.textPhone = phone
         self.age = age
         
     }
+    /*
+    override  init() {
+    super.init()
+    
+    }
+    
+    */
 
  /**Swift编码**/
     func encodeWithCoder(aCoder: NSCoder) {
