@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE07DD891CABCAF900365A72 /* MySwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07DD871CABCAF900365A72 /* MySwiftViewController.swift */; };
+		CE07DD8A1CABCAF900365A72 /* MySwiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE07DD881CABCAF900365A72 /* MySwiftViewController.xib */; };
 		CE416B381CA22B16003E1AF8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE416B371CA22B16003E1AF8 /* CFNetwork.framework */; };
 		CE59348A1CAB7FDA002F9682 /* SwiftStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5934891CAB7FDA002F9682 /* SwiftStudent.swift */; };
 		CE5934971CABB2CE002F9682 /* areaData.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE5934961CABB2CE002F9682 /* areaData.plist */; };
@@ -118,6 +120,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE07DD871CABCAF900365A72 /* MySwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySwiftViewController.swift; sourceTree = "<group>"; };
+		CE07DD881CABCAF900365A72 /* MySwiftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySwiftViewController.xib; sourceTree = "<group>"; };
 		CE416B371CA22B16003E1AF8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		CE416B3A1CA22F3E003E1AF8 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../../../../Downloads/Safari浏览器下载/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		CE5934891CAB7FDA002F9682 /* SwiftStudent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftStudent.swift; sourceTree = "<group>"; };
@@ -199,6 +203,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE07DD7F1CABCAEA00365A72 /* MySwiftViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE07DD871CABCAF900365A72 /* MySwiftViewController.swift */,
+				CE07DD881CABCAF900365A72 /* MySwiftViewController.xib */,
+			);
+			path = MySwiftViewController;
+			sourceTree = "<group>";
+		};
 		CE416B391CA22B1F003E1AF8 /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +304,7 @@
 		CEA7C8B61C9B8D3000ACC416 /* youwei */ = {
 			isa = PBXGroup;
 			children = (
+				CE07DD7F1CABCAEA00365A72 /* MySwiftViewController */,
 				CE5C3AE81CAA112E00316475 /* SwiftNSDictionary */,
 				CE5C3AE51CAA10A700316475 /* SwiftNSArray */,
 				CE5C3AE01CAA108200316475 /* SwiftView */,
@@ -536,6 +550,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE07DD8A1CABCAF900365A72 /* MySwiftViewController.xib in Resources */,
 				CEA7C8F21C9BA3E700ACC416 /* Info.plist in Resources */,
 				CED319AD1C9BE2D6001397B6 /* RightViewController.xib in Resources */,
 				CED319A91C9BE2BC001397B6 /* LeftViewController.xib in Resources */,
@@ -589,6 +604,7 @@
 				CEA7C8F31C9BA3E700ACC416 /* SlideMenuController.swift in Sources */,
 				CE5C3AE71CAA10BD00316475 /* SwiftNSArray.swift in Sources */,
 				CED319BF1C9BE5BC001397B6 /* UIView.swift in Sources */,
+				CE07DD891CABCAF900365A72 /* MySwiftViewController.swift in Sources */,
 				CED319BC1C9BE5BC001397B6 /* UIImage.swift in Sources */,
 				CE6A5B4D1CAACB06004D7620 /* SwiftStringA.swift in Sources */,
 				CED319BA1C9BE5BC001397B6 /* UIApplication.swift in Sources */,

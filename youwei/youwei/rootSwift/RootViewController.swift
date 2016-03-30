@@ -20,7 +20,7 @@ class RootViewController: UIViewController
      /**单列初始化**/
 
     @IBOutlet weak var _VTop: SwiftTopBanner!
- 
+
     @IBAction func btnToPush(sender: AnyObject) {
    
         openLeft()
@@ -56,6 +56,48 @@ class RootViewController: UIViewController
         
         
         super.viewDidLoad()
+        
+        
+        
+        
+        var path=NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] as NSString
+        var filePath=path.stringByAppendingPathComponent("data.archive")
+        //归档
+        var data=NSMutableData()
+        var archiver=NSKeyedArchiver(forWritingWithMutableData: data)
+        archiver.encodeObject(["Bill Gates","Steve Jobs"], forKey: "data");
+        archiver.encodeInt(32, forKey: "age");
+        archiver.encodeObject("test message", forKey: "tip");
+        archiver.finishEncoding()
+        data.writeToFile(filePath, atomically: true)
+        //反归档
+        var unarchiveData=NSData(contentsOfFile: filePath)
+        var unarchiver=NSKeyedUnarchiver(forReadingWithData: unarchiveData!)
+        var decodeData=unarchiver.decodeObjectForKey("data") as! NSArray
+        var decodeAge=unarchiver.decodeIntForKey("age")
+        var decodeTip=unarchiver.decodeObjectForKey("tip") as! NSString
+        NSLog("data=%@,age=%i,tip=%@",decodeData,decodeAge,decodeTip)
+        
+        
+
+        
+        
+        var isNOSTU:Bool!
+        
+        var student = SwiftStudent(name: "邵瑞", phone: "ssss", age: 33)
+
+        
+       isNOSTU = SwiftStringA.sharedInstance.saveWithNSKeyedArchiver(student, filePath:"student.plist")
+        print("是否储存成功\(isNOSTU)")
+//        var stuModle:SwiftStudent!
+    
+      
+        student = SwiftStringA.sharedInstance.readWithNSKeyedUnarchiver("student.plist", documentsPath: SwiftStringA.sharedInstance.swStringDocumentsPath()) as! SwiftStudent
+        
+        
+        print("textName \(student.textName)")
+        print("textPhone \(student.textPhone)")
+
         var strEmpty:NSString!
 
         strEmpty = "ee"
@@ -132,7 +174,7 @@ class RootViewController: UIViewController
         
         
         
-        returnString = SwiftStringA.sharedInstance.swStringDocumentsPath()
+        returnString = SwiftStringA.sharedInstance.swStringDocumentsPath() as String
         
         
         print("swStringDocumentsPath是 \n \(returnString)")

@@ -234,12 +234,13 @@ class SwiftStringA: NSString {
     *@prarm <#@prarm one#>
     * return 应用程序沙盒的Documents目录
     **/
-    func swStringDocumentsPath()->String
+    func swStringDocumentsPath()->NSString
     {
-        var path:String!
+        var path:NSString!
         let arrPathDocm:[AnyObject] = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)
         let documentsPath = arrPathDocm.first as! String
-        
+//        path = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] as String
+
         path = documentsPath
        return  path
     }
@@ -289,14 +290,12 @@ class SwiftStringA: NSString {
     func saveWithNSKeyedArchiver(anOject:AnyObject,filePath:String)->Bool
     {
         var isNO:Bool!
-        
-        let home = NSHomeDirectory() as NSString;
-        let docPath = home.stringByAppendingPathComponent(swStringDocumentsPath()) as NSString;
-    
-        let filePath = docPath.stringByAppendingPathComponent(filePath);
-        //            let book = CFAddressBook(name: "Francis", call: "199");
 
-        isNO = NSKeyedArchiver.archiveRootObject(anOject, toFile: filePath);
+//        let path = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] as NSString
+
+        let docPath = swStringDocumentsPath().stringByAppendingPathComponent(filePath)
+//
+        isNO = NSKeyedArchiver.archiveRootObject(anOject, toFile: docPath);
 
         return isNO
         
@@ -308,17 +307,17 @@ class SwiftStringA: NSString {
      *@prarm documentsPath 读取储存的路径
      * return
      **/
-    func readWithNSKeyedUnarchiver(filePath:String ,documentsPath:String )->AnyObject {
+    func readWithNSKeyedUnarchiver(filePath:NSString ,documentsPath:NSString )->AnyObject {
     
-        var anOject:AnyObject
+        var anOject:AnyObject!
+        let docPath = documentsPath.stringByAppendingPathComponent(filePath as String)
         
-        let home = NSHomeDirectory() as NSString;
-        let docPath = home.stringByAppendingPathComponent(documentsPath) as NSString;
-        let filePath = docPath.stringByAppendingPathComponent(filePath);
-        anOject =  NSKeyedUnarchiver.unarchiveObjectWithFile(filePath)!
-    
+        anOject =  NSKeyedUnarchiver.unarchiveObjectWithFile(docPath)!
         return anOject
     }
+    
+    
+    
     
     
     
