@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CE416B381CA22B16003E1AF8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE416B371CA22B16003E1AF8 /* CFNetwork.framework */; };
+		CE59348A1CAB7FDA002F9682 /* SwiftStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5934891CAB7FDA002F9682 /* SwiftStudent.swift */; };
+		CE5934971CABB2CE002F9682 /* areaData.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE5934961CABB2CE002F9682 /* areaData.plist */; };
 		CE5C3AE31CAA108200316475 /* SwiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C3AE11CAA108200316475 /* SwiftView.swift */; };
 		CE5C3AE41CAA108200316475 /* SwiftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5C3AE21CAA108200316475 /* SwiftView.xib */; };
 		CE5C3AE71CAA10BD00316475 /* SwiftNSArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C3AE61CAA10BD00316475 /* SwiftNSArray.swift */; };
@@ -118,6 +120,8 @@
 /* Begin PBXFileReference section */
 		CE416B371CA22B16003E1AF8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		CE416B3A1CA22F3E003E1AF8 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../../../../Downloads/Safari浏览器下载/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		CE5934891CAB7FDA002F9682 /* SwiftStudent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftStudent.swift; sourceTree = "<group>"; };
+		CE5934961CABB2CE002F9682 /* areaData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = areaData.plist; sourceTree = "<group>"; };
 		CE5C3AE11CAA108200316475 /* SwiftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftView.swift; sourceTree = "<group>"; };
 		CE5C3AE21CAA108200316475 /* SwiftView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SwiftView.xib; path = SwiftView/SwiftView.xib; sourceTree = "<group>"; };
 		CE5C3AE61CAA10BD00316475 /* SwiftNSArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNSArray.swift; sourceTree = "<group>"; };
@@ -244,8 +248,10 @@
 		CE5DB7691CA93BA000B12724 /* SwiftString */ = {
 			isa = PBXGroup;
 			children = (
+				CE5934961CABB2CE002F9682 /* areaData.plist */,
 				CE5DB76A1CA93BB300B12724 /* SwiftString.swift */,
 				CE6A5B4C1CAACB06004D7620 /* SwiftStringA.swift */,
+				CE5934891CAB7FDA002F9682 /* SwiftStudent.swift */,
 			);
 			path = SwiftString;
 			sourceTree = "<group>";
@@ -540,6 +546,7 @@
 				CEA7C8C21C9B8D3000ACC416 /* Assets.xcassets in Resources */,
 				CEA7C8BD1C9B8D3000ACC416 /* Main.storyboard in Resources */,
 				CE88314D1C9FE2BC00F95071 /* NextViewController.xib in Resources */,
+				CE5934971CABB2CE002F9682 /* areaData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,6 +572,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE5C3AEA1CAA114100316475 /* SwiftNSDictionary.swift in Sources */,
+				CE59348A1CAB7FDA002F9682 /* SwiftStudent.swift in Sources */,
 				CED319A41C9BA882001397B6 /* RootViewController.swift in Sources */,
 				CED319AC1C9BE2D6001397B6 /* RightViewController.swift in Sources */,
 				CEA7C8BA1C9B8D3000ACC416 /* ViewController.swift in Sources */,

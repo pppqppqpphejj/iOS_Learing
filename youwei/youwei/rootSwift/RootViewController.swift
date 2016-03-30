@@ -101,11 +101,62 @@ class RootViewController: UIViewController
         strSub = SwiftStringA.sharedInstance.swStringFilterWhitespaceCharacterOccurrencesOfString(" http:www.com  ")
         
         print("过滤开始 结尾的空白之 后的字符串 \(strSub)")
+        
+        var arry:NSArray!
+        
+        arry = SwiftStringA.sharedInstance.swStringSplitCharacterOccurrencesOfString(",", objString: "A,a,B,b,C,cCC,HHH,LL")
+        
+        print("打印分割之后的字符串 数组个数 \(arry.count)\n")
+        print("打印分割之后的字符串  \(arry)")
+
 
         print("是否为空\(isNO)")
 
 
         print("打印常量字符串\n\(SwiftStringA.sharedInstance.constString)")
+        
+        
+        
+        
+        
+            isNO = SwiftStringA.sharedInstance.saveWithNSUserDefaults("你好", key: "key")
+        
+        print("\(isNO)")
+        
+        
+        
+        var returnString:String
+        returnString = SwiftStringA.sharedInstance.readWithNSUserDefaults("key")
+        
+        print("字符串是 \n \(returnString)")
+        
+        
+        
+        returnString = SwiftStringA.sharedInstance.swStringDocumentsPath()
+        
+        
+        print("swStringDocumentsPath是 \n \(returnString)")
+
+        returnString = SwiftStringA.sharedInstance.getFilePath("Info", type: "plist")
+    
+        print("getFilePath plits是 \n \(returnString)")
+        
+        var arrContent:NSDictionary!
+        
+        arrContent = NSDictionary(contentsOfFile: returnString)
+
+        var arrayContent:NSArray!
+
+        returnString = SwiftStringA.sharedInstance.getFilePath("areaData", type: "plist")
+        
+        print("getFilePath plits是 \n \(returnString)")
+
+        arrayContent = NSArray(contentsOfFile: returnString)
+
+        
+
+        
+        
         
         var isBool = SwiftStringA.sharedInstance
         
@@ -155,6 +206,17 @@ class RootViewController: UIViewController
     
     
  
+    
+//    func showPopUp()
+//    {
+//        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+//        if let loginVC = storyboard.instantiateViewControllerWithIdentifier(
+//            "LoginViewController") as? LoginViewController {
+//                loginVC.delegate = self
+//                self.presentViewController(loginVC, animated: true, completion: nil)
+//        }
+//    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

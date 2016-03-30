@@ -173,18 +173,153 @@ class SwiftStringA: NSString {
     /**
      * objcString 过滤掉开头和结尾的空白
      * return 返回 替换之后的字符串 数组
-     *
      * split 分割
      **/
-    func swStringSplitCharacterOccurrencesOfString(stringA:String,objString:String)-> NSString
+    func swStringSplitCharacterOccurrencesOfString(stringA:String,objString:String)-> NSArray
     {
-        var string:String
+        var array:NSArray!
         
-            var aa = objString.componentsSeparatedByString(stringA)
-//        array = split(objString){$0 == "\(stringA)"}
+        if objString.isEmpty
+        {
+            
+            array = [stringA]
+            return array
+        }
+        else
+        {
+            array = objString.componentsSeparatedByString(stringA)
+
+        }
         
-        return aa as Array[String]
+        return array
         
     }
+    /**
+     *使用NSUserDefaults存储数据
+     *@prarm object 储存对象
+     *@prarm key 取对象的key
+     * return isNO  储存成功true 反之 false
+     **/
+    
+    func saveWithNSUserDefaults(object:String,key:String)->Bool
+    {
+        let defaults =  NSUserDefaults.standardUserDefaults();
+            defaults.setObject(object, forKey: key)
+        var isNO:Bool!
+            isNO =  defaults.synchronize()
+        
+        return isNO
+    }
+    
+    /**
+     *使用NSUserDefaults取数据
+     *@prarm key 取对象的key
+     * return string  取出来字符串
+     **/
+    
+    func readWithNSUserDefaults(key:String)->String
+    {
+        let defaults =  NSUserDefaults.standardUserDefaults();
+        defaults.valueForKey(key)
+        var string:String!
+        string = defaults.objectForKey(key) as! String
+        return string
+    }
+    
+    
+
+    /**
+    * 获取应用程序沙盒的Documents目录
+    *@prarm 获取沙盒路径后再APPEND配置文件
+    *@prarm <#@prarm one#>
+    * return 应用程序沙盒的Documents目录
+    **/
+    func swStringDocumentsPath()->String
+    {
+        var path:String!
+        let arrPathDocm:[AnyObject] = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)
+        let documentsPath = arrPathDocm.first as! String
+        
+        path = documentsPath
+       return  path
+    }
+    
+    
+    /**
+     *@prarm type
+     *@prarm fileName
+     * return path 文件bundel路径
+     **/
+    func getFilePath(fileName:String,type:String) ->String {
+        //        return NSBundle.mainBundle().pathForResource("Checklist", ofType: "plist")!
+
+        var path:String!
+        path = NSBundle.mainBundle().pathForResource(fileName, ofType: type)
+        return path
+    }
+    /**
+     
+     *@prarm 读取本地文件
+     *@prarm fileName 文件名称
+     * return 返回dic
+     **/
+    
+    func swWriteFileData(fileName:String,typeName:String)->NSDictionary
+    {
+        var dic:NSDictionary!
+        
+        
+        
+        
+        
+        return dic
+    
+    
+    }
+    
+    
+    /**
+    *归档数据/需要实现NSCoding协议
+    * 归档 saveWithNSKeyedArchiver
+    *@prarm pathfile 文件名称 arichive
+    *@prarm <#@prarm one#>
+    * return <#Return Type Values#>
+    **/
+    
+    func saveWithNSKeyedArchiver(anOject:AnyObject,filePath:String)->Bool
+    {
+        var isNO:Bool!
+        
+        let home = NSHomeDirectory() as NSString;
+        let docPath = home.stringByAppendingPathComponent(swStringDocumentsPath()) as NSString;
+    
+        let filePath = docPath.stringByAppendingPathComponent(filePath);
+        //            let book = CFAddressBook(name: "Francis", call: "199");
+
+        isNO = NSKeyedArchiver.archiveRootObject(anOject, toFile: filePath);
+
+        return isNO
+        
+        }
+    /**
+     *归档数据/需要实现NSCoding协议
+     * 归档 saveWithNSKeyedArchiver
+     *@prarm pathfile 文件名称 arichive
+     *@prarm documentsPath 读取储存的路径
+     * return
+     **/
+    func readWithNSKeyedUnarchiver(filePath:String ,documentsPath:String )->AnyObject {
+    
+        var anOject:AnyObject
+        
+        let home = NSHomeDirectory() as NSString;
+        let docPath = home.stringByAppendingPathComponent(documentsPath) as NSString;
+        let filePath = docPath.stringByAppendingPathComponent(filePath);
+        anOject =  NSKeyedUnarchiver.unarchiveObjectWithFile(filePath)!
+    
+        return anOject
+    }
+    
+    
     
 }

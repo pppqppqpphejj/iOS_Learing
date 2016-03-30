@@ -10,5 +10,16 @@ import UIKit
 
 class SwiftNSArray: NSObject {
 
+    
+    /**swift NSArray 单列**/
+    static var sharedInstance:SwiftNSArray
+    {
+        struct Static {
+            static let instance : SwiftNSArray = SwiftNSArray()
+            
+        }
+        return Static.instance
+    }
+    
 
 }
