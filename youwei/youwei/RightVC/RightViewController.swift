@@ -22,6 +22,11 @@ class RightViewController: UIViewController {
         self._VTop.btnGoback.hidden = false
         self._VTop.lalTitel.text = "右返回"
 
+        var  sTTudent = SwiftStringA.sharedInstance.readWithNSKeyedUnarchiver("student.archive", documentsPath: SwiftStringA.sharedInstance.swStringDocumentsPath()) as! SwiftStudent
+        
+        
+        print("textName \(sTTudent.textName)")
+        print("textPhone \(sTTudent.textPhone)")
         // Do any additional setup after loading the view.
     }
 

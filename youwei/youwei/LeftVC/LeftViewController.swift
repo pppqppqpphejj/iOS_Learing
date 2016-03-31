@@ -22,6 +22,16 @@ class LeftViewController: UIViewController {
           self._VTop.btnGoback.backgroundColor = UIColor.clearColor()
         self._VTop.btnGoback.removeTarget(self, action: Selector(), forControlEvents: UIControlEvents.TouchUpInside)
         self._VTop.btnGoback.addTarget(self, action: "btnRemoveAction:", forControlEvents: UIControlEvents.TouchUpInside)
+        
+        
+        
+        
+        var  sTTudent = SwiftStringA.sharedInstance.readWithNSKeyedUnarchiver("student.archive", documentsPath: SwiftStringA.sharedInstance.swStringDocumentsPath()) as! SwiftStudent
+        
+        
+        print("textName \(sTTudent.textName)")
+        print("textPhone \(sTTudent.textPhone)")
+        
 
         // Do any additional setup after loading the view.
     }

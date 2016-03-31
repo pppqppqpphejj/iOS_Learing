@@ -15,7 +15,13 @@ class NextViewController: UIViewController {
         super.viewDidLoad()
 
         self._VTop.lalTitel.text = "寿山石受伤"
-        // Do any additional setup after loading the view.
+
+        
+        var  sTTudent = SwiftStringA.sharedInstance.readWithNSKeyedUnarchiver("student.archive", documentsPath: SwiftStringA.sharedInstance.swStringDocumentsPath()) as! SwiftStudent
+        
+        
+        print("textName \(sTTudent.textName)")
+        print("textPhone \(sTTudent.textPhone)")        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

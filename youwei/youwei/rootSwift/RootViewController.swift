@@ -31,10 +31,15 @@ class RootViewController: UIViewController
     @IBOutlet weak var modePop: UIButton!
     @IBAction func modelPop(sender: AnyObject) {
         
-        var arr = ["1067349543@qq.com","13983441921@139.com"] as Array
-        var isNO:Bool!
-        isNO =  SwiftSingle.sharedInstance.messageSend(arr, messageContent: "nihao 你好！", ViewController: self)
-        print("\(isNO )")
+//        var arr = ["1067349543@qq.com","13983441921@139.com"] as Array
+//        var isNO:Bool!
+//        isNO =  SwiftSingle.sharedInstance.messageSend(arr, messageContent: "nihao 你好！", ViewController: self)
+//        print("\(isNO )")
+        
+        let tow_vc = NextViewController();
+        
+        self.presentViewController(tow_vc, animated: true, completion: nil)
+        
         
          /**拨打电话**/
 //        SwiftSingle.sharedInstance.messageSend()
@@ -98,11 +103,11 @@ class RootViewController: UIViewController
 //        var stuModle:SwiftStudent!
     
       
-        student = SwiftStringA.sharedInstance.readWithNSKeyedUnarchiver("student.archive", documentsPath: SwiftStringA.sharedInstance.swStringDocumentsPath()) as! SwiftStudent
+       let  sTTudent = SwiftStringA.sharedInstance.readWithNSKeyedUnarchiver("student.archive", documentsPath: SwiftStringA.sharedInstance.swStringDocumentsPath()) as! SwiftStudent
         
         
-        print("textName \(student.textName)")
-        print("textPhone \(student.textPhone)")
+        print("textName \(sTTudent.textName)")
+        print("textPhone \(sTTudent.textPhone)")
 
         var strEmpty:NSString!
 
