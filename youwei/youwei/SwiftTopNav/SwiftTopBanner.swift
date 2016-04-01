@@ -23,7 +23,7 @@ class UIBackButton:UIButton {
     {
 
         self.imageView?.image = UIImage(named: "白色返回箭头")
-        backgroundColor =  UIColor.brownColor()
+        backgroundColor =  UIColor.clearColor()
         showsTouchWhenHighlighted = true
     }
     
@@ -53,7 +53,7 @@ class SwiftTopBanner: UIView{
     var  appPop:AppDelegate!
     var  windowPop:UIWindow!
     override init(frame: CGRect) {
-        super.init(frame: frame)
+        super.init(frame: self.view.frame)
         awakeFromNib()
     }
     
@@ -67,13 +67,13 @@ class SwiftTopBanner: UIView{
 
         
         super.frame = frame
-        self.view.frame = frame;
+
         
     }
     
     override func awakeFromNib()
     {
-        
+
 
         self.parentController = nil
 

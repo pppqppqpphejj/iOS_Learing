@@ -19,6 +19,8 @@
 		CE5DB75F1CA9302600B12724 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5DB75E1CA9302600B12724 /* Foundation.framework */; };
 		CE5DB76B1CA93BB300B12724 /* SwiftString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB76A1CA93BB300B12724 /* SwiftString.swift */; };
 		CE6A5B4D1CAACB06004D7620 /* SwiftStringA.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A5B4C1CAACB06004D7620 /* SwiftStringA.swift */; };
+		CE7847781CAE6C0B0025259A /* SwiftDelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7847761CAE6C0B0025259A /* SwiftDelegateViewController.swift */; };
+		CE7847791CAE6C0B0025259A /* SwiftDelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7847771CAE6C0B0025259A /* SwiftDelegateViewController.xib */; };
 		CE88314C1C9FE2BC00F95071 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88314A1C9FE2BC00F95071 /* NextViewController.swift */; };
 		CE88314D1C9FE2BC00F95071 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE88314B1C9FE2BC00F95071 /* NextViewController.xib */; };
 		CE99A4261CA922880070C9FE /* SwiftSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99A4251CA922880070C9FE /* SwiftSingle.swift */; };
@@ -133,6 +135,8 @@
 		CE5DB75E1CA9302600B12724 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE5DB76A1CA93BB300B12724 /* SwiftString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftString.swift; sourceTree = "<group>"; };
 		CE6A5B4C1CAACB06004D7620 /* SwiftStringA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftStringA.swift; sourceTree = "<group>"; };
+		CE7847761CAE6C0B0025259A /* SwiftDelegateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDelegateViewController.swift; sourceTree = "<group>"; };
+		CE7847771CAE6C0B0025259A /* SwiftDelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwiftDelegateViewController.xib; sourceTree = "<group>"; };
 		CE88314A1C9FE2BC00F95071 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		CE88314B1C9FE2BC00F95071 /* NextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
 		CE99A4251CA922880070C9FE /* SwiftSingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSingle.swift; sourceTree = "<group>"; };
@@ -269,6 +273,15 @@
 			path = SwiftString;
 			sourceTree = "<group>";
 		};
+		CE78476E1CAE6BE30025259A /* SwuftDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CE7847761CAE6C0B0025259A /* SwiftDelegateViewController.swift */,
+				CE7847771CAE6C0B0025259A /* SwiftDelegateViewController.xib */,
+			);
+			path = SwuftDelegate;
+			sourceTree = "<group>";
+		};
 		CE99A41D1CA9223D0070C9FE /* SwiftSingle */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +317,7 @@
 		CEA7C8B61C9B8D3000ACC416 /* youwei */ = {
 			isa = PBXGroup;
 			children = (
+				CE78476E1CAE6BE30025259A /* SwuftDelegate */,
 				CE07DD7F1CABCAEA00365A72 /* MySwiftViewController */,
 				CE5C3AE81CAA112E00316475 /* SwiftNSDictionary */,
 				CE5C3AE51CAA10A700316475 /* SwiftNSArray */,
@@ -562,6 +576,7 @@
 				CEA7C8BD1C9B8D3000ACC416 /* Main.storyboard in Resources */,
 				CE88314D1C9FE2BC00F95071 /* NextViewController.xib in Resources */,
 				CE5934971CABB2CE002F9682 /* areaData.plist in Resources */,
+				CE7847791CAE6C0B0025259A /* SwiftDelegateViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,6 +626,7 @@
 				CEA7C8C01C9B8D3000ACC416 /* youwei.xcdatamodeld in Sources */,
 				CE99A4261CA922880070C9FE /* SwiftSingle.swift in Sources */,
 				CED319C01C9BE5BC001397B6 /* UIViewController.swift in Sources */,
+				CE7847781CAE6C0B0025259A /* SwiftDelegateViewController.swift in Sources */,
 				CED319BE1C9BE5BC001397B6 /* UITableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

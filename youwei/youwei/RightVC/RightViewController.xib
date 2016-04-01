@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RightViewController" customModule="youwei" customModuleProvider="target">
             <connections>
                 <outlet property="_VTop" destination="2JD-VE-Xr2" id="pAT-el-IF6"/>
+                <outlet property="btnToSwiftDelegaet" destination="adc-Ao-fmb" id="I6S-UD-Ydd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -33,65 +34,101 @@
                         </mask>
                     </variation>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBz-DD-OmS">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBz-DD-OmS">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="56" id="oHj-Uf-e1Z"/>
+                        <constraint firstAttribute="width" constant="100" id="DAw-mp-XIz">
+                            <variation key="heightClass=regular-widthClass=compact" constant="130"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="80" id="sOv-4f-2R2">
+                            <variation key="heightClass=regular-widthClass=compact" constant="44"/>
+                        </constraint>
                     </constraints>
-                    <state key="normal" title="Button"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="SwiftDelegate"/>
                     <variation key="default">
                         <mask key="constraints">
-                            <exclude reference="oHj-Uf-e1Z"/>
+                            <exclude reference="DAw-mp-XIz"/>
+                            <exclude reference="sOv-4f-2R2"/>
                         </mask>
                     </variation>
                     <variation key="heightClass=regular-widthClass=compact">
                         <mask key="constraints">
-                            <include reference="oHj-Uf-e1Z"/>
+                            <include reference="DAw-mp-XIz"/>
+                            <include reference="sOv-4f-2R2"/>
                         </mask>
                     </variation>
                     <connections>
                         <action selector="ppp:" destination="-1" eventType="touchUpInside" id="GFz-Gh-9Ow"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adc-Ao-fmb">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.56078431370000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="n7f-Bt-0tu"/>
+                        <constraint firstAttribute="width" constant="100" id="rV0-3L-fMS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="SwiftDelegate"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="n7f-Bt-0tu"/>
+                            <exclude reference="rV0-3L-fMS"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="n7f-Bt-0tu"/>
+                            <include reference="rV0-3L-fMS"/>
+                        </mask>
+                    </variation>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="HBz-DD-OmS" firstAttribute="top" secondItem="2JD-VE-Xr2" secondAttribute="bottom" constant="78" id="JnW-12-VeL"/>
+                <constraint firstAttribute="trailing" secondItem="adc-Ao-fmb" secondAttribute="trailing" constant="20" id="8DN-Fq-42X"/>
+                <constraint firstItem="HBz-DD-OmS" firstAttribute="top" secondItem="2JD-VE-Xr2" secondAttribute="bottom" constant="10" id="QCM-Gs-k7j"/>
                 <constraint firstItem="2JD-VE-Xr2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ulg-dm-g3l"/>
+                <constraint firstItem="adc-Ao-fmb" firstAttribute="top" secondItem="2JD-VE-Xr2" secondAttribute="bottom" constant="10" id="WL8-ZV-YmJ"/>
                 <constraint firstAttribute="trailing" secondItem="2JD-VE-Xr2" secondAttribute="trailing" id="aXI-vd-3Ww"/>
                 <constraint firstItem="2JD-VE-Xr2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="csI-IV-UMJ"/>
-                <constraint firstItem="HBz-DD-OmS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="44" id="gGF-MS-dwT"/>
-                <constraint firstAttribute="trailing" secondItem="HBz-DD-OmS" secondAttribute="trailing" constant="176" id="oiI-7y-uPk"/>
+                <constraint firstItem="HBz-DD-OmS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="n8k-lw-lLM"/>
             </constraints>
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="2JD-VE-Xr2"/>
                     <exclude reference="HBz-DD-OmS"/>
+                    <exclude reference="adc-Ao-fmb"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="JnW-12-VeL"/>
-                    <exclude reference="gGF-MS-dwT"/>
-                    <exclude reference="oiI-7y-uPk"/>
                     <exclude reference="Ulg-dm-g3l"/>
                     <exclude reference="aXI-vd-3Ww"/>
                     <exclude reference="csI-IV-UMJ"/>
+                    <exclude reference="QCM-Gs-k7j"/>
+                    <exclude reference="n8k-lw-lLM"/>
+                    <exclude reference="8DN-Fq-42X"/>
+                    <exclude reference="WL8-ZV-YmJ"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="subviews">
                     <include reference="2JD-VE-Xr2"/>
                     <include reference="HBz-DD-OmS"/>
+                    <include reference="adc-Ao-fmb"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="JnW-12-VeL"/>
-                    <include reference="gGF-MS-dwT"/>
-                    <include reference="oiI-7y-uPk"/>
                     <include reference="Ulg-dm-g3l"/>
                     <include reference="aXI-vd-3Ww"/>
                     <include reference="csI-IV-UMJ"/>
+                    <include reference="QCM-Gs-k7j"/>
+                    <include reference="n8k-lw-lLM"/>
+                    <include reference="8DN-Fq-42X"/>
+                    <include reference="WL8-ZV-YmJ"/>
                 </mask>
             </variation>
-            <point key="canvasLocation" x="326" y="175"/>
+            <point key="canvasLocation" x="48" y="124"/>
         </view>
     </objects>
 </document>

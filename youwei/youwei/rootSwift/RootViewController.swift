@@ -36,9 +36,10 @@ class RootViewController: UIViewController
 //        isNO =  SwiftSingle.sharedInstance.messageSend(arr, messageContent: "nihao 你好！", ViewController: self)
 //        print("\(isNO )")
         
-        let tow_vc = NextViewController();
-        
-        self.presentViewController(tow_vc, animated: true, completion: nil)
+        var tow_vc:NextViewController!
+tow_vc =  NextViewController(nibName: "NextViewController" as String, bundle: nil)
+
+        self.presentViewController(tow_vc, animated: false, completion: nil)
         
         
          /**拨打电话**/
@@ -49,9 +50,11 @@ class RootViewController: UIViewController
     @IBAction func btnRightPushAction(sender: AnyObject) {
         
         //        let  right
-        let tow_vc = RightViewController();
-        
-        self.presentViewController(tow_vc, animated: true, completion: nil)
+        var tow_vc = RightViewController();
+        tow_vc =  RightViewController(nibName: "RightViewController" as String, bundle: nil)
+
+        self.navigationController?.pushViewController(tow_vc, animated: true)
+//        self.presentViewController(tow_vc, animated: true, completion: nil)
         
         
 

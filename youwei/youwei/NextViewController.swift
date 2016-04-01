@@ -11,11 +11,20 @@ import UIKit
 class NextViewController: UIViewController {
 
     @IBOutlet weak var _VTop: SwiftTopBanner!
+    
+   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+  required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self._VTop.lalTitel.text = "寿山石受伤"
-
+        self._VTop.parentController = self.navigationController
+        self._VTop.btnGoback.hidden = false
         
         var  sTTudent = SwiftStringA.sharedInstance.readWithNSKeyedUnarchiver("student.archive", documentsPath: SwiftStringA.sharedInstance.swStringDocumentsPath()) as! SwiftStudent
         

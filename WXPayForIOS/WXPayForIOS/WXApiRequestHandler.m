@@ -52,8 +52,11 @@
     
     // 拼接详细的订单数据
     NSDictionary *postDict = [self getProductArgs];
+    
     //拼接调用支付接口所需要的参数
-    NSString *string = [NSString stringWithFormat:@"<xml><sign>%@</sign><appid>%@</appid><body>%@</body><mch_id>%@</mch_id><nonce_str>%@</nonce_str><notify_url>%@</notify_url><out_trade_no>%@</out_trade_no><spbill_create_ip>%@</spbill_create_ip><total_fee>%d</total_fee><trade_type>APP</trade_type></xml>",[postDict objectForKey:@"sign"], APPID, [postDict objectForKey:@"body"], PartnerId, [postDict objectForKey:@"nonce_str"], [postDict objectForKey:@"notify_url"], [postDict objectForKey:@"out_trade_no"], [postDict objectForKey:@"spbill_create_ip"],[[postDict objectForKey:@"total_fee"] intValue]];
+    NSString *string = [NSString stringWithFormat:
+                        @"<xml><sign>%@</sign><appid>%@</appid><body>%@</body><mch_id>%@</mch_id><nonce_str>%@</nonce_str><notify_url>%@</notify_url><out_trade_no>%@</out_trade_no><spbill_create_ip>%@</spbill_create_ip><total_fee>%d</total_fee><trade_type>APP</trade_type></xml>",
+                        [postDict objectForKey:@"sign"], APPID, [postDict objectForKey:@"body"], PartnerId, [postDict objectForKey:@"nonce_str"], [postDict objectForKey:@"notify_url"], [postDict objectForKey:@"out_trade_no"], [postDict objectForKey:@"spbill_create_ip"],[[postDict objectForKey:@"total_fee"] intValue]];
     
     //创建网络请求
     NSURL *requestURL = [NSURL URLWithString:url];

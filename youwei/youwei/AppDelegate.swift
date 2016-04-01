@@ -48,9 +48,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let slideMenuController = ExSlideMenuController(mainViewController: self.rootVC!, leftMenuViewController: self.leftVC!, rightMenuViewController: self.rightVC!);
         
       self.nav  = UINavigationController(rootViewController: self.rootVC!)
-        UINavigationBar.appearance().tintColor = UIColor(hex: "689F38")
+//        UINavigationBar.appearance().tintColor = UIColor(hex: "689F38")
 
-            self.nav?.navigationBarHidden =  false
+            self.nav?.navigationBarHidden =  true
             slideMenuController.mainViewController = self.nav
 
 

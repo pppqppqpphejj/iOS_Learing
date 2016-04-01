@@ -14,6 +14,7 @@ class LeftViewController: UIViewController {
     @IBAction func btnPopAction(sender: AnyObject) {
         self.navigationController?.popViewControllerAnimated(true)
     }
+    
     override func viewDidLoad() {
    
         super.viewDidLoad()

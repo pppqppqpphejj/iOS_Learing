@@ -197,15 +197,15 @@
                     <exclude reference="1Q5-UE-Tn8"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="Fm5-Xq-iWf"/>
-                    <exclude reference="QVb-C5-igE"/>
-                    <exclude reference="wPW-fF-Ec8"/>
+                    <exclude reference="jfU-NN-bb7"/>
+                    <exclude reference="uzp-ey-imI"/>
                     <exclude reference="54a-T7-Mds"/>
                     <exclude reference="Ksn-3V-Mkj"/>
                     <exclude reference="s6C-DC-JsL"/>
                     <exclude reference="vZA-mg-D7e"/>
-                    <exclude reference="jfU-NN-bb7"/>
-                    <exclude reference="uzp-ey-imI"/>
+                    <exclude reference="Fm5-Xq-iWf"/>
+                    <exclude reference="QVb-C5-igE"/>
+                    <exclude reference="wPW-fF-Ec8"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -216,15 +216,15 @@
                     <include reference="1Q5-UE-Tn8"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="Fm5-Xq-iWf"/>
-                    <include reference="QVb-C5-igE"/>
-                    <include reference="wPW-fF-Ec8"/>
+                    <include reference="jfU-NN-bb7"/>
+                    <include reference="uzp-ey-imI"/>
                     <include reference="54a-T7-Mds"/>
                     <include reference="Ksn-3V-Mkj"/>
                     <include reference="s6C-DC-JsL"/>
                     <include reference="vZA-mg-D7e"/>
-                    <include reference="jfU-NN-bb7"/>
-                    <include reference="uzp-ey-imI"/>
+                    <include reference="Fm5-Xq-iWf"/>
+                    <include reference="QVb-C5-igE"/>
+                    <include reference="wPW-fF-Ec8"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="-204" y="130"/>

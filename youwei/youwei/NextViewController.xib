@@ -2,12 +2,12 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9531"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NextViewController" customModule="youwei" customModuleProvider="target">
             <connections>
-                <outlet property="_VTop" destination="iZw-8C-Lvh" id="6mb-8F-JK6"/>
+                <outlet property="_VTop" destination="iZw-8C-Lvh" id="ctA-uE-p75"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,20 +16,57 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZw-8C-Lvh" customClass="SwiftTopBanner" customModule="youwei" customModuleProvider="target">
+                <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZw-8C-Lvh" customClass="SwiftTopBanner" customModule="youwei" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSs-PR-2my">
+                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <color key="backgroundColor" red="0.20000000000000001" green="0.56078431370000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="2Zw-68-77t"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="2Zw-68-77t"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="2Zw-68-77t"/>
+                                </mask>
+                            </variation>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstItem="qSs-PR-2my" firstAttribute="top" secondItem="iZw-8C-Lvh" secondAttribute="top" constant="25" id="GVD-bG-X4b"/>
                         <constraint firstAttribute="height" constant="80" id="QE7-FV-AuF"/>
+                        <constraint firstItem="qSs-PR-2my" firstAttribute="leading" secondItem="iZw-8C-Lvh" secondAttribute="leading" constant="130" id="c3p-L4-MXF"/>
+                        <constraint firstAttribute="trailing" secondItem="qSs-PR-2my" secondAttribute="trailing" constant="225" id="oeT-Dz-dQN">
+                            <variation key="heightClass=regular-widthClass=compact" constant="156"/>
+                        </constraint>
                     </constraints>
                     <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="qSs-PR-2my"/>
+                        </mask>
                         <mask key="constraints">
                             <exclude reference="QE7-FV-AuF"/>
+                            <exclude reference="GVD-bG-X4b"/>
+                            <exclude reference="c3p-L4-MXF"/>
+                            <exclude reference="oeT-Dz-dQN"/>
                         </mask>
                     </variation>
                     <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="subviews">
+                            <include reference="qSs-PR-2my"/>
+                        </mask>
                         <mask key="constraints">
                             <include reference="QE7-FV-AuF"/>
+                            <include reference="GVD-bG-X4b"/>
+                            <include reference="c3p-L4-MXF"/>
+                            <include reference="oeT-Dz-dQN"/>
                         </mask>
                     </variation>
                 </view>
@@ -60,6 +97,7 @@
                     <include reference="wBr-Ge-cfI"/>
                 </mask>
             </variation>
+            <point key="canvasLocation" x="250" y="293"/>
         </view>
     </objects>
 </document>
