@@ -128,16 +128,62 @@
                         <action selector="modelPop:" destination="-1" eventType="touchUpInside" id="Fxs-Mi-GPH"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkS-fb-XlB">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="85" id="JKy-5x-0Rc"/>
+                        <constraint firstAttribute="height" constant="42" id="noT-zH-52O"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="JKy-5x-0Rc"/>
+                            <exclude reference="noT-zH-52O"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="JKy-5x-0Rc"/>
+                            <include reference="noT-zH-52O"/>
+                        </mask>
+                    </variation>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Q5-UE-Tn8">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="152" id="ZoW-0W-9hr">
+                            <variation key="heightClass=regular-widthClass=compact" constant="129"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="62" id="rlO-0H-38G"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ZoW-0W-9hr"/>
+                            <exclude reference="rlO-0H-38G"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="ZoW-0W-9hr"/>
+                            <include reference="rlO-0H-38G"/>
+                        </mask>
+                    </variation>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="ZkS-fb-XlB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="41" id="54a-T7-Mds"/>
                 <constraint firstItem="whe-zV-l2b" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Fm5-Xq-iWf">
                     <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                 </constraint>
+                <constraint firstAttribute="bottom" secondItem="ZkS-fb-XlB" secondAttribute="bottom" constant="630" id="Ksn-3V-Mkj"/>
                 <constraint firstAttribute="trailing" secondItem="whe-zV-l2b" secondAttribute="trailing" id="QVb-C5-igE">
                     <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                 </constraint>
+                <constraint firstAttribute="bottom" secondItem="1Q5-UE-Tn8" secondAttribute="bottom" constant="24" id="jfU-NN-bb7"/>
                 <constraint firstItem="jb2-2u-alI" firstAttribute="top" secondItem="whe-zV-l2b" secondAttribute="bottom" constant="48" id="s6C-DC-JsL"/>
+                <constraint firstItem="1Q5-UE-Tn8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="uzp-ey-imI"/>
                 <constraint firstAttribute="trailing" secondItem="jb2-2u-alI" secondAttribute="trailing" constant="20" id="vZA-mg-D7e"/>
                 <constraint firstItem="whe-zV-l2b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wPW-fF-Ec8">
                     <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
@@ -147,26 +193,38 @@
                 <mask key="subviews">
                     <exclude reference="whe-zV-l2b"/>
                     <exclude reference="jb2-2u-alI"/>
+                    <exclude reference="ZkS-fb-XlB"/>
+                    <exclude reference="1Q5-UE-Tn8"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="s6C-DC-JsL"/>
-                    <exclude reference="vZA-mg-D7e"/>
                     <exclude reference="Fm5-Xq-iWf"/>
                     <exclude reference="QVb-C5-igE"/>
                     <exclude reference="wPW-fF-Ec8"/>
+                    <exclude reference="54a-T7-Mds"/>
+                    <exclude reference="Ksn-3V-Mkj"/>
+                    <exclude reference="s6C-DC-JsL"/>
+                    <exclude reference="vZA-mg-D7e"/>
+                    <exclude reference="jfU-NN-bb7"/>
+                    <exclude reference="uzp-ey-imI"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="subviews">
                     <include reference="whe-zV-l2b"/>
                     <include reference="jb2-2u-alI"/>
+                    <include reference="ZkS-fb-XlB"/>
+                    <include reference="1Q5-UE-Tn8"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="s6C-DC-JsL"/>
-                    <include reference="vZA-mg-D7e"/>
                     <include reference="Fm5-Xq-iWf"/>
                     <include reference="QVb-C5-igE"/>
                     <include reference="wPW-fF-Ec8"/>
+                    <include reference="54a-T7-Mds"/>
+                    <include reference="Ksn-3V-Mkj"/>
+                    <include reference="s6C-DC-JsL"/>
+                    <include reference="vZA-mg-D7e"/>
+                    <include reference="jfU-NN-bb7"/>
+                    <include reference="uzp-ey-imI"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="-204" y="130"/>

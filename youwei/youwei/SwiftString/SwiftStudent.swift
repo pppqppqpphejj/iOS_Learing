@@ -21,6 +21,7 @@ class SwiftStudent: NSObject,NSCoding {
         self.age = age
         
     }
+
     /*
     override  init() {
     super.init()
