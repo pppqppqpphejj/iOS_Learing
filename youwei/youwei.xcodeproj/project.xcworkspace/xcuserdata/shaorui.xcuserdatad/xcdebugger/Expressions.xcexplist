@@ -6,6 +6,28 @@
          contextName = "RightViewController.tableView(UITableView, cellForRowAtIndexPath : NSIndexPath) -&gt; UITableViewCell:RightViewController.swift">
       </ContextState>
       <ContextState
+         contextName = "SwiftTopBanner.btnGobackAction(UIButton) -&gt; ():SwiftTopBanner.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "appPop.nav">
+            </PersistentString>
+            <PersistentString
+               value = "appPop">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SwiftTopBanner.awakeFromNib() -&gt; ():SwiftTopBanner.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view">
+            </PersistentString>
+            <PersistentString
+               value = "self">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "RightViewController.tableView(UITableView, numberOfRowsInSection : Int) -&gt; Int:RightViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -14,13 +36,13 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "SwiftTopBanner.btnGobackAction(UIButton) -&gt; ():SwiftTopBanner.swift">
+         contextName = "RightViewController.tableView(UITableView, didSelectRowAtIndexPath : NSIndexPath) -&gt; ():RightViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "appPop.nav">
+               value = "self.products">
             </PersistentString>
             <PersistentString
-               value = "appPop">
+               value = "products">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

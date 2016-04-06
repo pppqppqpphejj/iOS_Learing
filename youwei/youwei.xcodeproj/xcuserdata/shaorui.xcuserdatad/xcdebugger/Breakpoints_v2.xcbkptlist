@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "youwei/RightVC/RightViewController.swift"
-            timestampString = "481623123.524632"
+            filePath = "youwei/SwuftDelegate/SwiftDelegateViewController.swift"
+            timestampString = "481629590.357483"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
-            landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "returnParams(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "youwei/RightVC/RightViewController.swift"
-            timestampString = "481623123.524632"
+            filePath = "youwei/SwuftDelegate/SwiftDelegateViewController.swift"
+            timestampString = "481629591.295298"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "returmParameArray(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,14 +57,46 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "youwei/RightVC/RightViewController.swift"
-            timestampString = "481623123.524632"
+            filePath = "youwei/SwuftDelegate/SwiftDelegateViewController.swift"
+            timestampString = "481629591.840318"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "returmParameDic(_:)"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "youwei.SwiftDelegateViewController.returmParameDic (youwei.SwiftDelegateViewController)(Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.NSDictionary&gt;) -&gt; ()"
+                  moduleName = "youwei"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shaorui/%E9%82%B5%E7%91%9E/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/MyGit/ios/youwei/youwei/SwuftDelegate/SwiftDelegateViewController.swift"
+                  timestampString = "481629659.502196"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "protocol witness for youwei.ParamsProtocol.returmParameDic &lt;A where A: youwei.ParamsProtocol&gt; (A)(Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.NSDictionary&gt;) -&gt; () in conformance youwei.SwiftDelegateViewController : youwei.ParamsProtocol in youwei"
+                  moduleName = "youwei"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shaorui/%E9%82%B5%E7%91%9E/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/MyGit/ios/youwei/youwei/SwuftDelegate/SwiftDelegateViewController.swift"
+                  timestampString = "481629659.502365"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

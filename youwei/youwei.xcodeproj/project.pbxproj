@@ -25,6 +25,7 @@
 		CE88314D1C9FE2BC00F95071 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE88314B1C9FE2BC00F95071 /* NextViewController.xib */; };
 		CE8F71351CB4E3AD006D3D14 /* RightViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F71331CB4E3AD006D3D14 /* RightViewCell.swift */; };
 		CE8F71361CB4E3AD006D3D14 /* RightViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8F71341CB4E3AD006D3D14 /* RightViewCell.xib */; };
+		CE8F71401CB50DB2006D3D14 /* ParamsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F713F1CB50DB2006D3D14 /* ParamsProtocol.swift */; };
 		CE99A4261CA922880070C9FE /* SwiftSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99A4251CA922880070C9FE /* SwiftSingle.swift */; };
 		CE99A42A1CA925D60070C9FE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE99A4281CA925D60070C9FE /* MessageUI.framework */; };
 		CE99A42C1CA925E10070C9FE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE99A42B1CA925E10070C9FE /* MobileCoreServices.framework */; };
@@ -144,6 +145,7 @@
 		CE8F71321CB4A2DB006D3D14 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		CE8F71331CB4E3AD006D3D14 /* RightViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RightViewCell.swift; path = RightVC/RightViewCell.swift; sourceTree = "<group>"; };
 		CE8F71341CB4E3AD006D3D14 /* RightViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RightViewCell.xib; path = RightVC/RightViewCell.xib; sourceTree = "<group>"; };
+		CE8F713F1CB50DB2006D3D14 /* ParamsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParamsProtocol.swift; sourceTree = "<group>"; };
 		CE99A4251CA922880070C9FE /* SwiftSingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSingle.swift; sourceTree = "<group>"; };
 		CE99A4281CA925D60070C9FE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		CE99A42B1CA925E10070C9FE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -281,6 +283,7 @@
 		CE78476E1CAE6BE30025259A /* SwuftDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				CE8F713F1CB50DB2006D3D14 /* ParamsProtocol.swift */,
 				CE7847761CAE6C0B0025259A /* SwiftDelegateViewController.swift */,
 				CE7847771CAE6C0B0025259A /* SwiftDelegateViewController.xib */,
 			);
@@ -644,6 +647,7 @@
 				CEA7C8C01C9B8D3000ACC416 /* youwei.xcdatamodeld in Sources */,
 				CE99A4261CA922880070C9FE /* SwiftSingle.swift in Sources */,
 				CED319C01C9BE5BC001397B6 /* UIViewController.swift in Sources */,
+				CE8F71401CB50DB2006D3D14 /* ParamsProtocol.swift in Sources */,
 				CE7847781CAE6C0B0025259A /* SwiftDelegateViewController.swift in Sources */,
 				CED319BE1C9BE5BC001397B6 /* UITableViewExtension.swift in Sources */,
 			);

@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NextViewController" customModule="youwei" customModuleProvider="target">
             <connections>
-                <outlet property="_VTop" destination="Cu0-00-Gbb" id="3bP-OV-uS3"/>
+                <outlet property="_VTop" destination="Cu0-00-Gbb" id="cjQ-6H-Hnf"/>
                 <outlet property="view" destination="QfM-Pf-tBn" id="Xxp-9l-QaW"/>
             </connections>
         </placeholder>
@@ -25,14 +25,14 @@
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">
-                            <exclude reference="uT8-fy-cRa"/>
                             <exclude reference="r91-0L-IKu"/>
+                            <exclude reference="uT8-fy-cRa"/>
                         </mask>
                     </variation>
                     <variation key="heightClass=regular-widthClass=compact">
                         <mask key="constraints">
-                            <include reference="uT8-fy-cRa"/>
                             <include reference="r91-0L-IKu"/>
+                            <include reference="uT8-fy-cRa"/>
                         </mask>
                     </variation>
                 </view>
@@ -52,10 +52,10 @@
                 </mask>
                 <mask key="constraints">
                     <exclude reference="6nx-1w-gqx"/>
-                    <exclude reference="I13-Vh-MT9"/>
-                    <exclude reference="FF2-08-buY"/>
-                    <exclude reference="VmM-vY-rEJ"/>
                     <exclude reference="Bdr-OY-8O4"/>
+                    <exclude reference="FF2-08-buY"/>
+                    <exclude reference="I13-Vh-MT9"/>
+                    <exclude reference="VmM-vY-rEJ"/>
                     <exclude reference="ehf-ff-G6O"/>
                 </mask>
             </variation>
@@ -65,10 +65,10 @@
                 </mask>
                 <mask key="constraints">
                     <include reference="6nx-1w-gqx"/>
-                    <include reference="I13-Vh-MT9"/>
-                    <include reference="FF2-08-buY"/>
-                    <include reference="VmM-vY-rEJ"/>
                     <include reference="Bdr-OY-8O4"/>
+                    <include reference="FF2-08-buY"/>
+                    <include reference="I13-Vh-MT9"/>
+                    <include reference="VmM-vY-rEJ"/>
                     <include reference="ehf-ff-G6O"/>
                 </mask>
             </variation>

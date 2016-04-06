@@ -170,6 +170,29 @@
                         </mask>
                     </variation>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWG-1M-2Cb">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="iXP-hp-bJs"/>
+                        <constraint firstAttribute="height" constant="52" id="kvw-Uc-nTS"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="iXP-hp-bJs"/>
+                            <exclude reference="kvw-Uc-nTS"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="iXP-hp-bJs"/>
+                            <include reference="kvw-Uc-nTS"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="delegateAction:" destination="-1" eventType="touchUpInside" id="iKY-QX-oPi"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
@@ -181,6 +204,8 @@
                 <constraint firstAttribute="trailing" secondItem="whe-zV-l2b" secondAttribute="trailing" id="QVb-C5-igE">
                     <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                 </constraint>
+                <constraint firstItem="NWG-1M-2Cb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="RWa-Nb-nIj"/>
+                <constraint firstItem="NWG-1M-2Cb" firstAttribute="top" secondItem="ZkS-fb-XlB" secondAttribute="bottom" constant="46" id="jbe-Cc-iTB"/>
                 <constraint firstAttribute="bottom" secondItem="1Q5-UE-Tn8" secondAttribute="bottom" constant="24" id="jfU-NN-bb7"/>
                 <constraint firstItem="jb2-2u-alI" firstAttribute="top" secondItem="whe-zV-l2b" secondAttribute="bottom" constant="48" id="s6C-DC-JsL"/>
                 <constraint firstItem="1Q5-UE-Tn8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="uzp-ey-imI"/>
@@ -195,17 +220,20 @@
                     <exclude reference="jb2-2u-alI"/>
                     <exclude reference="ZkS-fb-XlB"/>
                     <exclude reference="1Q5-UE-Tn8"/>
+                    <exclude reference="NWG-1M-2Cb"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="jfU-NN-bb7"/>
-                    <exclude reference="uzp-ey-imI"/>
-                    <exclude reference="54a-T7-Mds"/>
-                    <exclude reference="Ksn-3V-Mkj"/>
-                    <exclude reference="s6C-DC-JsL"/>
-                    <exclude reference="vZA-mg-D7e"/>
                     <exclude reference="Fm5-Xq-iWf"/>
                     <exclude reference="QVb-C5-igE"/>
                     <exclude reference="wPW-fF-Ec8"/>
+                    <exclude reference="54a-T7-Mds"/>
+                    <exclude reference="Ksn-3V-Mkj"/>
+                    <exclude reference="RWa-Nb-nIj"/>
+                    <exclude reference="jbe-Cc-iTB"/>
+                    <exclude reference="s6C-DC-JsL"/>
+                    <exclude reference="vZA-mg-D7e"/>
+                    <exclude reference="jfU-NN-bb7"/>
+                    <exclude reference="uzp-ey-imI"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -214,20 +242,23 @@
                     <include reference="jb2-2u-alI"/>
                     <include reference="ZkS-fb-XlB"/>
                     <include reference="1Q5-UE-Tn8"/>
+                    <include reference="NWG-1M-2Cb"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="jfU-NN-bb7"/>
-                    <include reference="uzp-ey-imI"/>
-                    <include reference="54a-T7-Mds"/>
-                    <include reference="Ksn-3V-Mkj"/>
-                    <include reference="s6C-DC-JsL"/>
-                    <include reference="vZA-mg-D7e"/>
                     <include reference="Fm5-Xq-iWf"/>
                     <include reference="QVb-C5-igE"/>
                     <include reference="wPW-fF-Ec8"/>
+                    <include reference="54a-T7-Mds"/>
+                    <include reference="Ksn-3V-Mkj"/>
+                    <include reference="RWa-Nb-nIj"/>
+                    <include reference="jbe-Cc-iTB"/>
+                    <include reference="s6C-DC-JsL"/>
+                    <include reference="vZA-mg-D7e"/>
+                    <include reference="jfU-NN-bb7"/>
+                    <include reference="uzp-ey-imI"/>
                 </mask>
             </variation>
-            <point key="canvasLocation" x="-204" y="130"/>
+            <point key="canvasLocation" x="84" y="106"/>
         </view>
     </objects>
 </document>

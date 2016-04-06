@@ -7,10 +7,12 @@
 //
 
 import UIKit
-
-class SwiftDelegateViewController: UIViewController {
+//相应协议
+class SwiftDelegateViewController: UIViewController,ParamsProtocol {
     
     var stringV = NSString()
+    var rootDelegate = RootViewController()
+    
     
     @IBOutlet weak var V_Top: SwiftTopBanner!
     
@@ -23,10 +25,29 @@ class SwiftDelegateViewController: UIViewController {
 //        self.V_Top.parentController = self.navigationController
         self.V_Top.lalTitel.text = "sss"
         self.V_Top.btnGoback.hidden  = false
+         /**设置代理**/
+        rootDelegate.paramsProtocolDelegate = self
+//        调用函数 触发代理事件
+        rootDelegate.delegateStart()
 
         // Do any additional setup after loading the view.
     }
 
+    
+    func returnParams(tmpStr: String) {
+        
+        print("传入 Swift \(tmpStr)")
+    }
+    
+    func returmParameArray(array: NSArray!) {
+        print("传入 NSArray Swift \(array)")
+
+    }
+    
+    func returmParameDic(array: NSDictionary!) {
+        print("传入NSDictionary  Swift \(array)")
+
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

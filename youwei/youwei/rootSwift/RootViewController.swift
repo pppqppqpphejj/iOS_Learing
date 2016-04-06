@@ -14,7 +14,9 @@ class RootViewController: UIViewController
 {
     
 
-    
+     /**声明代理 值传递**/ 
+    var paramsProtocolDelegate: ParamsProtocol?
+
     
     var jsonDic:NSDictionary!
      /**单列初始化**/
@@ -28,6 +30,16 @@ class RootViewController: UIViewController
     }
 
     
+    @IBAction func delegateAction(sender: AnyObject) {
+        var tow_vc:SwiftDelegateViewController!
+        tow_vc =  SwiftDelegateViewController(nibName: "SwiftDelegateViewController" as String, bundle: nil)
+
+        self.navigationController?.pushViewController(tow_vc, animated: false)
+
+        
+    }
+    
+    
     @IBOutlet weak var modePop: UIButton!
     @IBAction func modelPop(sender: AnyObject) {
         
@@ -39,7 +51,7 @@ class RootViewController: UIViewController
         var tow_vc:NextViewController!
 tow_vc =  NextViewController(nibName: "NextViewController" as String, bundle: nil)
 
-        self.presentViewController(tow_vc, animated: false, completion: nil)
+        self.navigationController?.presentViewController(tow_vc, animated: false, completion: nil)
         
         
          /**拨打电话**/
@@ -269,6 +281,20 @@ tow_vc =  NextViewController(nibName: "NextViewController" as String, bundle: ni
     }
     
     
+    
+    func delegateStart()
+    {
+        
+        var temp:String!
+            temp = "代理传入一个字符串"
+        var tempArray:NSArray!
+        tempArray = ["A","B","C"]
+        
+      self.paramsProtocolDelegate?.returnParams(temp)
+      self.paramsProtocolDelegate?.returmParameArray(tempArray)
+
+        
+    }
  
     
 //    func showPopUp()

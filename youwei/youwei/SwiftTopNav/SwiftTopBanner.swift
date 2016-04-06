@@ -54,7 +54,7 @@ class SwiftTopBanner: UIView{
     var  windowPop:UIWindow!
     override init(frame: CGRect) {
         super.init(frame: self.view.frame)
-        awakeFromNib()
+
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -62,25 +62,28 @@ class SwiftTopBanner: UIView{
 //        fatalError("init(coder:) has not been implemented")
     }
     
-    func setframe(frame:CGRect)
-    {
 
-        
-        super.frame = frame
-
-        
-    }
     
     override func awakeFromNib()
     {
 
 
-        self.parentController = nil
-
-        nibArray = (NSBundle.mainBundle().loadNibNamed("SwiftTopBanner", owner: self, options: nil))
         
+        nibArray = (NSBundle.mainBundle().loadNibNamed("SwiftTopBanner", owner: self, options: nil))
         self.view = self.nibArray.objectAtIndex(0) as! UIView
+        let screenBounds:CGRect = UIScreen.mainScreen().bounds
+
+        self.view.frame = CGRectMake(0, 0, screenBounds.width, 80.0)
+
+        
+        if #available(iOS 9.0, *) {
+            self.view.updateFocusIfNeeded()
+        } else {
+            // Fallback on earlier versions
+        }
         self.view.translatesAutoresizingMaskIntoConstraints =  false
+//        self.translatesAutoresizingMaskIntoConstraints =  false
+
         self.addSubview(self.view)
         
 
@@ -90,7 +93,7 @@ class SwiftTopBanner: UIView{
 
  /**设置距左右为零高度80**/
         self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-0.0-[view(80.0)]-0.0-|", options:NSLayoutFormatOptions.DirectionMask, metrics: nil, views: self.dicViews as! [String : AnyObject]))
-        self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-0-[view]-0-|", options: NSLayoutFormatOptions.DirectionMask, metrics: nil, views: self.dicViews as! [String :AnyObject]));
+        self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[view]|", options: NSLayoutFormatOptions.DirectionMask, metrics: nil, views: self.dicViews as! [String :AnyObject]));
 
 //        self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[view]-80-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view": self.view]));
 

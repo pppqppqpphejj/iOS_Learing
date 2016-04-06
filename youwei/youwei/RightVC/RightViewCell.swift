@@ -19,8 +19,8 @@ class RightViewCell: UITableViewCell {
     
     {
         
-        self.labName.text = "是生生世世)"
-        self.labDec.text = "生生世世身体"
+        self.labName.text? = "是生生世世\(name)" as String
+        self.labDec.text? = "生生世世身体\(dec)" as String
     }
     
     

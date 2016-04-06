@@ -102,6 +102,7 @@ class RightViewController: UIViewController,UITableViewDataSource,UITableViewDel
         self.tableView.registerNib(UINib(nibName: "RightViewCell", bundle: nil), forCellReuseIdentifier: CellIdentifierNib)
 //        let cell = tableView.dequeueReusableCellWithIdentifier("RightViewCell")
         //            as! RightViewCell; //cellForRowAtIndexPath
+//        self.tableView.registerClass(RightViewCell.self, forCellReuseIdentifier: "RightViewCell")
 
         
         // Class 注册
@@ -115,6 +116,7 @@ class RightViewController: UIViewController,UITableViewDataSource,UITableViewDel
         self.tableView.dataSource = self
         
 
+        self.tableView.reloadData()
        
     
         
@@ -125,35 +127,39 @@ class RightViewController: UIViewController,UITableViewDataSource,UITableViewDel
         
         return 1
     }
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return self.products.count
+    }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
+//        let cell = tableView.dequeueReusableCellWithIdentifier("RightViewCell")  as! RightViewCell;
 
         let cell = tableView.dequeueReusableCellWithIdentifier("RightViewCell")
             as! RightViewCell;
+//        let cell = self.tableView.dequeueReusableCellWithIdentifier("RightViewCell", forIndexPath: indexPath)
+//    as! RightViewCell
+     
 
 //        let cell = tableView.dequeueReusableCellWithIdentifier("RightViewCell", forIndexPath: indexPath) as! RightViewCell
-        var  productCell = products[indexPath.row]
-     var ss = productCell.objectForKey("name") as! String
-        var ssdec = productCell.objectForKey("dec") as! String
+        let  productCell = products[indexPath.row]
+     let ss = productCell.objectForKey("name") as! NSString
+        let ssdec = productCell.objectForKey("dec") as! NSString
 
-//        cell.setTextlabName(productCell.objectForKey("name"), dec: productCell.objectForKey("dec"))
-
-
-        cell.setTextlabName(ss, dec: ssdec)
+        cell.setTextlabName(ss , dec: ssdec)
 //        cell.labDec.text = ssdec
 //        cell.labName.text = ss
         return cell;
         
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return self.products.count
-    }
+
     
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let  productCell = products[indexPath.row]
+        
+        self.navigationController?.popViewControllerAnimated(true)
 
         print("productCell \(productCell)")
         
