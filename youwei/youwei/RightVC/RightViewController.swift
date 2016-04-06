@@ -33,11 +33,11 @@ class RightViewController: UIViewController {
         self._VTop.parentController = self.navigationController
         self._VTop.lalTitel.text = "右返回"
 
-        var  sTTudent = SwiftStringA.sharedInstance.readWithNSKeyedUnarchiver("student.archive", documentsPath: SwiftStringA.sharedInstance.swStringDocumentsPath()) as! SwiftStudent
+//        var  sTTudent = SwiftStringA.sharedInstance.readWithNSKeyedUnarchiver("student.archive", documentsPath: SwiftStringA.sharedInstance.swStringDocumentsPath()) as! SwiftStudent
         
-        
-        print("textName \(sTTudent.textName)")
-        print("textPhone \(sTTudent.textPhone)")
+//        
+//        print("textName \(sTTudent.textName)")
+//        print("textPhone \(sTTudent.textPhone)")
         
         
         self.btnToSwiftDelegaet.addTarget(self, action: "btnToSwiftDelegaet:", forControlEvents: UIControlEvents.TouchUpInside)

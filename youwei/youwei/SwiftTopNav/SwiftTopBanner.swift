@@ -86,9 +86,16 @@ class SwiftTopBanner: UIView{
 
         self.dicViews = ["view":self.view]
         
-        self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[view]|", options:NSLayoutFormatOptions.DirectionMask, metrics: nil, views: self.dicViews as! [String : AnyObject]))
+//        self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:[view]-0-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view": self.view]));
 
-        self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[view]|", options: NSLayoutFormatOptions.DirectionMask, metrics: nil, views:self.dicViews as! [String : AnyObject]))
+ /**设置距左右为零高度80**/
+        self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-0.0-[view(80.0)]-0.0-|", options:NSLayoutFormatOptions.DirectionMask, metrics: nil, views: self.dicViews as! [String : AnyObject]))
+        self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-0-[view]-0-|", options: NSLayoutFormatOptions.DirectionMask, metrics: nil, views: self.dicViews as! [String :AnyObject]));
+
+//        self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[view]-80-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view": self.view]));
+
+
+//        self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[view]|", options: NSLayoutFormatOptions.DirectionMask, metrics: nil, views:self.dicViews as! [String : AnyObject]))
         
         self.btnGoback.backgroundColor = UIColor.clearColor()
         self.btnGoback.removeTarget(self, action: Selector(), forControlEvents: UIControlEvents.TouchUpInside)

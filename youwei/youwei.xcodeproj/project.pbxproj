@@ -139,6 +139,7 @@
 		CE7847771CAE6C0B0025259A /* SwiftDelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwiftDelegateViewController.xib; sourceTree = "<group>"; };
 		CE88314A1C9FE2BC00F95071 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		CE88314B1C9FE2BC00F95071 /* NextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
+		CE8F71321CB4A2DB006D3D14 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		CE99A4251CA922880070C9FE /* SwiftSingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSingle.swift; sourceTree = "<group>"; };
 		CE99A4281CA925D60070C9FE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		CE99A42B1CA925E10070C9FE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -282,6 +283,14 @@
 			path = SwuftDelegate;
 			sourceTree = "<group>";
 		};
+		CE8F712A1CB4A289006D3D14 /* PlayBackGround */ = {
+			isa = PBXGroup;
+			children = (
+				CE8F71321CB4A2DB006D3D14 /* MyPlayground.playground */,
+			);
+			path = PlayBackGround;
+			sourceTree = "<group>";
+		};
 		CE99A41D1CA9223D0070C9FE /* SwiftSingle */ = {
 			isa = PBXGroup;
 			children = (
@@ -317,6 +326,7 @@
 		CEA7C8B61C9B8D3000ACC416 /* youwei */ = {
 			isa = PBXGroup;
 			children = (
+				CE8F712A1CB4A289006D3D14 /* PlayBackGround */,
 				CE78476E1CAE6BE30025259A /* SwuftDelegate */,
 				CE07DD7F1CABCAEA00365A72 /* MySwiftViewController */,
 				CE5C3AE81CAA112E00316475 /* SwiftNSDictionary */,

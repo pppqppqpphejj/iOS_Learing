@@ -67,24 +67,24 @@ tow_vc =  NextViewController(nibName: "NextViewController" as String, bundle: ni
         
         
         
-        
-        var path=NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] as NSString
-        var filePath=path.stringByAppendingPathComponent("data.archive")
-        //归档
-        var data=NSMutableData()
-        var archiver=NSKeyedArchiver(forWritingWithMutableData: data)
-        archiver.encodeObject(["Bill Gates","Steve Jobs"], forKey: "data");
-        archiver.encodeInt(32, forKey: "age");
-        archiver.encodeObject("test message", forKey: "tip");
-        archiver.finishEncoding()
-        data.writeToFile(filePath, atomically: true)
-        //反归档
-        var unarchiveData=NSData(contentsOfFile: filePath)
-        var unarchiver=NSKeyedUnarchiver(forReadingWithData: unarchiveData!)
-        var decodeData=unarchiver.decodeObjectForKey("data") as! NSArray
-        var decodeAge=unarchiver.decodeIntForKey("age")
-        var decodeTip=unarchiver.decodeObjectForKey("tip") as! NSString
-        NSLog("data=%@,age=%i,tip=%@",decodeData,decodeAge,decodeTip)
+//        
+//        var path=NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] as NSString
+//        var filePath=path.stringByAppendingPathComponent("data.archive")
+//        //归档
+//        var data=NSMutableData()
+//        var archiver=NSKeyedArchiver(forWritingWithMutableData: data)
+//        archiver.encodeObject(["Bill Gates","Steve Jobs"], forKey: "data");
+//        archiver.encodeInt(32, forKey: "age");
+//        archiver.encodeObject("test message", forKey: "tip");
+//        archiver.finishEncoding()
+//        data.writeToFile(filePath, atomically: true)
+//        //反归档
+//        var unarchiveData=NSData(contentsOfFile: filePath)
+//        var unarchiver=NSKeyedUnarchiver(forReadingWithData: unarchiveData!)
+//        var decodeData=unarchiver.decodeObjectForKey("data") as! NSArray
+//        var decodeAge=unarchiver.decodeIntForKey("age")
+//        var decodeTip=unarchiver.decodeObjectForKey("tip") as! NSString
+//        NSLog("data=%@,age=%i,tip=%@",decodeData,decodeAge,decodeTip)
         
         
 
@@ -98,7 +98,7 @@ tow_vc =  NextViewController(nibName: "NextViewController" as String, bundle: ni
 //        student.textPhone = "1398383"
 //        student.age = 108
 
-        var student = SwiftStudent(name: "邵瑞", phone: "ssss", age: 33)
+        let student = SwiftStudent(name: "邵瑞", phone: "ssss", age: 33)
 
         
        isNOSTU = SwiftStringA.sharedInstance.saveWithNSKeyedArchiver(student, filePath:"student.archive")
@@ -111,7 +111,15 @@ tow_vc =  NextViewController(nibName: "NextViewController" as String, bundle: ni
         
         print("textName \(sTTudent.textName)")
         print("textPhone \(sTTudent.textPhone)")
+        
+        
+        
+        var isremove:Bool!
 
+            isremove = SwiftStringA.sharedInstance.deletFileFromDoc("student.archive")
+        
+        print("是否已出\(isremove)")
+        
         var strEmpty:NSString!
 
         strEmpty = "ee"

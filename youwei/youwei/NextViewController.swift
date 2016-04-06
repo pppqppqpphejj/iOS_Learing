@@ -25,7 +25,13 @@ class NextViewController: UIViewController {
         self._VTop.lalTitel.text = "寿山石受伤"
         self._VTop.parentController = self.navigationController
         self._VTop.btnGoback.hidden = false
-        
+        self._VTop.btnGoback.backgroundColor = UIColor.orangeColor()
+        self._VTop.lalTitel.text = "sssssseeeee"
+        self._VTop.lalTitel.backgroundColor = UIColor.redColor()
+//        self._VTop.addSubview(self._VTop.btnGoback)
+//        self._VTop.addSubview(self._VTop.lalTitel)
+
+//        self.view.bringSubviewToFront(self._VTop)
         var  sTTudent = SwiftStringA.sharedInstance.readWithNSKeyedUnarchiver("student.archive", documentsPath: SwiftStringA.sharedInstance.swStringDocumentsPath()) as! SwiftStudent
         
         

@@ -103,13 +103,13 @@
                     <exclude reference="adc-Ao-fmb"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="Ulg-dm-g3l"/>
-                    <exclude reference="aXI-vd-3Ww"/>
-                    <exclude reference="csI-IV-UMJ"/>
                     <exclude reference="QCM-Gs-k7j"/>
                     <exclude reference="n8k-lw-lLM"/>
                     <exclude reference="8DN-Fq-42X"/>
                     <exclude reference="WL8-ZV-YmJ"/>
+                    <exclude reference="Ulg-dm-g3l"/>
+                    <exclude reference="aXI-vd-3Ww"/>
+                    <exclude reference="csI-IV-UMJ"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -119,13 +119,13 @@
                     <include reference="adc-Ao-fmb"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="Ulg-dm-g3l"/>
-                    <include reference="aXI-vd-3Ww"/>
-                    <include reference="csI-IV-UMJ"/>
                     <include reference="QCM-Gs-k7j"/>
                     <include reference="n8k-lw-lLM"/>
                     <include reference="8DN-Fq-42X"/>
                     <include reference="WL8-ZV-YmJ"/>
+                    <include reference="Ulg-dm-g3l"/>
+                    <include reference="aXI-vd-3Ww"/>
+                    <include reference="csI-IV-UMJ"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="48" y="124"/>

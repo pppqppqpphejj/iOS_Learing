@@ -20,9 +20,10 @@ class SwiftDelegateViewController: UIViewController {
         
 
         print("传入的值是\(self.stringV)")
+//        self.V_Top.parentController = self.navigationController
+        self.V_Top.lalTitel.text = "sss"
         self.V_Top.btnGoback.hidden  = false
-        self.V_Top.lalTitel.text = self.stringV as String
-        self.V_Top.parentController = self.navigationController
+
         // Do any additional setup after loading the view.
     }
 

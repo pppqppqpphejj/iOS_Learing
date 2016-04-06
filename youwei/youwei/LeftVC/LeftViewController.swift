@@ -27,12 +27,12 @@ class LeftViewController: UIViewController {
         
         
         
-        var  sTTudent = SwiftStringA.sharedInstance.readWithNSKeyedUnarchiver("student.archive", documentsPath: SwiftStringA.sharedInstance.swStringDocumentsPath()) as! SwiftStudent
+//        var  sTTudent = SwiftStringA.sharedInstance.readWithNSKeyedUnarchiver("student.archive", documentsPath: SwiftStringA.sharedInstance.swStringDocumentsPath()) as! SwiftStudent
         
-        
-        print("textName \(sTTudent.textName)")
-        print("textPhone \(sTTudent.textPhone)")
-        
+//        
+//        print("textName \(sTTudent.textName)")
+//        print("textPhone \(sTTudent.textPhone)")
+//        
 
         // Do any additional setup after loading the view.
     }

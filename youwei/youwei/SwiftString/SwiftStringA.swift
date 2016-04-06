@@ -309,11 +309,54 @@ class SwiftStringA: NSString {
      **/
     func readWithNSKeyedUnarchiver(filePath:NSString ,documentsPath:NSString )->AnyObject {
     
-        var anOject:AnyObject!
-        let docPath = documentsPath.stringByAppendingPathComponent(filePath as String)
+        var anOject:AnyObject;
+        let  docPath = documentsPath.stringByAppendingPathComponent(filePath as String)
         
-        anOject =  NSKeyedUnarchiver.unarchiveObjectWithFile(docPath)!
-        return anOject
+        let blHave:Bool = NSFileManager.defaultManager().fileExistsAtPath(docPath);        anOject =  NSKeyedUnarchiver.unarchiveObjectWithFile(docPath) as! SwiftStudent
+
+        if (blHave)
+        {
+            return anOject
+        }
+        else
+        {
+        
+            return 0
+            
+        }
+
+    }
+    /**
+     *@prarm 移除已储存的数据
+     *@prarm 传入储存文件路径
+     * return 返回bool 值
+     **/
+        func removeFilePathFromDocumentsPath(filePath: String!)->Bool{
+        
+
+
+        let docPath = swStringDocumentsPath().stringByAppendingPathComponent(filePath)
+
+        var blHave:Bool = NSFileManager.defaultManager().fileExistsAtPath(docPath)
+        if(blHave)
+        {
+        
+        do {
+            try NSFileManager.defaultManager().removeItemAtPath(docPath)
+            
+            
+             blHave = NSFileManager.defaultManager().isDeletableFileAtPath(docPath)
+            
+            return  blHave
+        }
+        catch {
+            
+            return blHave
+            
+        }
+            
+        }
+       return blHave
     }
     
     
