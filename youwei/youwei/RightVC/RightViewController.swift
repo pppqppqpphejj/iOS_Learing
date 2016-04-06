@@ -8,11 +8,24 @@
 
 import UIKit
 
-class RightViewController: UIViewController {
+class RightViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
+    
+    
+    
     @IBOutlet weak var _VTop: SwiftTopBanner!
     @IBOutlet weak var btnToSwiftDelegaet: UIButton!
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    //MARK: cell 标识符
+    let CellIdentifierNib = "RightViewCell"
+    let CellIdentifierClass = "class"
+    let CellIdentifierStoryboard = "Storyboard"
+    let CellIdentifierdSystem = "System"
+//    数据源
+    var products:NSArray!
+    
     @IBAction func ppp(sender: AnyObject) {
         
             self._VTop.btnGobackAction(sender as! UIButton)
@@ -33,6 +46,11 @@ class RightViewController: UIViewController {
         self._VTop.parentController = self.navigationController
         self._VTop.lalTitel.text = "右返回"
 
+        
+//        初始化 tableView
+        initTableView()
+        
+        
 //        var  sTTudent = SwiftStringA.sharedInstance.readWithNSKeyedUnarchiver("student.archive", documentsPath: SwiftStringA.sharedInstance.swStringDocumentsPath()) as! SwiftStudent
         
 //        
@@ -40,7 +58,7 @@ class RightViewController: UIViewController {
 //        print("textPhone \(sTTudent.textPhone)")
         
         
-        self.btnToSwiftDelegaet.addTarget(self, action: "btnToSwiftDelegaet:", forControlEvents: UIControlEvents.TouchUpInside)
+//        self.btnToSwiftDelegaet.addTarget(self, action: "btnToSwiftDelegaet:", forControlEvents: UIControlEvents.TouchUpInside)
         // Do any additional setup after loading the view.
     }
     func btnToSwiftDelegaet(btnToSwiftDelegaet:UIButton)
@@ -55,12 +73,104 @@ class RightViewController: UIViewController {
 //    
         
     }
+    
+    
+    func initTableView()
+    {
+//        直接赋值创建字典
+        var myDic1:Dictionary<String,String>
+//        清空 myDic1 = [:]
+//        存入类型<String,String>
+        var myDic2:Dictionary<String,String>
+        var myDic3:Dictionary<String,String>
+        var myDic4:Dictionary<String,String>
+        var myDic5:Dictionary<String,String>
 
+        //使用init()构造器
+//        var myDicOne:[String:Float] = Dictionary<String,Float>()
+        
+        myDic1 =  ["name":"A boat for one person", "dec":"275.0"]
+        myDic2 =  ["name":"Protective and fashionable", "dec":"48.95"]
+        myDic3 =  ["name":"Protective and fashionable", "dec": "48.9"]
+        myDic4 =  ["name":"Give your playing field a professional touch","dec":"q1001"]
+        myDic5 =  [ "name": "Improve your brain efficiency by 75%", "dec":"16.8"]
+
+        self.products = [myDic1,myDic2,myDic3,myDic4,myDic5]
+
+        
+        // Nib 注册
+        self.tableView.registerNib(UINib(nibName: "RightViewCell", bundle: nil), forCellReuseIdentifier: CellIdentifierNib)
+//        let cell = tableView.dequeueReusableCellWithIdentifier("RightViewCell")
+        //            as! RightViewCell; //cellForRowAtIndexPath
+
+        
+        // Class 注册
+//        self.tableView!.registerCellClass(RightViewCell.self, forCellReuseIdentifier: "RightViewCell")
+        //        self.tableView.registerClass(RightViewCell.classForCoder(), forCellReuseIdentifier: "RightViewCell")
+
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        
+        self.tableView.delegate = self
+        
+        self.tableView.dataSource = self
+        
+
+       
+    
+        
+    }
+
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        
+        return 1
+    }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+
+
+        let cell = tableView.dequeueReusableCellWithIdentifier("RightViewCell")
+            as! RightViewCell;
+
+//        let cell = tableView.dequeueReusableCellWithIdentifier("RightViewCell", forIndexPath: indexPath) as! RightViewCell
+        var  productCell = products[indexPath.row]
+     var ss = productCell.objectForKey("name") as! String
+        var ssdec = productCell.objectForKey("dec") as! String
+
+//        cell.setTextlabName(productCell.objectForKey("name"), dec: productCell.objectForKey("dec"))
+
+
+        cell.setTextlabName(ss, dec: ssdec)
+//        cell.labDec.text = ssdec
+//        cell.labName.text = ss
+        return cell;
+        
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return self.products.count
+    }
+    
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let  productCell = products[indexPath.row]
+
+        print("productCell \(productCell)")
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+//    func tableView(tableView: UITableView, didHighlightRowAtIndexPath indexPath: NSIndexPath) {
+//        
+//
+//    } 
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 80.0
+    }
 
     /*
     // MARK: - Navigation

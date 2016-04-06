@@ -309,22 +309,27 @@ class SwiftStringA: NSString {
      **/
     func readWithNSKeyedUnarchiver(filePath:NSString ,documentsPath:NSString )->AnyObject {
     
-        var anOject:AnyObject;
+        var anOject:SwiftStudent!;
         let  docPath = documentsPath.stringByAppendingPathComponent(filePath as String)
         
-        let blHave:Bool = NSFileManager.defaultManager().fileExistsAtPath(docPath);        anOject =  NSKeyedUnarchiver.unarchiveObjectWithFile(docPath) as! SwiftStudent
+        var blHave:Bool = NSFileManager.defaultManager().fileExistsAtPath(docPath);
 
         if (blHave)
         {
-            return anOject
+    
+            
+            anOject =  NSKeyedUnarchiver.unarchiveObjectWithFile(docPath) as! SwiftStudent
+            
+            
+            return  anOject
         }
+        
         else
         {
-        
-            return 0
-            
+            return ""
         }
-
+       
+        
     }
     /**
      *@prarm 移除已储存的数据

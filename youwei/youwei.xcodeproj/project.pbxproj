@@ -23,6 +23,8 @@
 		CE7847791CAE6C0B0025259A /* SwiftDelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7847771CAE6C0B0025259A /* SwiftDelegateViewController.xib */; };
 		CE88314C1C9FE2BC00F95071 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88314A1C9FE2BC00F95071 /* NextViewController.swift */; };
 		CE88314D1C9FE2BC00F95071 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE88314B1C9FE2BC00F95071 /* NextViewController.xib */; };
+		CE8F71351CB4E3AD006D3D14 /* RightViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F71331CB4E3AD006D3D14 /* RightViewCell.swift */; };
+		CE8F71361CB4E3AD006D3D14 /* RightViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8F71341CB4E3AD006D3D14 /* RightViewCell.xib */; };
 		CE99A4261CA922880070C9FE /* SwiftSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99A4251CA922880070C9FE /* SwiftSingle.swift */; };
 		CE99A42A1CA925D60070C9FE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE99A4281CA925D60070C9FE /* MessageUI.framework */; };
 		CE99A42C1CA925E10070C9FE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE99A42B1CA925E10070C9FE /* MobileCoreServices.framework */; };
@@ -140,6 +142,8 @@
 		CE88314A1C9FE2BC00F95071 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		CE88314B1C9FE2BC00F95071 /* NextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
 		CE8F71321CB4A2DB006D3D14 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		CE8F71331CB4E3AD006D3D14 /* RightViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RightViewCell.swift; path = RightVC/RightViewCell.swift; sourceTree = "<group>"; };
+		CE8F71341CB4E3AD006D3D14 /* RightViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RightViewCell.xib; path = RightVC/RightViewCell.xib; sourceTree = "<group>"; };
 		CE99A4251CA922880070C9FE /* SwiftSingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSingle.swift; sourceTree = "<group>"; };
 		CE99A4281CA925D60070C9FE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		CE99A42B1CA925E10070C9FE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -354,6 +358,8 @@
 				CEA7C8C31C9B8D3000ACC416 /* LaunchScreen.storyboard */,
 				CEA7C8C61C9B8D3000ACC416 /* Info.plist */,
 				CEA7C8BE1C9B8D3000ACC416 /* youwei.xcdatamodeld */,
+				CE8F71331CB4E3AD006D3D14 /* RightViewCell.swift */,
+				CE8F71341CB4E3AD006D3D14 /* RightViewCell.xib */,
 			);
 			path = youwei;
 			sourceTree = "<group>";
@@ -579,6 +585,7 @@
 				CED319AD1C9BE2D6001397B6 /* RightViewController.xib in Resources */,
 				CED319A91C9BE2BC001397B6 /* LeftViewController.xib in Resources */,
 				CEA7C8C51C9B8D3000ACC416 /* LaunchScreen.storyboard in Resources */,
+				CE8F71361CB4E3AD006D3D14 /* RightViewCell.xib in Resources */,
 				CE5C3AE41CAA108200316475 /* SwiftView.xib in Resources */,
 				CED319D01C9BFFAE001397B6 /* SwiftTopBanner.xib in Resources */,
 				CED319A51C9BA882001397B6 /* RootViewController.xib in Resources */,
@@ -626,6 +633,7 @@
 				CED319AF1C9BE3F2001397B6 /* ExSlideMenuController.swift in Sources */,
 				CED319BB1C9BE5BC001397B6 /* UIColor.swift in Sources */,
 				CE5DB76B1CA93BB300B12724 /* SwiftString.swift in Sources */,
+				CE8F71351CB4E3AD006D3D14 /* RightViewCell.swift in Sources */,
 				CEA7C8F31C9BA3E700ACC416 /* SlideMenuController.swift in Sources */,
 				CE5C3AE71CAA10BD00316475 /* SwiftNSArray.swift in Sources */,
 				CED319BF1C9BE5BC001397B6 /* UIView.swift in Sources */,

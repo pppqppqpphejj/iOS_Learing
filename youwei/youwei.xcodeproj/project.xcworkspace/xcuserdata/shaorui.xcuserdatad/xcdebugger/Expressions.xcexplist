@@ -3,6 +3,17 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "RightViewController.tableView(UITableView, cellForRowAtIndexPath : NSIndexPath) -&gt; UITableViewCell:RightViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "RightViewController.tableView(UITableView, numberOfRowsInSection : Int) -&gt; Int:RightViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.products.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "SwiftTopBanner.btnGobackAction(UIButton) -&gt; ():SwiftTopBanner.swift">
          <PersistentStrings>
             <PersistentString

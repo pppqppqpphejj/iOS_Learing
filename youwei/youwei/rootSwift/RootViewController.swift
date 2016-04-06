@@ -116,7 +116,7 @@ tow_vc =  NextViewController(nibName: "NextViewController" as String, bundle: ni
         
         var isremove:Bool!
 
-            isremove = SwiftStringA.sharedInstance.deletFileFromDoc("student.archive")
+//            isremove = SwiftStringA.sharedInstance.deletFileFromDoc("student.archive")
         
         print("是否已出\(isremove)")
         
