@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate>
+/**头部搜索空件**/
+@property (weak, nonatomic) IBOutlet UISearchBar *search;
+/**搜索控件**/
+@property (weak, nonatomic) IBOutlet UITableView *tabView;
 
 @end
 

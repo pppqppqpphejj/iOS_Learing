@@ -16,6 +16,11 @@
 		CE4C25481CB73C4600C08E68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4C25461CB73C4600C08E68 /* LaunchScreen.storyboard */; };
 		CE4C25531CB73C4600C08E68 /* schooldbDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4C25521CB73C4600C08E68 /* schooldbDemoTests.m */; };
 		CE4C255E1CB73C4700C08E68 /* schooldbDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4C255D1CB73C4700C08E68 /* schooldbDemoUITests.m */; };
+		CE4C25711CB73D7500C08E68 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4C25701CB73D7500C08E68 /* libsqlite3.tbd */; };
+		CE4C25781CB73F8D00C08E68 /* ClassSQLHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4C25771CB73F8D00C08E68 /* ClassSQLHandle.m */; };
+		CE4C257A1CB74ED200C08E68 /* schooldata.db in Resources */ = {isa = PBXBuildFile; fileRef = CE4C25791CB74ED200C08E68 /* schooldata.db */; };
+		CE4C257F1CB7594800C08E68 /* RootTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4C257D1CB7594800C08E68 /* RootTabCell.m */; };
+		CE4C25801CB7594800C08E68 /* RootTabCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4C257E1CB7594800C08E68 /* RootTabCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,14 @@
 		CE4C25591CB73C4600C08E68 /* schooldbDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = schooldbDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4C255D1CB73C4700C08E68 /* schooldbDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = schooldbDemoUITests.m; sourceTree = "<group>"; };
 		CE4C255F1CB73C4700C08E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4C25701CB73D7500C08E68 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		CE4C25731CB73DD700C08E68 /* URLPathDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLPathDB.h; sourceTree = "<group>"; };
+		CE4C25761CB73F8D00C08E68 /* ClassSQLHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassSQLHandle.h; sourceTree = "<group>"; };
+		CE4C25771CB73F8D00C08E68 /* ClassSQLHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassSQLHandle.m; sourceTree = "<group>"; };
+		CE4C25791CB74ED200C08E68 /* schooldata.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = schooldata.db; sourceTree = "<group>"; };
+		CE4C257C1CB7594800C08E68 /* RootTabCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabCell.h; sourceTree = "<group>"; };
+		CE4C257D1CB7594800C08E68 /* RootTabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabCell.m; sourceTree = "<group>"; };
+		CE4C257E1CB7594800C08E68 /* RootTabCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootTabCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4C25711CB73D7500C08E68 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +97,7 @@
 		CE4C25291CB73C4600C08E68 = {
 			isa = PBXGroup;
 			children = (
+				CE4C25721CB73D8200C08E68 /* FrameWork */,
 				CE4C25341CB73C4600C08E68 /* schooldbDemo */,
 				CE4C25511CB73C4600C08E68 /* schooldbDemoTests */,
 				CE4C255C1CB73C4700C08E68 /* schooldbDemoUITests */,
@@ -103,6 +118,10 @@
 		CE4C25341CB73C4600C08E68 /* schooldbDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CE4C257B1CB7593400C08E68 /* CellTab */,
+				CE4C256F1CB73D6200C08E68 /* classlib */,
+				CE4C256E1CB73D0300C08E68 /* framework */,
+				CE4C256D1CB73CEB00C08E68 /* recourse */,
 				CE4C25381CB73C4600C08E68 /* AppDelegate.h */,
 				CE4C25391CB73C4600C08E68 /* AppDelegate.m */,
 				CE4C253B1CB73C4600C08E68 /* ViewController.h */,
@@ -141,6 +160,49 @@
 				CE4C255F1CB73C4700C08E68 /* Info.plist */,
 			);
 			path = schooldbDemoUITests;
+			sourceTree = "<group>";
+		};
+		CE4C256D1CB73CEB00C08E68 /* recourse */ = {
+			isa = PBXGroup;
+			children = (
+				CE4C25791CB74ED200C08E68 /* schooldata.db */,
+			);
+			path = recourse;
+			sourceTree = "<group>";
+		};
+		CE4C256E1CB73D0300C08E68 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		CE4C256F1CB73D6200C08E68 /* classlib */ = {
+			isa = PBXGroup;
+			children = (
+				CE4C25731CB73DD700C08E68 /* URLPathDB.h */,
+				CE4C25761CB73F8D00C08E68 /* ClassSQLHandle.h */,
+				CE4C25771CB73F8D00C08E68 /* ClassSQLHandle.m */,
+			);
+			path = classlib;
+			sourceTree = "<group>";
+		};
+		CE4C25721CB73D8200C08E68 /* FrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				CE4C25701CB73D7500C08E68 /* libsqlite3.tbd */,
+			);
+			name = FrameWork;
+			sourceTree = "<group>";
+		};
+		CE4C257B1CB7593400C08E68 /* CellTab */ = {
+			isa = PBXGroup;
+			children = (
+				CE4C257C1CB7594800C08E68 /* RootTabCell.h */,
+				CE4C257D1CB7594800C08E68 /* RootTabCell.m */,
+				CE4C257E1CB7594800C08E68 /* RootTabCell.xib */,
+			);
+			path = CellTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +310,9 @@
 			files = (
 				CE4C25481CB73C4600C08E68 /* LaunchScreen.storyboard in Resources */,
 				CE4C25451CB73C4600C08E68 /* Assets.xcassets in Resources */,
+				CE4C25801CB7594800C08E68 /* RootTabCell.xib in Resources */,
 				CE4C25401CB73C4600C08E68 /* Main.storyboard in Resources */,
+				CE4C257A1CB74ED200C08E68 /* schooldata.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +337,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4C25781CB73F8D00C08E68 /* ClassSQLHandle.m in Sources */,
+				CE4C257F1CB7594800C08E68 /* RootTabCell.m in Sources */,
 				CE4C25431CB73C4600C08E68 /* schooldbDemo.xcdatamodeld in Sources */,
 				CE4C253D1CB73C4600C08E68 /* ViewController.m in Sources */,
 				CE4C253A1CB73C4600C08E68 /* AppDelegate.m in Sources */,
