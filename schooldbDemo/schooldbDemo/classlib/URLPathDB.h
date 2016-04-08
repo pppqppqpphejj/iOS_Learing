@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface URLPathDB : NSObject
+/**已存在的数据库**/
 #define dbpath @"schooldata.db"
+//自己创建数据库
+#define dbPathSQLite @"database.sqlite"
 
 @end

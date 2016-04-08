@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
+//#import <sqlite3ext.h>
+#import <sqlite3.h>
 @interface ClassSQLHandle : NSObject
 +(ClassSQLHandle *)shareDataBase;
 
@@ -17,6 +18,22 @@
  * bool
  ***/
 -(BOOL)openDb:(NSString *)dbname;
+
+
+/***
+ * 创建数据库
+ * dbname
+ * type 后缀名
+ * bool 
+ ***/
+-(BOOL)createDataBase:(NSString *)FILE_NAME andType:(NSString *)type;
+/***
+ * SQLITE 创建 TABLE
+ * sqlTable　 执行
+ * bool
+ ***/
+-(BOOL)createTable:(NSString *)sqlTable;
+
 /***
  * 查询sql 并返回结果
  * sqlQuery  传入执行语句

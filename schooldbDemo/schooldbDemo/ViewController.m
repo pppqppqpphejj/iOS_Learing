@@ -10,6 +10,7 @@
 #import "URLPathDB.h"
 #import "RootTabCell.h"
 #import "ClassSQLHandle.h"
+#import "RootViewController.h"
 #import <sqlite3.h>
 @interface ViewController ()
 {
@@ -28,17 +29,27 @@
     [super viewDidLoad];
     
     
-    
-    
     singleOpen = [ClassSQLHandle shareDataBase];
             NSString *query = @"select * from univs";
 
     BOOL open = [singleOpen openDb:dbpath];
-    
-    self.dbArr =  [singleOpen executeQuery:query];
-    
+     self.dbArr =  [singleOpen executeQuery:query];
+        
         NSLog(@"%@",self.dbArr);
     
+    
+ 
+//    BOOL craet = [singleOpen createDataBase:dbPathSQLite andType:@"sqlite"];
+//
+//     if(craet)
+//    {
+//    
+// BOOL create = [singleOpen createTable:@"CREATE TABLE IF NOT EXISTS USERINFO (ID INTEGER PRIMARY KEY AUTOINCREMENT, MARK_DATA TEXT,NAME TEXT,AGE INTEGER)"];
+//    
+//    
+//    
+//    }
+//    
     
     self.search.delegate = self;
     
@@ -67,6 +78,8 @@
 
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar{
     
+    self.search.showsCancelButton = NO;
+
 //    NSString * sql = [NSString stringWithFormat:@"select * from univs  where name like '%%%@%%'",searchBar.text];
 
 }
@@ -183,7 +196,16 @@
     
     NSDictionary * dic = self.dbArr[indexPath.row];
     
+    UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+
     
+    RootViewController * concc = [storyboard instantiateViewControllerWithIdentifier:@"rootView"];
+
+    
+    concc.labTextName = [NSString stringWithFormat:@"%@",dic[@"name"]];
+    
+    
+    [self.navigationController pushViewController:concc animated:YES];
 //    cell.labName.text = dic[@"name"];
     
     NSString * sss = [NSString stringWithFormat:@"%@",dic[@"name"]];
@@ -205,6 +227,10 @@
     [self.tabView reloadData];
     
     
+}
+-(void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
+
 }
 
 - (void)didReceiveMemoryWarning {
