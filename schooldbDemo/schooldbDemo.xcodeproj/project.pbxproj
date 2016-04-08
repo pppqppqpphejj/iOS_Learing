@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE4C25371CB73C4600C08E68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4C25361CB73C4600C08E68 /* main.m */; };
+		CE4C253A1CB73C4600C08E68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4C25391CB73C4600C08E68 /* AppDelegate.m */; };
+		CE4C253D1CB73C4600C08E68 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4C253C1CB73C4600C08E68 /* ViewController.m */; };
+		CE4C25401CB73C4600C08E68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4C253E1CB73C4600C08E68 /* Main.storyboard */; };
+		CE4C25431CB73C4600C08E68 /* schooldbDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE4C25411CB73C4600C08E68 /* schooldbDemo.xcdatamodeld */; };
+		CE4C25451CB73C4600C08E68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4C25441CB73C4600C08E68 /* Assets.xcassets */; };
+		CE4C25481CB73C4600C08E68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4C25461CB73C4600C08E68 /* LaunchScreen.storyboard */; };
+		CE4C25531CB73C4600C08E68 /* schooldbDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4C25521CB73C4600C08E68 /* schooldbDemoTests.m */; };
+		CE4C255E1CB73C4700C08E68 /* schooldbDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4C255D1CB73C4700C08E68 /* schooldbDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE4C254F1CB73C4600C08E68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE4C252A1CB73C4600C08E68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE4C25311CB73C4600C08E68;
+			remoteInfo = schooldbDemo;
+		};
+		CE4C255A1CB73C4600C08E68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE4C252A1CB73C4600C08E68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE4C25311CB73C4600C08E68;
+			remoteInfo = schooldbDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE4C25321CB73C4600C08E68 /* schooldbDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = schooldbDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4C25361CB73C4600C08E68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE4C25381CB73C4600C08E68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE4C25391CB73C4600C08E68 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE4C253B1CB73C4600C08E68 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CE4C253C1CB73C4600C08E68 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE4C253F1CB73C4600C08E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE4C25421CB73C4600C08E68 /* schooldbDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = schooldbDemo.xcdatamodel; sourceTree = "<group>"; };
+		CE4C25441CB73C4600C08E68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE4C25471CB73C4600C08E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE4C25491CB73C4600C08E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4C254E1CB73C4600C08E68 /* schooldbDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = schooldbDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4C25521CB73C4600C08E68 /* schooldbDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = schooldbDemoTests.m; sourceTree = "<group>"; };
+		CE4C25541CB73C4600C08E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4C25591CB73C4600C08E68 /* schooldbDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = schooldbDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4C255D1CB73C4700C08E68 /* schooldbDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = schooldbDemoUITests.m; sourceTree = "<group>"; };
+		CE4C255F1CB73C4700C08E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE4C252F1CB73C4600C08E68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4C254B1CB73C4600C08E68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4C25561CB73C4600C08E68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE4C25291CB73C4600C08E68 = {
+			isa = PBXGroup;
+			children = (
+				CE4C25341CB73C4600C08E68 /* schooldbDemo */,
+				CE4C25511CB73C4600C08E68 /* schooldbDemoTests */,
+				CE4C255C1CB73C4700C08E68 /* schooldbDemoUITests */,
+				CE4C25331CB73C4600C08E68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE4C25331CB73C4600C08E68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE4C25321CB73C4600C08E68 /* schooldbDemo.app */,
+				CE4C254E1CB73C4600C08E68 /* schooldbDemoTests.xctest */,
+				CE4C25591CB73C4600C08E68 /* schooldbDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE4C25341CB73C4600C08E68 /* schooldbDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CE4C25381CB73C4600C08E68 /* AppDelegate.h */,
+				CE4C25391CB73C4600C08E68 /* AppDelegate.m */,
+				CE4C253B1CB73C4600C08E68 /* ViewController.h */,
+				CE4C253C1CB73C4600C08E68 /* ViewController.m */,
+				CE4C253E1CB73C4600C08E68 /* Main.storyboard */,
+				CE4C25441CB73C4600C08E68 /* Assets.xcassets */,
+				CE4C25461CB73C4600C08E68 /* LaunchScreen.storyboard */,
+				CE4C25491CB73C4600C08E68 /* Info.plist */,
+				CE4C25411CB73C4600C08E68 /* schooldbDemo.xcdatamodeld */,
+				CE4C25351CB73C4600C08E68 /* Supporting Files */,
+			);
+			path = schooldbDemo;
+			sourceTree = "<group>";
+		};
+		CE4C25351CB73C4600C08E68 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE4C25361CB73C4600C08E68 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE4C25511CB73C4600C08E68 /* schooldbDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE4C25521CB73C4600C08E68 /* schooldbDemoTests.m */,
+				CE4C25541CB73C4600C08E68 /* Info.plist */,
+			);
+			path = schooldbDemoTests;
+			sourceTree = "<group>";
+		};
+		CE4C255C1CB73C4700C08E68 /* schooldbDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE4C255D1CB73C4700C08E68 /* schooldbDemoUITests.m */,
+				CE4C255F1CB73C4700C08E68 /* Info.plist */,
+			);
+			path = schooldbDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE4C25311CB73C4600C08E68 /* schooldbDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4C25621CB73C4700C08E68 /* Build configuration list for PBXNativeTarget "schooldbDemo" */;
+			buildPhases = (
+				CE4C252E1CB73C4600C08E68 /* Sources */,
+				CE4C252F1CB73C4600C08E68 /* Frameworks */,
+				CE4C25301CB73C4600C08E68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = schooldbDemo;
+			productName = schooldbDemo;
+			productReference = CE4C25321CB73C4600C08E68 /* schooldbDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE4C254D1CB73C4600C08E68 /* schooldbDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4C25651CB73C4700C08E68 /* Build configuration list for PBXNativeTarget "schooldbDemoTests" */;
+			buildPhases = (
+				CE4C254A1CB73C4600C08E68 /* Sources */,
+				CE4C254B1CB73C4600C08E68 /* Frameworks */,
+				CE4C254C1CB73C4600C08E68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE4C25501CB73C4600C08E68 /* PBXTargetDependency */,
+			);
+			name = schooldbDemoTests;
+			productName = schooldbDemoTests;
+			productReference = CE4C254E1CB73C4600C08E68 /* schooldbDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE4C25581CB73C4600C08E68 /* schooldbDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4C25681CB73C4700C08E68 /* Build configuration list for PBXNativeTarget "schooldbDemoUITests" */;
+			buildPhases = (
+				CE4C25551CB73C4600C08E68 /* Sources */,
+				CE4C25561CB73C4600C08E68 /* Frameworks */,
+				CE4C25571CB73C4600C08E68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE4C255B1CB73C4600C08E68 /* PBXTargetDependency */,
+			);
+			name = schooldbDemoUITests;
+			productName = schooldbDemoUITests;
+			productReference = CE4C25591CB73C4600C08E68 /* schooldbDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE4C252A1CB73C4600C08E68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = wondergroup;
+				TargetAttributes = {
+					CE4C25311CB73C4600C08E68 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					CE4C254D1CB73C4600C08E68 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CE4C25311CB73C4600C08E68;
+					};
+					CE4C25581CB73C4600C08E68 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CE4C25311CB73C4600C08E68;
+					};
+				};
+			};
+			buildConfigurationList = CE4C252D1CB73C4600C08E68 /* Build configuration list for PBXProject "schooldbDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE4C25291CB73C4600C08E68;
+			productRefGroup = CE4C25331CB73C4600C08E68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE4C25311CB73C4600C08E68 /* schooldbDemo */,
+				CE4C254D1CB73C4600C08E68 /* schooldbDemoTests */,
+				CE4C25581CB73C4600C08E68 /* schooldbDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE4C25301CB73C4600C08E68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4C25481CB73C4600C08E68 /* LaunchScreen.storyboard in Resources */,
+				CE4C25451CB73C4600C08E68 /* Assets.xcassets in Resources */,
+				CE4C25401CB73C4600C08E68 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4C254C1CB73C4600C08E68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4C25571CB73C4600C08E68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE4C252E1CB73C4600C08E68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4C25431CB73C4600C08E68 /* schooldbDemo.xcdatamodeld in Sources */,
+				CE4C253D1CB73C4600C08E68 /* ViewController.m in Sources */,
+				CE4C253A1CB73C4600C08E68 /* AppDelegate.m in Sources */,
+				CE4C25371CB73C4600C08E68 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4C254A1CB73C4600C08E68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4C25531CB73C4600C08E68 /* schooldbDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4C25551CB73C4600C08E68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4C255E1CB73C4700C08E68 /* schooldbDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE4C25501CB73C4600C08E68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE4C25311CB73C4600C08E68 /* schooldbDemo */;
+			targetProxy = CE4C254F1CB73C4600C08E68 /* PBXContainerItemProxy */;
+		};
+		CE4C255B1CB73C4600C08E68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE4C25311CB73C4600C08E68 /* schooldbDemo */;
+			targetProxy = CE4C255A1CB73C4600C08E68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE4C253E1CB73C4600C08E68 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4C253F1CB73C4600C08E68 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE4C25461CB73C4600C08E68 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4C25471CB73C4600C08E68 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE4C25601CB73C4700C08E68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE4C25611CB73C4700C08E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE4C25631CB73C4700C08E68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = schooldbDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondergroup.schooldbDemo.schooldbDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CE4C25641CB73C4700C08E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = schooldbDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondergroup.schooldbDemo.schooldbDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CE4C25661CB73C4700C08E68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = schooldbDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondergroup.schooldbDemo.schooldbDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/schooldbDemo.app/schooldbDemo";
+			};
+			name = Debug;
+		};
+		CE4C25671CB73C4700C08E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = schooldbDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondergroup.schooldbDemo.schooldbDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/schooldbDemo.app/schooldbDemo";
+			};
+			name = Release;
+		};
+		CE4C25691CB73C4700C08E68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = schooldbDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondergroup.schooldbDemo.schooldbDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = schooldbDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CE4C256A1CB73C4700C08E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = schooldbDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondergroup.schooldbDemo.schooldbDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = schooldbDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE4C252D1CB73C4600C08E68 /* Build configuration list for PBXProject "schooldbDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4C25601CB73C4700C08E68 /* Debug */,
+				CE4C25611CB73C4700C08E68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE4C25621CB73C4700C08E68 /* Build configuration list for PBXNativeTarget "schooldbDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4C25631CB73C4700C08E68 /* Debug */,
+				CE4C25641CB73C4700C08E68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE4C25651CB73C4700C08E68 /* Build configuration list for PBXNativeTarget "schooldbDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4C25661CB73C4700C08E68 /* Debug */,
+				CE4C25671CB73C4700C08E68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE4C25681CB73C4700C08E68 /* Build configuration list for PBXNativeTarget "schooldbDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4C25691CB73C4700C08E68 /* Debug */,
+				CE4C256A1CB73C4700C08E68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE4C25411CB73C4600C08E68 /* schooldbDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE4C25421CB73C4600C08E68 /* schooldbDemo.xcdatamodel */,
+			);
+			currentVersion = CE4C25421CB73C4600C08E68 /* schooldbDemo.xcdatamodel */;
+			path = schooldbDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE4C252A1CB73C4600C08E68 /* Project object */;
+}

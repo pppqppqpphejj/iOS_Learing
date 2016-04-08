@@ -26,22 +26,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "youwei/SwuftDelegate/SwiftDelegateViewController.swift"
-            timestampString = "481629590.357483"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "returnParams(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "youwei/SwuftDelegate/SwiftDelegateViewController.swift"
             timestampString = "481629591.295298"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
