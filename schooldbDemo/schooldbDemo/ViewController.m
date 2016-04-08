@@ -79,6 +79,13 @@
 - (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar{
     
     
+    if(searchBar.text.length==0)
+    {
+    
+    [self.view endEditing:YES];
+
+    }
+    
 }
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
 //    NSString * sql = [NSString stringWithFormat:@"select * from univs  where name like '%%@%'",searchText];
@@ -172,6 +179,17 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
+    
+    
+    NSDictionary * dic = self.dbArr[indexPath.row];
+    
+    
+//    cell.labName.text = dic[@"name"];
+    
+    NSString * sss = [NSString stringWithFormat:@"%@",dic[@"name"]];
+    UIAlertView * alet = [[UIAlertView alloc] initWithTitle:@"你选择的学校是" message:sss delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", @"取消",nil];
+    
+    [alet show];
 }
 
 #pragma Tableview reloadData
