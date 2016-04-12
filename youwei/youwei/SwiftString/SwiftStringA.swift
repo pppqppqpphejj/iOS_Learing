@@ -365,6 +365,19 @@ class SwiftStringA: NSString {
     }
     
     
+    func readTextString(textString: NSString!)->NSString
+    {
+        
+        
+//        var str:NSString = NSString.stringWithContentsOfFile(_srcouceFilePath,encoding:NSUTF8StringEncoding,error:nil)
+
+        var textString = NSString()
+        var encode:NSStringEncoding = CFStringConvertEncodingToNSStringEncoding(CFStringEncoding(CFStringEncodings.GB_18030_2000.rawValue))
+//        textString = NSString.stringWithContentsOfFile(textString,encoding:encode,error:nil)
+        
+        return textString
+    }
+    
     
     
     

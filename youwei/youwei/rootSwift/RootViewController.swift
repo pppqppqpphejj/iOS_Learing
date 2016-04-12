@@ -78,6 +78,8 @@ tow_vc =  NextViewController(nibName: "NextViewController" as String, bundle: ni
         super.viewDidLoad()
         
         
+
+        
         
 //        
 //        var path=NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] as NSString
