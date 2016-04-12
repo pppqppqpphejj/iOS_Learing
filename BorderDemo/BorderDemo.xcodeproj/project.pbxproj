@@ -104,6 +104,9 @@
 		CEEF13791CBC9BDE00773A9C /* FourViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEF13781CBC9BDE00773A9C /* FourViewController.xib */; };
 		CEEF137B1CBC9BF000773A9C /* FiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEF137A1CBC9BF000773A9C /* FiveViewController.xib */; };
 		CEEF137E1CBC9CFE00773A9C /* FiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEF137D1CBC9CFE00773A9C /* FiveViewController.m */; };
+		CEEF13801CBC9FF000773A9C /* BarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEF137F1CBC9FF000773A9C /* BarViewController.xib */; };
+		CEEF13831CBCB60A00773A9C /* ItemButtion.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEF13821CBCB60A00773A9C /* ItemButtion.m */; };
+		CEEF13851CBCB62900773A9C /* ItemButtion.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEF13841CBCB62900773A9C /* ItemButtion.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -229,6 +232,10 @@
 		CEEF137A1CBC9BF000773A9C /* FiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FiveViewController.xib; sourceTree = "<group>"; };
 		CEEF137C1CBC9CFE00773A9C /* FiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveViewController.h; sourceTree = "<group>"; };
 		CEEF137D1CBC9CFE00773A9C /* FiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveViewController.m; sourceTree = "<group>"; };
+		CEEF137F1CBC9FF000773A9C /* BarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarViewController.xib; sourceTree = "<group>"; };
+		CEEF13811CBCB60A00773A9C /* ItemButtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemButtion.h; path = ItemBution/ItemButtion.h; sourceTree = "<group>"; };
+		CEEF13821CBCB60A00773A9C /* ItemButtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemButtion.m; path = ItemBution/ItemButtion.m; sourceTree = "<group>"; };
+		CEEF13841CBCB62900773A9C /* ItemButtion.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemButtion.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +324,7 @@
 				4BC7761E1AB8506200E63EAC /* MainViewController.m */,
 				4BC776201AB8508B00E63EAC /* BarViewController.h */,
 				4BC776211AB8508B00E63EAC /* BarViewController.m */,
+				CEEF137F1CBC9FF000773A9C /* BarViewController.xib */,
 				4BC7762C1AB85AE500E63EAC /* OneViewController.h */,
 				4BC7762D1AB85AE500E63EAC /* OneViewController.m */,
 				CEEF13691CBC99F000773A9C /* OneViewController.xib */,
@@ -331,6 +339,9 @@
 				CEEF13781CBC9BDE00773A9C /* FourViewController.xib */,
 				CEEF137A1CBC9BF000773A9C /* FiveViewController.xib */,
 				CE8F5EA11CBB8BC300B6D64E /* PCHHeader.h */,
+				CEEF13811CBCB60A00773A9C /* ItemButtion.h */,
+				CEEF13821CBCB60A00773A9C /* ItemButtion.m */,
+				CEEF13841CBCB62900773A9C /* ItemButtion.xib */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -525,6 +536,7 @@
 				CEEF137B1CBC9BF000773A9C /* FiveViewController.xib in Resources */,
 				CE8F5F091CBB907D00B6D64E /* index_hd_one.png in Resources */,
 				CE8F5F1E1CBB907D00B6D64E /* serch.jpg in Resources */,
+				CEEF13851CBCB62900773A9C /* ItemButtion.xib in Resources */,
 				CE8F5F241CBB907D00B6D64E /* tb_6.png in Resources */,
 				CEEF13791CBC9BDE00773A9C /* FourViewController.xib in Resources */,
 				CE8F5F0C1CBB907D00B6D64E /* index_pic.png in Resources */,
@@ -549,6 +561,7 @@
 				CE8F5F0D1CBB907D00B6D64E /* index_three.png in Resources */,
 				CE8F5EF91CBB907D00B6D64E /* bottom_two_change.png in Resources */,
 				4BC776071AB8504200E63EAC /* LaunchScreen.xib in Resources */,
+				CEEF13801CBC9FF000773A9C /* BarViewController.xib in Resources */,
 				CE8F5F211CBB907D00B6D64E /* tb_3.png in Resources */,
 				CE8F5EFB1CBB907D00B6D64E /* default_ptr_flip.png in Resources */,
 				CE8F5F2F1CBB907D00B6D64E /* tb_17.png in Resources */,
@@ -617,6 +630,7 @@
 				4BC776341AB85AF500E63EAC /* ThreeViewController.m in Sources */,
 				4BC776371AB85AFE00E63EAC /* FourViewController.m in Sources */,
 				4BC7762E1AB85AE500E63EAC /* OneViewController.m in Sources */,
+				CEEF13831CBCB60A00773A9C /* ItemButtion.m in Sources */,
 				4BC7761F1AB8506200E63EAC /* MainViewController.m in Sources */,
 				4BC776311AB85AED00E63EAC /* TwoViewController.m in Sources */,
 				4BC776221AB8508B00E63EAC /* BarViewController.m in Sources */,

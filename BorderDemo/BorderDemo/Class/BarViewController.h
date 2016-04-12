@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ItemButtion.h"
 @protocol BarDelegate <NSObject>
 /**表现所选功能**/
 -(void)selectedOneItemWithIndex:(NSInteger)index;
@@ -16,7 +16,7 @@
 
 
 @end
-
+@class ItemButtion;
 @interface BarViewController : UIViewController
 {
     
@@ -32,7 +32,18 @@
     NSMutableArray *itemBtb_Arr;
 
 
-    UIView *backView;
+    __weak IBOutlet  UIView *backView;
+    
+    
+    __weak IBOutlet ItemButtion *itemOne;
+    
+    __weak IBOutlet ItemButtion *itemTwo;
+    __weak IBOutlet ItemButtion *itemThree;
+    
+    __weak IBOutlet ItemButtion *itemFour;
+    
+    __weak IBOutlet ItemButtion *itemFive;
+    
     
 }
 

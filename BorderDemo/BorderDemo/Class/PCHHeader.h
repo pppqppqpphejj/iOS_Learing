@@ -14,5 +14,5 @@
 #define select_bar_array_Height [[NSArray alloc]initWithObjects:@"bottom_one_change",@"bottom_two_change",@"bottom_four_change",@"bottom_five_change",@"bottom_three_change", nil]
 
 //底部Bar高度
-#define bottom_BarHight 50
+#define bottom_BarHight 55
 #endif /* PCHHeader_h */

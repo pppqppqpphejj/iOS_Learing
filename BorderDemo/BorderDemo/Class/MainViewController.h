@@ -14,7 +14,7 @@
 #import "FourViewController.h"
 #import "FiveViewController.h"
 
-
+@class ItemButtion;
 @interface MainViewController : UIViewController<BarDelegate,UIScrollViewDelegate>
 {
     BarViewController *bar_view;

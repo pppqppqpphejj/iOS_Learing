@@ -102,7 +102,7 @@
 -(void)awakeFromNib
 {
     [self setBackgroundColor:[UIColor clearColor]];
-    [self.imageView setImage:[UIImage imageNamed:@"白色返回箭头"]];
+    [self.imageView setImage:[UIImage imageNamed:@"backt"]];
     [self setShowsTouchWhenHighlighted:YES];
 }
 

@@ -124,15 +124,23 @@
             }];
         }
         currentTag=tag;
-        for (UIButton * btn in itemArray) {
+        for (ItemButtion * btn in itemArray) {
             
             if (btn.tag == currentTag) {
                 btn.selected = YES;
+                btn.imvMain.image = btn.imHight;
+
+                
             }
             else
                 {
                 btn.selected = NO;
+                btn.imvMain.image = btn.imNormal;
+
                 }
+            [btn setNeedsLayout];
+            [btn layoutIfNeeded];
+
             
         }
 
