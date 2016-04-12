@@ -32,7 +32,7 @@
     NSMutableArray *itemBtb_Arr;
 
 
-    __weak IBOutlet  UIView *backView;
+    UIView *backView;
     
     
     __weak IBOutlet ItemButtion *itemOne;

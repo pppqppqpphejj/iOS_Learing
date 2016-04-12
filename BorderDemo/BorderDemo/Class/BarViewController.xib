@@ -7,7 +7,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BarViewController">
             <connections>
-                <outlet property="backView" destination="WCR-zE-SzZ" id="Qjl-O5-ABt"/>
                 <outlet property="itemFive" destination="AwZ-Sv-fe0" id="8Sm-pq-4jO"/>
                 <outlet property="itemFour" destination="ZUB-Yl-RGa" id="Cbh-p7-3bC"/>
                 <outlet property="itemOne" destination="cgz-Q9-2g4" id="X0w-Mj-4WT"/>
