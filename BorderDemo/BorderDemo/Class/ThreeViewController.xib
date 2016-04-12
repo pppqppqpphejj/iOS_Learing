@@ -5,9 +5,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9531"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OneViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThreeViewController">
             <connections>
-                <outlet property="view" destination="iN0-l3-epB" id="qh7-sa-3Fi"/>
+                <outlet property="view" destination="iN0-l3-epB" id="JgV-9X-DGq"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -15,50 +15,48 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ge8-TN-Dim" customClass="UITopBanner">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BYG-8m-pF6" customClass="UITopBanner">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="80" id="NIf-ml-129">
-                            <variation key="heightClass=regular-widthClass=compact" constant="60"/>
-                        </constraint>
+                        <constraint firstAttribute="height" constant="80" id="Pqr-G0-XGl"/>
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">
-                            <exclude reference="NIf-ml-129"/>
+                            <exclude reference="Pqr-G0-XGl"/>
                         </mask>
                     </variation>
                     <variation key="heightClass=regular-widthClass=compact">
                         <mask key="constraints">
-                            <include reference="NIf-ml-129"/>
+                            <include reference="Pqr-G0-XGl"/>
                         </mask>
                     </variation>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="Ge8-TN-Dim" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IlA-To-aBv"/>
-                <constraint firstAttribute="trailing" secondItem="Ge8-TN-Dim" secondAttribute="trailing" id="ezO-dg-iSG"/>
-                <constraint firstItem="Ge8-TN-Dim" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ziB-hA-XEU"/>
+                <constraint firstAttribute="trailing" secondItem="BYG-8m-pF6" secondAttribute="trailing" id="3Gb-mn-fNp"/>
+                <constraint firstItem="BYG-8m-pF6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="l7z-C1-LVF"/>
+                <constraint firstItem="BYG-8m-pF6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uBk-FX-8g9"/>
             </constraints>
             <variation key="default">
                 <mask key="subviews">
-                    <exclude reference="Ge8-TN-Dim"/>
+                    <exclude reference="BYG-8m-pF6"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="IlA-To-aBv"/>
-                    <exclude reference="ezO-dg-iSG"/>
-                    <exclude reference="ziB-hA-XEU"/>
+                    <exclude reference="3Gb-mn-fNp"/>
+                    <exclude reference="l7z-C1-LVF"/>
+                    <exclude reference="uBk-FX-8g9"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="subviews">
-                    <include reference="Ge8-TN-Dim"/>
+                    <include reference="BYG-8m-pF6"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="IlA-To-aBv"/>
-                    <include reference="ezO-dg-iSG"/>
-                    <include reference="ziB-hA-XEU"/>
+                    <include reference="3Gb-mn-fNp"/>
+                    <include reference="l7z-C1-LVF"/>
+                    <include reference="uBk-FX-8g9"/>
                 </mask>
             </variation>
         </view>

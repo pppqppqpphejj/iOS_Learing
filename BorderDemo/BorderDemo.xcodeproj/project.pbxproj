@@ -18,7 +18,6 @@
 		4BC776311AB85AED00E63EAC /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC776301AB85AED00E63EAC /* TwoViewController.m */; };
 		4BC776341AB85AF500E63EAC /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC776331AB85AF500E63EAC /* ThreeViewController.m */; };
 		4BC776371AB85AFE00E63EAC /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC776361AB85AFE00E63EAC /* FourViewController.m */; };
-		4BC7763A1AB85B0600E63EAC /* FiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC776391AB85B0600E63EAC /* FiveViewController.m */; };
 		CE8F5EF01CBB907D00B6D64E /* backt.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8F5EA31CBB907C00B6D64E /* backt.png */; };
 		CE8F5EF11CBB907D00B6D64E /* bottom_five_change.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8F5EA41CBB907C00B6D64E /* bottom_five_change.png */; };
 		CE8F5EF21CBB907D00B6D64E /* bottom_five.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8F5EA51CBB907C00B6D64E /* bottom_five.png */; };
@@ -101,6 +100,10 @@
 		CEEF13731CBC9A8500773A9C /* layerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEF136F1CBC9A8500773A9C /* layerView.m */; };
 		CEEF13741CBC9A8500773A9C /* UITopBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEF13711CBC9A8500773A9C /* UITopBanner.m */; };
 		CEEF13751CBC9A8500773A9C /* UITopBanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEF13721CBC9A8500773A9C /* UITopBanner.xib */; };
+		CEEF13771CBC9BB600773A9C /* ThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEF13761CBC9BB600773A9C /* ThreeViewController.xib */; };
+		CEEF13791CBC9BDE00773A9C /* FourViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEF13781CBC9BDE00773A9C /* FourViewController.xib */; };
+		CEEF137B1CBC9BF000773A9C /* FiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEF137A1CBC9BF000773A9C /* FiveViewController.xib */; };
+		CEEF137E1CBC9CFE00773A9C /* FiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEF137D1CBC9CFE00773A9C /* FiveViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,8 +139,6 @@
 		4BC776331AB85AF500E63EAC /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
 		4BC776351AB85AFE00E63EAC /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
 		4BC776361AB85AFE00E63EAC /* FourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
-		4BC776381AB85B0600E63EAC /* FiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveViewController.h; sourceTree = "<group>"; };
-		4BC776391AB85B0600E63EAC /* FiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveViewController.m; sourceTree = "<group>"; };
 		CE8F5EA11CBB8BC300B6D64E /* PCHHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCHHeader.h; sourceTree = "<group>"; };
 		CE8F5EA31CBB907C00B6D64E /* backt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backt.png; sourceTree = "<group>"; };
 		CE8F5EA41CBB907C00B6D64E /* bottom_five_change.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottom_five_change.png; sourceTree = "<group>"; };
@@ -223,6 +224,11 @@
 		CEEF13701CBC9A8500773A9C /* UITopBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITopBanner.h; sourceTree = "<group>"; };
 		CEEF13711CBC9A8500773A9C /* UITopBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITopBanner.m; sourceTree = "<group>"; };
 		CEEF13721CBC9A8500773A9C /* UITopBanner.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UITopBanner.xib; sourceTree = "<group>"; };
+		CEEF13761CBC9BB600773A9C /* ThreeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThreeViewController.xib; sourceTree = "<group>"; };
+		CEEF13781CBC9BDE00773A9C /* FourViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourViewController.xib; sourceTree = "<group>"; };
+		CEEF137A1CBC9BF000773A9C /* FiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FiveViewController.xib; sourceTree = "<group>"; };
+		CEEF137C1CBC9CFE00773A9C /* FiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveViewController.h; sourceTree = "<group>"; };
+		CEEF137D1CBC9CFE00773A9C /* FiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +311,8 @@
 		4BC7761C1AB8505400E63EAC /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				CEEF137C1CBC9CFE00773A9C /* FiveViewController.h */,
+				CEEF137D1CBC9CFE00773A9C /* FiveViewController.m */,
 				4BC7761D1AB8506200E63EAC /* MainViewController.h */,
 				4BC7761E1AB8506200E63EAC /* MainViewController.m */,
 				4BC776201AB8508B00E63EAC /* BarViewController.h */,
@@ -317,10 +325,11 @@
 				CEEF136B1CBC9A4B00773A9C /* TwoViewController.xib */,
 				4BC776321AB85AF500E63EAC /* ThreeViewController.h */,
 				4BC776331AB85AF500E63EAC /* ThreeViewController.m */,
+				CEEF13761CBC9BB600773A9C /* ThreeViewController.xib */,
 				4BC776351AB85AFE00E63EAC /* FourViewController.h */,
 				4BC776361AB85AFE00E63EAC /* FourViewController.m */,
-				4BC776381AB85B0600E63EAC /* FiveViewController.h */,
-				4BC776391AB85B0600E63EAC /* FiveViewController.m */,
+				CEEF13781CBC9BDE00773A9C /* FourViewController.xib */,
+				CEEF137A1CBC9BF000773A9C /* FiveViewController.xib */,
 				CE8F5EA11CBB8BC300B6D64E /* PCHHeader.h */,
 			);
 			path = Class;
@@ -513,9 +522,11 @@
 				CE8F5F171CBB907D00B6D64E /* one_4.png in Resources */,
 				CE8F5F151CBB907D00B6D64E /* one_2.png in Resources */,
 				CE8F5F271CBB907D00B6D64E /* tb_9.png in Resources */,
+				CEEF137B1CBC9BF000773A9C /* FiveViewController.xib in Resources */,
 				CE8F5F091CBB907D00B6D64E /* index_hd_one.png in Resources */,
 				CE8F5F1E1CBB907D00B6D64E /* serch.jpg in Resources */,
 				CE8F5F241CBB907D00B6D64E /* tb_6.png in Resources */,
+				CEEF13791CBC9BDE00773A9C /* FourViewController.xib in Resources */,
 				CE8F5F0C1CBB907D00B6D64E /* index_pic.png in Resources */,
 				CE8F5F101CBB907D00B6D64E /* line1.png in Resources */,
 				CE8F5F311CBB907D00B6D64E /* tb_19.png in Resources */,
@@ -582,6 +593,7 @@
 				4BC776041AB8504200E63EAC /* Images.xcassets in Resources */,
 				CE8F5F381CBB907D00B6D64E /* wd_3.png in Resources */,
 				CE8F5F221CBB907D00B6D64E /* tb_4.png in Resources */,
+				CEEF13771CBC9BB600773A9C /* ThreeViewController.xib in Resources */,
 				CE8F5F2C1CBB907D00B6D64E /* tb_14.png in Resources */,
 				CE8F5F371CBB907D00B6D64E /* wd_2.png in Resources */,
 			);
@@ -601,7 +613,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BC7763A1AB85B0600E63EAC /* FiveViewController.m in Sources */,
 				4BC776021AB8504200E63EAC /* AppDelegate.m in Sources */,
 				4BC776341AB85AF500E63EAC /* ThreeViewController.m in Sources */,
 				4BC776371AB85AFE00E63EAC /* FourViewController.m in Sources */,
@@ -610,6 +621,7 @@
 				4BC776311AB85AED00E63EAC /* TwoViewController.m in Sources */,
 				4BC776221AB8508B00E63EAC /* BarViewController.m in Sources */,
 				CEEF13741CBC9A8500773A9C /* UITopBanner.m in Sources */,
+				CEEF137E1CBC9CFE00773A9C /* FiveViewController.m in Sources */,
 				CEEF13731CBC9A8500773A9C /* layerView.m in Sources */,
 				4BC775FF1AB8504200E63EAC /* main.m in Sources */,
 			);
@@ -726,9 +738,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: shaorui shaorui (5H5729EQXH)";
-				GCC_PREFIX_HEADER = "/Users/shaorui/Downloads/QQ传输文件/BorderDemo/BorderDemo/Class/PCHHeader.h";
+				GCC_PREFIX_HEADER = "/Users/shaorui/邵瑞/学习记录/MyGit/ios/BorderDemo/BorderDemo/Class/PCHHeader.h";
 				INFOPLIST_FILE = BorderDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = mobi.wonders.ios.apps.yucaitong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -739,9 +752,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: shaorui shaorui (5H5729EQXH)";
-				GCC_PREFIX_HEADER = "/Users/shaorui/Downloads/QQ传输文件/BorderDemo/BorderDemo/Class/PCHHeader.h";
+				GCC_PREFIX_HEADER = "/Users/shaorui/邵瑞/学习记录/MyGit/ios/BorderDemo/BorderDemo/Class/PCHHeader.h";
 				INFOPLIST_FILE = BorderDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = mobi.wonders.ios.apps.yucaitong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
