@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ItemButtion">
+            <connections>
+                <outlet property="imvMain" destination="dh1-IV-YAv" id="jmy-0G-cat"/>
+                <outlet property="lalTitle" destination="JOl-zA-Pfl" id="POE-ak-FOE"/>
+                <outlet property="view" destination="eS6-af-1aU" id="TrR-AH-4hu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eS6-af-1aU">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="首页" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="180" translatesAutoresizingMaskIntoConstraints="NO" id="JOl-zA-Pfl">
+                    <rect key="frame" x="0.0" y="69" width="180" height="41"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="JOl-zA-Pfl" secondAttribute="height" multiplier="54:17" constant="49.764705882352956" id="DpT-3s-NFn">
+                            <variation key="heightClass=regular-widthClass=compact" constant="21.176470588235304"/>
+                        </constraint>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rz1-KE-gQh">
+                    <rect key="frame" x="0.0" y="0.0" width="180" height="7"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="rz1-KE-gQh" secondAttribute="height" multiplier="27:1" id="4rR-IS-1kN"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dh1-IV-YAv">
+                    <rect key="frame" x="61" y="13" width="58" height="56"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="dh1-IV-YAv" secondAttribute="height" multiplier="71:88" constant="12.81818181818182" id="Pae-wS-ddc"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="rz1-KE-gQh" firstAttribute="top" secondItem="eS6-af-1aU" secondAttribute="top" id="2xC-4S-QR2"/>
+                <constraint firstItem="dh1-IV-YAv" firstAttribute="top" secondItem="rz1-KE-gQh" secondAttribute="bottom" constant="6" id="89X-Ch-34a"/>
+                <constraint firstAttribute="bottom" secondItem="JOl-zA-Pfl" secondAttribute="bottom" constant="10" id="JzE-xD-Hgj">
+                    <variation key="heightClass=regular-widthClass=compact" constant="2"/>
+                </constraint>
+                <constraint firstItem="JOl-zA-Pfl" firstAttribute="top" secondItem="dh1-IV-YAv" secondAttribute="bottom" id="MZt-EK-1wg">
+                    <variation key="heightClass=regular-widthClass=compact" constant="4"/>
+                </constraint>
+                <constraint firstAttribute="centerX" secondItem="dh1-IV-YAv" secondAttribute="centerX" id="SwA-4v-37s"/>
+                <constraint firstAttribute="trailing" secondItem="JOl-zA-Pfl" secondAttribute="trailing" id="W3w-wp-dx9"/>
+                <constraint firstItem="rz1-KE-gQh" firstAttribute="leading" secondItem="eS6-af-1aU" secondAttribute="leading" id="dgs-k9-YSC"/>
+                <constraint firstAttribute="trailing" secondItem="rz1-KE-gQh" secondAttribute="trailing" id="duO-eo-ins"/>
+                <constraint firstItem="JOl-zA-Pfl" firstAttribute="leading" secondItem="eS6-af-1aU" secondAttribute="leading" id="iUa-js-13C"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="235" y="259"/>
+        </view>
+    </objects>
+</document>

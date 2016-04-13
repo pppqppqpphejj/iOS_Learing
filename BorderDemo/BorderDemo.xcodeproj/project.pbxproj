@@ -10,7 +10,6 @@
 		4BC775FF1AB8504200E63EAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC775FE1AB8504200E63EAC /* main.m */; };
 		4BC776021AB8504200E63EAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC776011AB8504200E63EAC /* AppDelegate.m */; };
 		4BC776041AB8504200E63EAC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BC776031AB8504200E63EAC /* Images.xcassets */; };
-		4BC776071AB8504200E63EAC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BC776051AB8504200E63EAC /* LaunchScreen.xib */; };
 		4BC776131AB8504300E63EAC /* BorderDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC776121AB8504300E63EAC /* BorderDemoTests.m */; };
 		CE8F5EF01CBB907D00B6D64E /* backt.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8F5EA31CBB907C00B6D64E /* backt.png */; };
 		CE8F5EF11CBB907D00B6D64E /* bottom_five_change.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8F5EA41CBB907C00B6D64E /* bottom_five_change.png */; };
@@ -89,6 +88,7 @@
 		CE8F5F3A1CBB907D00B6D64E /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8F5EED1CBB907D00B6D64E /* welcome.png */; };
 		CE8F5F3B1CBB907D00B6D64E /* wode_top.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8F5EEE1CBB907D00B6D64E /* wode_top.png */; };
 		CE8F5F3C1CBB907D00B6D64E /* xuanz.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8F5EEF1CBB907D00B6D64E /* xuanz.png */; };
+		CE931CE31CBCF30F00056086 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE931CE21CBCF30F00056086 /* LaunchScreen.xib */; };
 		CEEF13D91CBCDEBA00773A9C /* FiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEF13CA1CBCDEBA00773A9C /* FiveViewController.m */; };
 		CEEF13DA1CBCDEBA00773A9C /* FiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEF13CB1CBCDEBA00773A9C /* FiveViewController.xib */; };
 		CEEF13DB1CBCDEBA00773A9C /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEF13CD1CBCDEBA00773A9C /* FourViewController.m */; };
@@ -126,7 +126,6 @@
 		4BC776001AB8504200E63EAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4BC776011AB8504200E63EAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4BC776031AB8504200E63EAC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4BC776061AB8504200E63EAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4BC7760C1AB8504200E63EAC /* BorderDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BorderDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BC776111AB8504300E63EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BC776121AB8504300E63EAC /* BorderDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BorderDemoTests.m; sourceTree = "<group>"; };
@@ -207,6 +206,7 @@
 		CE8F5EED1CBB907D00B6D64E /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome.png; sourceTree = "<group>"; };
 		CE8F5EEE1CBB907D00B6D64E /* wode_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wode_top.png; sourceTree = "<group>"; };
 		CE8F5EEF1CBB907D00B6D64E /* xuanz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xuanz.png; sourceTree = "<group>"; };
+		CE931CE21CBCF30F00056086 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		CEEF13C91CBCDEBA00773A9C /* FiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveViewController.h; sourceTree = "<group>"; };
 		CEEF13CA1CBCDEBA00773A9C /* FiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveViewController.m; sourceTree = "<group>"; };
 		CEEF13CB1CBCDEBA00773A9C /* FiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FiveViewController.xib; sourceTree = "<group>"; };
@@ -283,8 +283,8 @@
 				4BC776001AB8504200E63EAC /* AppDelegate.h */,
 				4BC776011AB8504200E63EAC /* AppDelegate.m */,
 				4BC776031AB8504200E63EAC /* Images.xcassets */,
-				4BC776051AB8504200E63EAC /* LaunchScreen.xib */,
 				4BC775FC1AB8504200E63EAC /* Supporting Files */,
+				CE931CE21CBCF30F00056086 /* LaunchScreen.xib */,
 			);
 			path = BorderDemo;
 			sourceTree = "<group>";
@@ -596,10 +596,10 @@
 				CE8F5F131CBB907D00B6D64E /* oettt.png in Resources */,
 				CE8F5EF81CBB907D00B6D64E /* bottom_three.png in Resources */,
 				CEEF13F61CBCDF1300773A9C /* BarViewController.xib in Resources */,
+				CE931CE31CBCF30F00056086 /* LaunchScreen.xib in Resources */,
 				CE8F5EF21CBB907D00B6D64E /* bottom_five.png in Resources */,
 				CE8F5F0D1CBB907D00B6D64E /* index_three.png in Resources */,
 				CE8F5EF91CBB907D00B6D64E /* bottom_two_change.png in Resources */,
-				4BC776071AB8504200E63EAC /* LaunchScreen.xib in Resources */,
 				CE8F5F211CBB907D00B6D64E /* tb_3.png in Resources */,
 				CE8F5EFB1CBB907D00B6D64E /* default_ptr_flip.png in Resources */,
 				CE8F5F2F1CBB907D00B6D64E /* tb_17.png in Resources */,
@@ -699,17 +699,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		4BC776051AB8504200E63EAC /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4BC776061AB8504200E63EAC /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		4BC776141AB8504300E63EAC /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -792,6 +781,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: shaorui shaorui (5H5729EQXH)";
 				GCC_PREFIX_HEADER = "/Users/shaorui/邵瑞/学习记录/MyGit/ios/BorderDemo/BorderDemo/Class/Controller/PCHHeader.h";
 				INFOPLIST_FILE = BorderDemo/Info.plist;
@@ -806,6 +796,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: shaorui shaorui (5H5729EQXH)";
 				GCC_PREFIX_HEADER = "/Users/shaorui/邵瑞/学习记录/MyGit/ios/BorderDemo/BorderDemo/Class/Controller/PCHHeader.h";
 				INFOPLIST_FILE = BorderDemo/Info.plist;
