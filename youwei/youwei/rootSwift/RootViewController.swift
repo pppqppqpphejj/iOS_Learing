@@ -10,13 +10,17 @@
 import UIKit
 import JavaScriptCore
 
-class RootViewController: UIViewController
+class RootViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
 {
-    
-
+ 
+    /***声明2 section ***/
+    var sectionCount:NSInteger!
      /**声明代理 值传递**/ 
     var paramsProtocolDelegate: ParamsProtocol?
-
+/***tableView数据源***/
+    var arrData:NSArray!
+/***获取网络解析的数据***/
+    var  arrMutableData:NSMutableArray!
     
     var jsonDic:NSDictionary!
      /**单列初始化**/
@@ -28,7 +32,8 @@ class RootViewController: UIViewController
         openLeft()
 
     }
-
+/***声明控件属性UITableView***/
+    @IBOutlet weak var tabView: UITableView!
     
     @IBAction func delegateAction(sender: AnyObject) {
         var tow_vc:SwiftDelegateViewController!
@@ -39,8 +44,10 @@ class RootViewController: UIViewController
         
     }
     
-    
+    //TODO: 声明一个输出口
     @IBOutlet weak var modePop: UIButton!
+    //MARK: 进入下一个界面
+    
     @IBAction func modelPop(sender: AnyObject) {
         
 //        var arr = ["1067349543@qq.com","13983441921@139.com"] as Array
@@ -49,16 +56,15 @@ class RootViewController: UIViewController
 //        print("\(isNO )")
         
         var tow_vc:NextViewController!
-tow_vc =  NextViewController(nibName: "NextViewController" as String, bundle: nil)
+        tow_vc =  NextViewController(nibName: "NextViewController" as String, bundle: nil)
 
         self.navigationController?.presentViewController(tow_vc, animated: false, completion: nil)
-        
-        
-         /**拨打电话**/
+/**拨打电话**/
 //        SwiftSingle.sharedInstance.messageSend()
 //        SwiftSingle.sharedInstance.callPhoneNumberAction("13983441921")
 
     }
+    
     @IBAction func btnRightPushAction(sender: AnyObject) {
         
         //        let  right
@@ -76,9 +82,11 @@ tow_vc =  NextViewController(nibName: "NextViewController" as String, bundle: ni
         
         
         super.viewDidLoad()
-        
-        
+      
+        sectionCount = 2
 
+        initTableView()
+        
         
         
 //        
@@ -239,7 +247,9 @@ tow_vc =  NextViewController(nibName: "NextViewController" as String, bundle: ni
         var isBool = SwiftStringA.sharedInstance
         
         self._VTop.btnGoback.hidden = true
-        self._VTop.lalTitel.text = NSString(string: "自定义") as String
+        self._VTop.lalTitel.text = NSString(string: "有位") as String
+        
+        
         self.jsonDic = ["key":"sss"]
         print("is json dic \(self.jsonDic)")
         print("is json dic  objectForKey \(self.jsonDic.objectForKey("key"))")
@@ -283,7 +293,7 @@ tow_vc =  NextViewController(nibName: "NextViewController" as String, bundle: ni
     }
     
     
-    
+//    FIXME:代理
     func delegateStart()
     {
         
@@ -295,6 +305,48 @@ tow_vc =  NextViewController(nibName: "NextViewController" as String, bundle: ni
       self.paramsProtocolDelegate?.returnParams(temp)
       self.paramsProtocolDelegate?.returmParameArray(tempArray)
 
+        
+    }
+    
+    /***初始化 UITableView***/
+    func initTableView()
+    {
+        
+        
+        
+        var nibCell:NSString!
+        nibCell = "RootCell"
+        
+        var nibTabCell:UINib!
+        
+        nibTabCell  = UINib(nibName: nibCell as String, bundle: nil)
+        
+        self.tabView.registerNib(nibTabCell, forCellReuseIdentifier: nibCell as String)
+        
+        var nibCellTwo:NSString!
+        nibCellTwo = "RootCellTwo"
+        
+        var nibTabCellTwo:UINib!
+        
+        nibTabCellTwo  = UINib(nibName: nibCellTwo as String, bundle: nil)
+        
+        self.tabView.registerNib(nibTabCellTwo, forCellReuseIdentifier: nibCellTwo as String)
+        
+        
+        
+//        self.tabView.registerNib(UINib(nibName: "RootCellTwo", bundle: nil), forCellReuseIdentifier: "RootCellTwo")
+//
+//        self.tabView.registerNib(UINib(nibName: "RootCell", bundle: nil), forCellReuseIdentifier: "RootCell")
+        self.tabView.separatorStyle = UITableViewCellSeparatorStyle.None
+        self.tabView.dataSource = self
+
+        self.tabView.delegate = self
+
+//        设置tableView头部视图
+            let tabHead = HeaderTabView()
+//        设置Frame
+            tabHead.frame = tabHead.loadNibFrame().frame;
+            self.tabView.tableHeaderView = tabHead
         
     }
  
@@ -309,12 +361,114 @@ tow_vc =  NextViewController(nibName: "NextViewController" as String, bundle: ni
 //        }
 //    }
     
+
+    
+    //TODO:实现UITableViewDataSource
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 2;
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if(section==0)
+        {
+            return 1
+        }
+        else if (section==1)
+        {
+            return sectionCount
+        }
+        else
+        {
+        return 0
+        }
+
+}
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell:UITableViewCell!
+        
+        
+        if indexPath.section==0
+        {
+            cell = tableView.dequeueReusableCellWithIdentifier("RootCell")
+            
+            if(cell == nil){
+                cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier:"RootCell");
+            }
+
+//            return cell!
+        }
+        else if indexPath.section==1
+            
+        {
+            
+             cell = tableView.dequeueReusableCellWithIdentifier("RootCellTwo")
+            
+        if (cell==nil)
+            {
+                cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "RootCellTwo")
+            }
+//            return cell!
+            
+        }
+            return cell!
+
+        
+        
+
+    
+    }
+    
+    
+    func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+    
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        var  indexsection:NSInteger!
+            indexsection = indexPath.section
+        var indexHeight:CGFloat!
+        indexHeight = 0.0
+        
+        if indexsection == 0
+        {
+         indexHeight = 160.00
+            return indexHeight
+        }
+        else if indexsection == 1
+        {
+            indexHeight = 60.00
+
+            return indexHeight
+        }
+        else
+        {
+            return indexHeight
+        }
+//        switch indexsection
+//        {
+//        case 0:
+//            
+//            break;
+//        case 1:
+//            break
+//        default
+//            break;
+//            
+//        }
+        
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
     /*
     // MARK: - Navigation
 

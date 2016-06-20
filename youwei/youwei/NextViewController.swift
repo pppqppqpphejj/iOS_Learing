@@ -21,16 +21,12 @@ class NextViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self._VTop.lalTitel.text = "寿山石受伤"
-        self._VTop.btnGoback.backgroundColor = UIColor.blueColor()
+        self._VTop.btnGoback.backgroundColor = UIColor.clearColor()
         self._VTop.parentController = self.navigationController
+        self._VTop.lalTitel.text = "右返回"
 
+        self.view.addSubview(self._VTop);
         
-        self._VTop.addSubview(self._VTop.btnGoback)
-
-        self._VTop.updateConstraints()
-
         var  sTTudent = SwiftStringA.sharedInstance.readWithNSKeyedUnarchiver("student.archive", documentsPath: SwiftStringA.sharedInstance.swStringDocumentsPath()) as! SwiftStudent
         
         

@@ -42,10 +42,10 @@ class RightViewController: UIViewController,UITableViewDataSource,UITableViewDel
     override func viewDidLoad() {
         super.viewDidLoad()
 //        self._VTop.btnGoback.hidden = false
-        self._VTop.btnGoback.backgroundColor = UIColor.blueColor()
+        self._VTop.btnGoback.backgroundColor = UIColor.clearColor()
         self._VTop.parentController = self.navigationController
         self._VTop.lalTitel.text = "右返回"
-
+        self.view.addSubview(self._VTop)
         
 //        初始化 tableView
         initTableView()
@@ -116,7 +116,9 @@ class RightViewController: UIViewController,UITableViewDataSource,UITableViewDel
         self.tableView.dataSource = self
         
 
+        
         self.tableView.reloadData()
+        
        
     
         
