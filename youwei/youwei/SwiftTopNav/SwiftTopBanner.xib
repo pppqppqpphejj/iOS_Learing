@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SwiftTopBanner" customModule="youwei" customModuleProvider="target">
@@ -17,98 +17,121 @@
             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button autoresizesSubviews="NO" opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlh-aJ-hXc">
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlh-aJ-hXc" userLabel="设置返回按钮">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                    <color key="backgroundColor" red="0.20000000000000001" green="0.56078431370000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="25" id="SFE-WJ-fI7"/>
-                        <constraint firstAttribute="height" constant="40" id="a2f-YS-YfA"/>
+                        <constraint firstAttribute="height" constant="40" id="Ans-pt-uh3"/>
+                        <constraint firstAttribute="width" constant="35" id="XGw-kE-qJ8">
+                            <variation key="heightClass=regular-widthClass=compact" constant="23"/>
+                        </constraint>
                     </constraints>
                     <state key="normal" backgroundImage="白色返回箭头"/>
+                    <state key="selected" backgroundImage="白色返回箭头"/>
                     <variation key="default">
                         <mask key="constraints">
-                            <exclude reference="SFE-WJ-fI7"/>
-                            <exclude reference="a2f-YS-YfA"/>
+                            <exclude reference="Ans-pt-uh3"/>
+                            <exclude reference="XGw-kE-qJ8"/>
                         </mask>
                     </variation>
                     <variation key="heightClass=regular-widthClass=compact">
                         <mask key="constraints">
-                            <include reference="SFE-WJ-fI7"/>
-                            <include reference="a2f-YS-YfA"/>
+                            <include reference="Ans-pt-uh3"/>
+                            <include reference="XGw-kE-qJ8"/>
                         </mask>
                     </variation>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fva-dP-uxT">
+                <button hidden="YES" clipsSubviews="YES" alpha="0.94999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awz-FR-cKK">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="Button"/>
-                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="351" y="25" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="n4w-NV-LEx"/>
+                        <constraint firstAttribute="width" constant="35" id="xYO-B4-Ecz"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="n4w-NV-LEx"/>
+                            <exclude reference="xYO-B4-Ecz"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="n4w-NV-LEx"/>
+                            <include reference="xYO-B4-Ecz"/>
+                        </mask>
                     </variation>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="kWr-zD-xSq">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="kWr-zD-xSq" userLabel="设置控制器的TITLE">
                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="305" id="15c-L8-7KK"/>
-                        <constraint firstAttribute="height" constant="40" id="NvY-Yd-ii3"/>
+                        <constraint firstAttribute="height" constant="40" id="kDg-pA-aBh"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                     <variation key="default">
                         <mask key="constraints">
-                            <exclude reference="15c-L8-7KK"/>
-                            <exclude reference="NvY-Yd-ii3"/>
+                            <exclude reference="kDg-pA-aBh"/>
                         </mask>
                     </variation>
                     <variation key="heightClass=regular-widthClass=compact">
                         <mask key="constraints">
-                            <include reference="15c-L8-7KK"/>
-                            <include reference="NvY-Yd-ii3"/>
+                            <include reference="kDg-pA-aBh"/>
                         </mask>
                     </variation>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.11764705882352941" green="0.51764705882352935" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="kWr-zD-xSq" secondAttribute="bottom" constant="15" id="IWv-K9-PnR"/>
-                <constraint firstItem="kWr-zD-xSq" firstAttribute="leading" secondItem="tlh-aJ-hXc" secondAttribute="trailing" constant="3" id="UaH-rT-fFF"/>
-                <constraint firstItem="tlh-aJ-hXc" firstAttribute="leading" secondItem="hmK-eA-7SL" secondAttribute="leading" constant="10" id="rXe-bZ-Ad5"/>
-                <constraint firstItem="tlh-aJ-hXc" firstAttribute="top" secondItem="hmK-eA-7SL" secondAttribute="top" constant="25" id="v5l-e2-4bO"/>
+                <constraint firstAttribute="bottom" secondItem="tlh-aJ-hXc" secondAttribute="bottom" constant="15" id="VBl-cV-Omf"/>
+                <constraint firstItem="kWr-zD-xSq" firstAttribute="leading" secondItem="tlh-aJ-hXc" secondAttribute="trailing" constant="10" id="cfk-m8-bAa">
+                    <variation key="heightClass=regular-widthClass=compact" constant="22"/>
+                </constraint>
+                <constraint firstAttribute="bottom" secondItem="kWr-zD-xSq" secondAttribute="bottom" constant="15" id="iBx-ag-CRC"/>
+                <constraint firstAttribute="trailing" secondItem="Awz-FR-cKK" secondAttribute="trailing" constant="10" id="jbi-tG-voj"/>
+                <constraint firstItem="tlh-aJ-hXc" firstAttribute="leading" secondItem="hmK-eA-7SL" secondAttribute="leading" constant="10" id="nsO-Zw-SgD"/>
+                <constraint firstItem="Awz-FR-cKK" firstAttribute="leading" secondItem="kWr-zD-xSq" secondAttribute="trailing" constant="10" id="pdJ-NB-5ON"/>
+                <constraint firstAttribute="bottom" secondItem="Awz-FR-cKK" secondAttribute="bottom" constant="15" id="qTm-gR-F41"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="tlh-aJ-hXc"/>
-                    <exclude reference="Fva-dP-uxT"/>
+                    <exclude reference="Awz-FR-cKK"/>
                     <exclude reference="kWr-zD-xSq"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="rXe-bZ-Ad5"/>
-                    <exclude reference="v5l-e2-4bO"/>
-                    <exclude reference="IWv-K9-PnR"/>
-                    <exclude reference="UaH-rT-fFF"/>
+                    <exclude reference="jbi-tG-voj"/>
+                    <exclude reference="pdJ-NB-5ON"/>
+                    <exclude reference="qTm-gR-F41"/>
+                    <exclude reference="VBl-cV-Omf"/>
+                    <exclude reference="nsO-Zw-SgD"/>
+                    <exclude reference="cfk-m8-bAa"/>
+                    <exclude reference="iBx-ag-CRC"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="subviews">
                     <include reference="tlh-aJ-hXc"/>
-                    <include reference="Fva-dP-uxT"/>
+                    <include reference="Awz-FR-cKK"/>
                     <include reference="kWr-zD-xSq"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="rXe-bZ-Ad5"/>
-                    <include reference="v5l-e2-4bO"/>
-                    <include reference="IWv-K9-PnR"/>
-                    <include reference="UaH-rT-fFF"/>
+                    <include reference="jbi-tG-voj"/>
+                    <include reference="pdJ-NB-5ON"/>
+                    <include reference="qTm-gR-F41"/>
+                    <include reference="VBl-cV-Omf"/>
+                    <include reference="nsO-Zw-SgD"/>
+                    <include reference="cfk-m8-bAa"/>
+                    <include reference="iBx-ag-CRC"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="540" y="-693"/>
         </view>
     </objects>
     <resources>
-        <image name="白色返回箭头" width="13" height="26"/>
+        <image name="白色返回箭头" width="6" height="13"/>
     </resources>
 </document>

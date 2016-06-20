@@ -6,6 +6,9 @@
 //  Copyright © 2016年 wondergroup. All rights reserved.
 //
 
+/***使用注解 如果是使用navigationController可以不加这句代码    self.view.addSubview(self._VTop) 任可显示返回按钮***/
+/***使用注解 如果是使用presentViewController需要加这句代码    self.view.addSubview(self._VTop) 才可以可显示返回按钮***/
+
 import UIKit
 class UIBackButton:UIButton {
     override init(frame: CGRect) {
