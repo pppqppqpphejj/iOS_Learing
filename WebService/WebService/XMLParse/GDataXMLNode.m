@@ -1548,6 +1548,8 @@ static xmlChar *SplitQNameReverse(const xmlChar *qname, xmlChar **prefix) {
   
   NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
   GDataXMLDocument *doc = [self initWithData:data options:mask error:error];
+    
+    
   return doc;
 }
 

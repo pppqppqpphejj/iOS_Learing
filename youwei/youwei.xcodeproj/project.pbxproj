@@ -9,7 +9,12 @@
 /* Begin PBXBuildFile section */
 		CE07DD891CABCAF900365A72 /* MySwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07DD871CABCAF900365A72 /* MySwiftViewController.swift */; };
 		CE07DD8A1CABCAF900365A72 /* MySwiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE07DD881CABCAF900365A72 /* MySwiftViewController.xib */; };
+		CE0BDAD11D18120800FA098F /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BDAD01D18120800FA098F /* NibDesignable.swift */; };
+		CE0BDAD31D18135600FA098F /* HeaderTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BDAD21D18135600FA098F /* HeaderTabView.swift */; };
+		CE0BDAD51D1813A000FA098F /* HeaderTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0BDAD41D1813A000FA098F /* HeaderTabView.xib */; };
 		CE416B381CA22B16003E1AF8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE416B371CA22B16003E1AF8 /* CFNetwork.framework */; };
+		CE45FA981D0F9F8D002E963E /* RootCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45FA961D0F9F8D002E963E /* RootCell.swift */; };
+		CE45FA991D0F9F8D002E963E /* RootCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE45FA971D0F9F8D002E963E /* RootCell.xib */; };
 		CE59348A1CAB7FDA002F9682 /* SwiftStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5934891CAB7FDA002F9682 /* SwiftStudent.swift */; };
 		CE5934971CABB2CE002F9682 /* areaData.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE5934961CABB2CE002F9682 /* areaData.plist */; };
 		CE5C3AE31CAA108200316475 /* SwiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C3AE11CAA108200316475 /* SwiftView.swift */; };
@@ -18,11 +23,16 @@
 		CE5C3AEA1CAA114100316475 /* SwiftNSDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C3AE91CAA114100316475 /* SwiftNSDictionary.swift */; };
 		CE5DB75F1CA9302600B12724 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5DB75E1CA9302600B12724 /* Foundation.framework */; };
 		CE5DB76B1CA93BB300B12724 /* SwiftString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DB76A1CA93BB300B12724 /* SwiftString.swift */; };
+		CE66DDBE1D18CA2300AFB554 /* MySchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66DDBC1D18CA2300AFB554 /* MySchoolViewController.swift */; };
+		CE66DDBF1D18CA2300AFB554 /* MySchoolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE66DDBD1D18CA2300AFB554 /* MySchoolViewController.xib */; };
 		CE6A5B4D1CAACB06004D7620 /* SwiftStringA.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A5B4C1CAACB06004D7620 /* SwiftStringA.swift */; };
 		CE7847781CAE6C0B0025259A /* SwiftDelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7847761CAE6C0B0025259A /* SwiftDelegateViewController.swift */; };
 		CE7847791CAE6C0B0025259A /* SwiftDelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7847771CAE6C0B0025259A /* SwiftDelegateViewController.xib */; };
+		CE8366001D101A39006A7BC7 /* RootCellTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8365FE1D101A39006A7BC7 /* RootCellTwo.swift */; };
+		CE8366011D101A39006A7BC7 /* RootCellTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8365FF1D101A39006A7BC7 /* RootCellTwo.xib */; };
 		CE88314C1C9FE2BC00F95071 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88314A1C9FE2BC00F95071 /* NextViewController.swift */; };
 		CE88314D1C9FE2BC00F95071 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE88314B1C9FE2BC00F95071 /* NextViewController.xib */; };
+		CE8F02E41D17CE4D00843FCA /* RegexHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F02E31D17CE4D00843FCA /* RegexHelper.swift */; };
 		CE8F71351CB4E3AD006D3D14 /* RightViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F71331CB4E3AD006D3D14 /* RightViewCell.swift */; };
 		CE8F71361CB4E3AD006D3D14 /* RightViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8F71341CB4E3AD006D3D14 /* RightViewCell.xib */; };
 		CE8F71401CB50DB2006D3D14 /* ParamsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F713F1CB50DB2006D3D14 /* ParamsProtocol.swift */; };
@@ -127,8 +137,13 @@
 /* Begin PBXFileReference section */
 		CE07DD871CABCAF900365A72 /* MySwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySwiftViewController.swift; sourceTree = "<group>"; };
 		CE07DD881CABCAF900365A72 /* MySwiftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySwiftViewController.xib; sourceTree = "<group>"; };
+		CE0BDAD01D18120800FA098F /* NibDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
+		CE0BDAD21D18135600FA098F /* HeaderTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTabView.swift; sourceTree = "<group>"; };
+		CE0BDAD41D1813A000FA098F /* HeaderTabView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderTabView.xib; sourceTree = "<group>"; };
 		CE416B371CA22B16003E1AF8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		CE416B3A1CA22F3E003E1AF8 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../../../../Downloads/Safari浏览器下载/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		CE45FA961D0F9F8D002E963E /* RootCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootCell.swift; sourceTree = "<group>"; };
+		CE45FA971D0F9F8D002E963E /* RootCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootCell.xib; sourceTree = "<group>"; };
 		CE5934891CAB7FDA002F9682 /* SwiftStudent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftStudent.swift; sourceTree = "<group>"; };
 		CE5934961CABB2CE002F9682 /* areaData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = areaData.plist; sourceTree = "<group>"; };
 		CE5C3AE11CAA108200316475 /* SwiftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftView.swift; sourceTree = "<group>"; };
@@ -137,11 +152,16 @@
 		CE5C3AE91CAA114100316475 /* SwiftNSDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNSDictionary.swift; sourceTree = "<group>"; };
 		CE5DB75E1CA9302600B12724 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE5DB76A1CA93BB300B12724 /* SwiftString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftString.swift; sourceTree = "<group>"; };
+		CE66DDBC1D18CA2300AFB554 /* MySchoolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySchoolViewController.swift; sourceTree = "<group>"; };
+		CE66DDBD1D18CA2300AFB554 /* MySchoolViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySchoolViewController.xib; sourceTree = "<group>"; };
 		CE6A5B4C1CAACB06004D7620 /* SwiftStringA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftStringA.swift; sourceTree = "<group>"; };
 		CE7847761CAE6C0B0025259A /* SwiftDelegateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDelegateViewController.swift; sourceTree = "<group>"; };
 		CE7847771CAE6C0B0025259A /* SwiftDelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwiftDelegateViewController.xib; sourceTree = "<group>"; };
+		CE8365FE1D101A39006A7BC7 /* RootCellTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootCellTwo.swift; sourceTree = "<group>"; };
+		CE8365FF1D101A39006A7BC7 /* RootCellTwo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootCellTwo.xib; sourceTree = "<group>"; };
 		CE88314A1C9FE2BC00F95071 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		CE88314B1C9FE2BC00F95071 /* NextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
+		CE8F02E31D17CE4D00843FCA /* RegexHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexHelper.swift; sourceTree = "<group>"; };
 		CE8F71321CB4A2DB006D3D14 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		CE8F71331CB4E3AD006D3D14 /* RightViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RightViewCell.swift; path = RightVC/RightViewCell.swift; sourceTree = "<group>"; };
 		CE8F71341CB4E3AD006D3D14 /* RightViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RightViewCell.xib; path = RightVC/RightViewCell.xib; sourceTree = "<group>"; };
@@ -223,6 +243,16 @@
 			path = MySwiftViewController;
 			sourceTree = "<group>";
 		};
+		CE0BDACF1D18120800FA098F /* NibDesignable1 */ = {
+			isa = PBXGroup;
+			children = (
+				CE0BDAD01D18120800FA098F /* NibDesignable.swift */,
+				CE0BDAD21D18135600FA098F /* HeaderTabView.swift */,
+				CE0BDAD41D1813A000FA098F /* HeaderTabView.xib */,
+			);
+			path = NibDesignable1;
+			sourceTree = "<group>";
+		};
 		CE416B391CA22B1F003E1AF8 /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +273,17 @@
 				CE416B511CA22F3E003E1AF8 /* Alamofire.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CE45FA951D0F9F48002E963E /* RootTabCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE45FA961D0F9F8D002E963E /* RootCell.swift */,
+				CE45FA971D0F9F8D002E963E /* RootCell.xib */,
+				CE8365FE1D101A39006A7BC7 /* RootCellTwo.swift */,
+				CE8365FF1D101A39006A7BC7 /* RootCellTwo.xib */,
+			);
+			path = RootTabCell;
 			sourceTree = "<group>";
 		};
 		CE5C3AE01CAA108200316475 /* SwiftView */ = {
@@ -276,8 +317,26 @@
 				CE5DB76A1CA93BB300B12724 /* SwiftString.swift */,
 				CE6A5B4C1CAACB06004D7620 /* SwiftStringA.swift */,
 				CE5934891CAB7FDA002F9682 /* SwiftStudent.swift */,
+				CE8F02E31D17CE4D00843FCA /* RegexHelper.swift */,
 			);
 			path = SwiftString;
+			sourceTree = "<group>";
+		};
+		CE66DDBA1D18C9FF00AFB554 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE66DDBB1D18CA1400AFB554 /* MySchool */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE66DDBB1D18CA1400AFB554 /* MySchool */ = {
+			isa = PBXGroup;
+			children = (
+				CE66DDBC1D18CA2300AFB554 /* MySchoolViewController.swift */,
+				CE66DDBD1D18CA2300AFB554 /* MySchoolViewController.xib */,
+			);
+			path = MySchool;
 			sourceTree = "<group>";
 		};
 		CE78476E1CAE6BE30025259A /* SwuftDelegate */ = {
@@ -288,6 +347,13 @@
 				CE7847771CAE6C0B0025259A /* SwiftDelegateViewController.xib */,
 			);
 			path = SwuftDelegate;
+			sourceTree = "<group>";
+		};
+		CE8366021D102882006A7BC7 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		CE8F712A1CB4A289006D3D14 /* PlayBackGround */ = {
@@ -333,6 +399,10 @@
 		CEA7C8B61C9B8D3000ACC416 /* youwei */ = {
 			isa = PBXGroup;
 			children = (
+				CE66DDBA1D18C9FF00AFB554 /* Controller */,
+				CE0BDACF1D18120800FA098F /* NibDesignable1 */,
+				CE8366021D102882006A7BC7 /* CustomView */,
+				CE45FA951D0F9F48002E963E /* RootTabCell */,
 				CE8F712A1CB4A289006D3D14 /* PlayBackGround */,
 				CE78476E1CAE6BE30025259A /* SwuftDelegate */,
 				CE07DD7F1CABCAEA00365A72 /* MySwiftViewController */,
@@ -589,13 +659,17 @@
 				CED319A91C9BE2BC001397B6 /* LeftViewController.xib in Resources */,
 				CEA7C8C51C9B8D3000ACC416 /* LaunchScreen.storyboard in Resources */,
 				CE8F71361CB4E3AD006D3D14 /* RightViewCell.xib in Resources */,
+				CE66DDBF1D18CA2300AFB554 /* MySchoolViewController.xib in Resources */,
 				CE5C3AE41CAA108200316475 /* SwiftView.xib in Resources */,
 				CED319D01C9BFFAE001397B6 /* SwiftTopBanner.xib in Resources */,
 				CED319A51C9BA882001397B6 /* RootViewController.xib in Resources */,
 				CEA7C8C21C9B8D3000ACC416 /* Assets.xcassets in Resources */,
+				CE0BDAD51D1813A000FA098F /* HeaderTabView.xib in Resources */,
+				CE45FA991D0F9F8D002E963E /* RootCell.xib in Resources */,
 				CEA7C8BD1C9B8D3000ACC416 /* Main.storyboard in Resources */,
 				CE88314D1C9FE2BC00F95071 /* NextViewController.xib in Resources */,
 				CE5934971CABB2CE002F9682 /* areaData.plist in Resources */,
+				CE8366011D101A39006A7BC7 /* RootCellTwo.xib in Resources */,
 				CE7847791CAE6C0B0025259A /* SwiftDelegateViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -632,11 +706,15 @@
 				CE5C3AE31CAA108200316475 /* SwiftView.swift in Sources */,
 				CEA7C8B81C9B8D3000ACC416 /* AppDelegate.swift in Sources */,
 				CED319CC1C9BFF65001397B6 /* SwiftTopBanner.swift in Sources */,
+				CE0BDAD11D18120800FA098F /* NibDesignable.swift in Sources */,
+				CE0BDAD31D18135600FA098F /* HeaderTabView.swift in Sources */,
 				CED319A81C9BE2BC001397B6 /* LeftViewController.swift in Sources */,
+				CE66DDBE1D18CA2300AFB554 /* MySchoolViewController.swift in Sources */,
 				CED319AF1C9BE3F2001397B6 /* ExSlideMenuController.swift in Sources */,
 				CED319BB1C9BE5BC001397B6 /* UIColor.swift in Sources */,
 				CE5DB76B1CA93BB300B12724 /* SwiftString.swift in Sources */,
 				CE8F71351CB4E3AD006D3D14 /* RightViewCell.swift in Sources */,
+				CE8366001D101A39006A7BC7 /* RootCellTwo.swift in Sources */,
 				CEA7C8F31C9BA3E700ACC416 /* SlideMenuController.swift in Sources */,
 				CE5C3AE71CAA10BD00316475 /* SwiftNSArray.swift in Sources */,
 				CED319BF1C9BE5BC001397B6 /* UIView.swift in Sources */,
@@ -650,6 +728,8 @@
 				CE8F71401CB50DB2006D3D14 /* ParamsProtocol.swift in Sources */,
 				CE7847781CAE6C0B0025259A /* SwiftDelegateViewController.swift in Sources */,
 				CED319BE1C9BE5BC001397B6 /* UITableViewExtension.swift in Sources */,
+				CE45FA981D0F9F8D002E963E /* RootCell.swift in Sources */,
+				CE8F02E41D17CE4D00843FCA /* RegexHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

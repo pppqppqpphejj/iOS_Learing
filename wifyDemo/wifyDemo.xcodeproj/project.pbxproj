@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE694F841D07A6E5004293DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE694F831D07A6E5004293DC /* main.m */; };
+		CE694F871D07A6E5004293DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE694F861D07A6E5004293DC /* AppDelegate.m */; };
+		CE694F8A1D07A6E5004293DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE694F891D07A6E5004293DC /* ViewController.m */; };
+		CE694F8D1D07A6E5004293DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE694F8B1D07A6E5004293DC /* Main.storyboard */; };
+		CE694F901D07A6E5004293DC /* wifyDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE694F8E1D07A6E5004293DC /* wifyDemo.xcdatamodeld */; };
+		CE694F921D07A6E5004293DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE694F911D07A6E5004293DC /* Assets.xcassets */; };
+		CE694F951D07A6E5004293DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE694F931D07A6E5004293DC /* LaunchScreen.storyboard */; };
+		CE694FA01D07A6E5004293DC /* wifyDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE694F9F1D07A6E5004293DC /* wifyDemoTests.m */; };
+		CE694FAB1D07A6E5004293DC /* wifyDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE694FAA1D07A6E5004293DC /* wifyDemoUITests.m */; };
+		CE694FB91D07C6DD004293DC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE694FB81D07C6DD004293DC /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE694F9C1D07A6E5004293DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE694F771D07A6E5004293DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE694F7E1D07A6E5004293DC;
+			remoteInfo = wifyDemo;
+		};
+		CE694FA71D07A6E5004293DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE694F771D07A6E5004293DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE694F7E1D07A6E5004293DC;
+			remoteInfo = wifyDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE694F7F1D07A6E5004293DC /* wifyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wifyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE694F831D07A6E5004293DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE694F851D07A6E5004293DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE694F861D07A6E5004293DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE694F881D07A6E5004293DC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CE694F891D07A6E5004293DC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE694F8C1D07A6E5004293DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE694F8F1D07A6E5004293DC /* wifyDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = wifyDemo.xcdatamodel; sourceTree = "<group>"; };
+		CE694F911D07A6E5004293DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE694F941D07A6E5004293DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE694F961D07A6E5004293DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE694F9B1D07A6E5004293DC /* wifyDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wifyDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE694F9F1D07A6E5004293DC /* wifyDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wifyDemoTests.m; sourceTree = "<group>"; };
+		CE694FA11D07A6E5004293DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = wifyDemoTests/Info.plist; sourceTree = "<group>"; };
+		CE694FA61D07A6E5004293DC /* wifyDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wifyDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE694FAA1D07A6E5004293DC /* wifyDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wifyDemoUITests.m; sourceTree = "<group>"; };
+		CE694FAC1D07A6E5004293DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE694FB81D07C6DD004293DC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE694F7C1D07A6E5004293DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE694FB91D07C6DD004293DC /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE694F981D07A6E5004293DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE694FA31D07A6E5004293DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE694F761D07A6E5004293DC = {
+			isa = PBXGroup;
+			children = (
+				CE694FB81D07C6DD004293DC /* SystemConfiguration.framework */,
+				CE694F811D07A6E5004293DC /* wifyDemo */,
+				CE694F9E1D07A6E5004293DC /* wifyDemoTests */,
+				CE694FA11D07A6E5004293DC /* Info.plist */,
+				CE694FA91D07A6E5004293DC /* wifyDemoUITests */,
+				CE694F801D07A6E5004293DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE694F801D07A6E5004293DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE694F7F1D07A6E5004293DC /* wifyDemo.app */,
+				CE694F9B1D07A6E5004293DC /* wifyDemoTests.xctest */,
+				CE694FA61D07A6E5004293DC /* wifyDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE694F811D07A6E5004293DC /* wifyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CE694F851D07A6E5004293DC /* AppDelegate.h */,
+				CE694F861D07A6E5004293DC /* AppDelegate.m */,
+				CE694F881D07A6E5004293DC /* ViewController.h */,
+				CE694F891D07A6E5004293DC /* ViewController.m */,
+				CE694F8B1D07A6E5004293DC /* Main.storyboard */,
+				CE694F911D07A6E5004293DC /* Assets.xcassets */,
+				CE694F931D07A6E5004293DC /* LaunchScreen.storyboard */,
+				CE694F961D07A6E5004293DC /* Info.plist */,
+				CE694F8E1D07A6E5004293DC /* wifyDemo.xcdatamodeld */,
+				CE694F821D07A6E5004293DC /* Supporting Files */,
+			);
+			path = wifyDemo;
+			sourceTree = "<group>";
+		};
+		CE694F821D07A6E5004293DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE694F831D07A6E5004293DC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE694F9E1D07A6E5004293DC /* wifyDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE694F9F1D07A6E5004293DC /* wifyDemoTests.m */,
+			);
+			path = wifyDemoTests;
+			sourceTree = "<group>";
+		};
+		CE694FA91D07A6E5004293DC /* wifyDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE694FAA1D07A6E5004293DC /* wifyDemoUITests.m */,
+				CE694FAC1D07A6E5004293DC /* Info.plist */,
+			);
+			path = wifyDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE694F7E1D07A6E5004293DC /* wifyDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE694FAF1D07A6E5004293DC /* Build configuration list for PBXNativeTarget "wifyDemo" */;
+			buildPhases = (
+				CE694F7B1D07A6E5004293DC /* Sources */,
+				CE694F7C1D07A6E5004293DC /* Frameworks */,
+				CE694F7D1D07A6E5004293DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wifyDemo;
+			productName = wifyDemo;
+			productReference = CE694F7F1D07A6E5004293DC /* wifyDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE694F9A1D07A6E5004293DC /* wifyDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE694FB21D07A6E5004293DC /* Build configuration list for PBXNativeTarget "wifyDemoTests" */;
+			buildPhases = (
+				CE694F971D07A6E5004293DC /* Sources */,
+				CE694F981D07A6E5004293DC /* Frameworks */,
+				CE694F991D07A6E5004293DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE694F9D1D07A6E5004293DC /* PBXTargetDependency */,
+			);
+			name = wifyDemoTests;
+			productName = wifyDemoTests;
+			productReference = CE694F9B1D07A6E5004293DC /* wifyDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE694FA51D07A6E5004293DC /* wifyDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE694FB51D07A6E5004293DC /* Build configuration list for PBXNativeTarget "wifyDemoUITests" */;
+			buildPhases = (
+				CE694FA21D07A6E5004293DC /* Sources */,
+				CE694FA31D07A6E5004293DC /* Frameworks */,
+				CE694FA41D07A6E5004293DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE694FA81D07A6E5004293DC /* PBXTargetDependency */,
+			);
+			name = wifyDemoUITests;
+			productName = wifyDemoUITests;
+			productReference = CE694FA61D07A6E5004293DC /* wifyDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE694F771D07A6E5004293DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = wifyDemo;
+				TargetAttributes = {
+					CE694F7E1D07A6E5004293DC = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					CE694F9A1D07A6E5004293DC = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = CE694F7E1D07A6E5004293DC;
+					};
+					CE694FA51D07A6E5004293DC = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = CE694F7E1D07A6E5004293DC;
+					};
+				};
+			};
+			buildConfigurationList = CE694F7A1D07A6E5004293DC /* Build configuration list for PBXProject "wifyDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE694F761D07A6E5004293DC;
+			productRefGroup = CE694F801D07A6E5004293DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE694F7E1D07A6E5004293DC /* wifyDemo */,
+				CE694F9A1D07A6E5004293DC /* wifyDemoTests */,
+				CE694FA51D07A6E5004293DC /* wifyDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE694F7D1D07A6E5004293DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE694F951D07A6E5004293DC /* LaunchScreen.storyboard in Resources */,
+				CE694F921D07A6E5004293DC /* Assets.xcassets in Resources */,
+				CE694F8D1D07A6E5004293DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE694F991D07A6E5004293DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE694FA41D07A6E5004293DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE694F7B1D07A6E5004293DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE694F8A1D07A6E5004293DC /* ViewController.m in Sources */,
+				CE694F901D07A6E5004293DC /* wifyDemo.xcdatamodeld in Sources */,
+				CE694F871D07A6E5004293DC /* AppDelegate.m in Sources */,
+				CE694F841D07A6E5004293DC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE694F971D07A6E5004293DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE694FA01D07A6E5004293DC /* wifyDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE694FA21D07A6E5004293DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE694FAB1D07A6E5004293DC /* wifyDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE694F9D1D07A6E5004293DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE694F7E1D07A6E5004293DC /* wifyDemo */;
+			targetProxy = CE694F9C1D07A6E5004293DC /* PBXContainerItemProxy */;
+		};
+		CE694FA81D07A6E5004293DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE694F7E1D07A6E5004293DC /* wifyDemo */;
+			targetProxy = CE694FA71D07A6E5004293DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE694F8B1D07A6E5004293DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE694F8C1D07A6E5004293DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE694F931D07A6E5004293DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE694F941D07A6E5004293DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE694FAD1D07A6E5004293DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE694FAE1D07A6E5004293DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE694FB01D07A6E5004293DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = wifyDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondergroup.wifyDemo.wifyDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CE694FB11D07A6E5004293DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = wifyDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondergroup.wifyDemo.wifyDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CE694FB31D07A6E5004293DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = wifyDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondergroup.wifyDemo.wifyDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wifyDemo.app/wifyDemo";
+			};
+			name = Debug;
+		};
+		CE694FB41D07A6E5004293DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = wifyDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondergroup.wifyDemo.wifyDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wifyDemo.app/wifyDemo";
+			};
+			name = Release;
+		};
+		CE694FB61D07A6E5004293DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = wifyDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondergroup.wifyDemo.wifyDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = wifyDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CE694FB71D07A6E5004293DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = wifyDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wondergroup.wifyDemo.wifyDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = wifyDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE694F7A1D07A6E5004293DC /* Build configuration list for PBXProject "wifyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE694FAD1D07A6E5004293DC /* Debug */,
+				CE694FAE1D07A6E5004293DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE694FAF1D07A6E5004293DC /* Build configuration list for PBXNativeTarget "wifyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE694FB01D07A6E5004293DC /* Debug */,
+				CE694FB11D07A6E5004293DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE694FB21D07A6E5004293DC /* Build configuration list for PBXNativeTarget "wifyDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE694FB31D07A6E5004293DC /* Debug */,
+				CE694FB41D07A6E5004293DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE694FB51D07A6E5004293DC /* Build configuration list for PBXNativeTarget "wifyDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE694FB61D07A6E5004293DC /* Debug */,
+				CE694FB71D07A6E5004293DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE694F8E1D07A6E5004293DC /* wifyDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE694F8F1D07A6E5004293DC /* wifyDemo.xcdatamodel */,
+			);
+			currentVersion = CE694F8F1D07A6E5004293DC /* wifyDemo.xcdatamodel */;
+			path = wifyDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE694F771D07A6E5004293DC /* Project object */;
+}

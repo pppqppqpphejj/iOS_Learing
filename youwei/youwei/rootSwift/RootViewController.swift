@@ -58,6 +58,7 @@ class RootViewController: UIViewController,UITableViewDataSource,UITableViewDele
         var tow_vc:NextViewController!
         tow_vc =  NextViewController(nibName: "NextViewController" as String, bundle: nil)
 
+
         self.navigationController?.presentViewController(tow_vc, animated: false, completion: nil)
 /**拨打电话**/
 //        SwiftSingle.sharedInstance.messageSend()
@@ -346,6 +347,7 @@ class RootViewController: UIViewController,UITableViewDataSource,UITableViewDele
             let tabHead = HeaderTabView()
 //        设置Frame
             tabHead.frame = tabHead.loadNibFrame().frame;
+            tabHead.conteroller = self
             self.tabView.tableHeaderView = tabHead
         
     }

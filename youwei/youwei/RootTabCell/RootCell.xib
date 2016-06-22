@@ -16,22 +16,13 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yAh-1E-OGV">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="160"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QQ20160614-0" translatesAutoresizingMaskIntoConstraints="NO" id="2bA-VF-0Ch">
-                                <rect key="frame" x="0.0" y="0.0" width="400" height="160"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="2bA-VF-0Ch" firstAttribute="top" secondItem="yAh-1E-OGV" secondAttribute="top" id="96G-3h-1HN"/>
-                            <constraint firstAttribute="trailing" secondItem="2bA-VF-0Ch" secondAttribute="trailing" id="WUK-79-Pdz"/>
                             <constraint firstAttribute="height" constant="160" id="g9l-1f-aPA"/>
-                            <constraint firstItem="2bA-VF-0Ch" firstAttribute="leading" secondItem="yAh-1E-OGV" secondAttribute="leading" id="qPU-HL-pr7"/>
-                            <constraint firstAttribute="bottom" secondItem="2bA-VF-0Ch" secondAttribute="bottom" id="qbu-Gy-5eH"/>
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstItem="yAh-1E-OGV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7Lb-2o-f5h"/>
                     <constraint firstItem="yAh-1E-OGV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CNB-gQ-ilM"/>
@@ -44,7 +35,4 @@
             <point key="canvasLocation" x="117" y="258"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="QQ20160614-0" width="312" height="126"/>
-    </resources>
 </document>

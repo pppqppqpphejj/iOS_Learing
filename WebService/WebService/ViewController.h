@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SoapHelper/SoapHelper.h"
 #import "ServiceHelper.h"
 #import "MBProgressHUD.h"
-@interface ViewController : UIViewController<MBProgressHUDDelegate,ServiceHelperDelegate>{
+@interface ViewController : UIViewController<MBProgressHUDDelegate,ServiceHelperDelegate,NSXMLParserDelegate>{
     ServiceHelper *helper;
     MBProgressHUD *HUD;
 }

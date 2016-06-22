@@ -151,7 +151,7 @@
     NSError *error=[request error];
     //如果发生错误，就返回空
     if (error||statusCode!=200) {
-        return @"";
+//        return @"";
     }
 	NSString *soapAction=[[request requestHeaders] objectForKey:@"SOAPAction"];
     NSString *methodName=@"";
@@ -162,9 +162,11 @@
     }
 	// Use when fetching text data
 	NSString *responseString = [request responseString];
+
+    
 	NSString *result=[SoapXmlParseHelper SoapMessageResultXml:responseString ServiceMethodName:methodName];
 
-    return result;
+    return responseString;
 }
 -(void)dealloc{
     if (networkQueue) {

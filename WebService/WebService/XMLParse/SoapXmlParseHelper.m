@@ -42,6 +42,7 @@
         result=[[result objectAtIndex:0] children];
     }
     [document release];
+    
     return MsgResult;
 }
 #pragma mark -

@@ -378,6 +378,27 @@ class SwiftStringA: NSString {
         return textString
     }
     
+    /**
+     *@prarm 验证邮箱地址
+     * return 返回bool 值
+     **/
+    
+    func isEmailString(emailString: String) ->Bool
+    {
+   
+        
+     if emailString == "^([a-z0-9_\\.-]+)@[\\da-z\\.-]+)\\.([a-z\\.]{2,6})$"
+     {
+        return true
+    }
+    else
+     {
+        
+        return false
+    }
+    
+    }
+    
     
     
     

@@ -11,7 +11,9 @@
 
 //#define defaultWebServiceUrl @"http://60.251.51.217/ElandMDC.admin/MDC.asmx"
 //#define defaultWebServiceNameSpace @"http://tempuri.org/"
+//http://www.sdhrss.gov.cn/webWebservice/services/PublicServiceIOS?wsdl=
 
-#define defaultWebServiceUrl @"http://www.sdhrss.gov.cn/webWebservice/services/PublicServiceIOS"
-#define defaultWebServiceNameSpace @"http://172.16.1.102:8001/webWebservice/services/PublicServiceN"
-
+#define defaultWebServiceUrl @"http://www.sdhrss.gov.cn/webWebservice/services/PublicServiceIOS?wsdl="
+#define defaultWebServiceNameSpace @"http://www.sdhrss.gov.cn/webWebservice/services/PublicServiceIOS"
+#define defaultWebServiceAction @"http://www.sdhrss.gov.cn/webWebservice/services/PublicServiceIOS"
+#define defaultWebServiceMethodName @"doService"
