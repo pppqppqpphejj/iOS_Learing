@@ -15,13 +15,13 @@
 @implementation ViewController
 - (IBAction)openWifyAction:(id)sender {
 //    配置调起无线wify
-    NSURL *url = [NSURL URLWithString:@"prefs:root=WIFI"];
-    if ([[UIApplication sharedApplication] canOpenURL:url])
-        {
-            [[UIApplication sharedApplication] openURL:url];
-        }
-    
-    
+//    NSURL *url = [NSURL URLWithString:@"prefs:root=WIFI"];
+//    if ([[UIApplication sharedApplication] canOpenURL:url])
+//        {
+//            [[UIApplication sharedApplication] openURL:url];
+//        }
+//    
+    [self openLocatio:nil];
     
     
 }
